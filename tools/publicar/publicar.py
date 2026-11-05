@@ -55,7 +55,12 @@ def autorizar(canal: str) -> None:
     tp.write_text(creds.to_json())
     os.chmod(tp, 0o600)
     yt = _servicio(canal)
-    ch = yt.channels().list(part="snippet", mine=True).execute()["items"][0]
+    items = yt.channels().list(part="snippet", mine=True).execute().get("items", [])
+    if not items:
+        tp.unlink()
+        sys.exit("La cuenta que autorizaste no tiene canal de YouTube. Vuelve a ejecutar el comando y, "
+                 "en la pantalla de Google, elige el canal (cuenta de marca) y no solo tu cuenta personal.")
+    ch = items[0]
     _verificar_canal(canal, ch["id"])
     print(f"Listo: '{canal}' quedó autorizado para el canal «{ch['snippet']['title']}» ({ch['id']}).")
 
@@ -73,6 +78,13 @@ def _servicio(canal: str):
         creds.refresh(Request())
         tp.write_text(creds.to_json())
     return build("youtube", "v3", credentials=creds)
+
+
+def _mi_canal(yt, part: str = "snippet") -> dict:
+    items = yt.channels().list(part=part, mine=True).execute().get("items", [])
+    if not items:
+        sys.exit("La autorización no corresponde a ningún canal. Ejecuta de nuevo: publicar.py autorizar <canal>")
+    return items[0]
 
 
 def _verificar_canal(canal: str, canal_id: str) -> None:
@@ -174,7 +186,7 @@ def subir(carpeta: Path, forzar: bool = False) -> None:
         sys.exit(f"{carpeta.name}: la ficha tiene errores:\n  - " + "\n  - ".join(err))
 
     yt = _servicio(f["canal"])
-    ch = yt.channels().list(part="snippet", mine=True).execute()["items"][0]
+    ch = _mi_canal(yt)
     _verificar_canal(f["canal"], ch["id"])
     print(f"{carpeta.name} → «{ch['snippet']['title']}», programado para {f['publicar_en']}")
 
@@ -228,7 +240,7 @@ def personalizar(canal: str, simular: bool = False) -> None:
         return
 
     yt = _servicio(canal)
-    ch = yt.channels().list(part="brandingSettings", mine=True).execute()["items"][0]
+    ch = _mi_canal(yt, "brandingSettings")
     _verificar_canal(canal, ch["id"])
     print(f"Canal «{ch['brandingSettings']['channel'].get('title')}» ({ch['id']})")
     bs = ch["brandingSettings"]
