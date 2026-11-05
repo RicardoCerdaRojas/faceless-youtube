@@ -26,3 +26,12 @@ El efecto "locutor de comercial" viene sobre todo del texto. Para evitarlo, la n
 
 - Las cifras se escriben con palabras en el texto que va a la voz ("veinticuatro pesos", "nueve millones"), para que el motor no las lea mal.
 - Las cifras exactas van en pantalla, por código.
+
+## Texto en pantalla
+
+- Todo texto que aparece en pantalla (títulos de sección, preguntas, cifras clave) también lo dice el narrador. Mucha gente escucha el video sin mirarlo, y una tarjeta muda suena a silencio sin contenido.
+- Ninguna escena queda sin voz, salvo la pantalla final.
+
+## Tono del gancho
+
+- El gancho plantea la pregunta y promete la explicación ("cómo gana dinero", "cuánto le queda"), sin adelantar un veredicto negativo ("no es tan bueno como parece"). El juicio llega al final, con los números ya vistos.

@@ -21,11 +21,13 @@ Texto de miniatura: **"$9 MILLONES… ¿Y LE QUEDA ESTO?"** sobre la manguera qu
 > **[VISUAL]** Gasolinera de noche. El contador de una bomba girando. En pantalla: "$9,243,000 al mes".
 
 **NARRACIÓN:**
-Mira, una gasolinera promedio en México vende más de nueve millones de pesos al mes, y uno pensaría que el dueño está nadando en dinero, ¿no?
+Mira, una gasolinera promedio en México vende más de nueve millones de pesos al mes. Es un montón de dinero, ¿no?
 
-Pero de cada litro que pagas a casi veinticuatro pesos, al dueño le puede quedar… menos de lo que cuesta un chicle. Y si la estación está en el lugar equivocado, ni eso: pierde dinero cada mes.
+Pero, ¿cuánto de eso termina de verdad en el bolsillo del dueño? ¿De dónde sale la ganancia, a dónde se va el resto… y qué tiene que pasar para que una gasolinera sea un buen negocio?
 
-Así que hoy vamos a abrir los números de una gasolinera, con calma, litro por litro, para responder una sola pregunta: ¿cuánto le queda de verdad al dueño?
+> **[VISUAL]** Título: "¿Cómo gana dinero una gasolinera?" · "Los números, litro por litro".
+
+Hoy vamos a abrir los números de una gasolinera, con calma, litro por litro, para entender cómo gana dinero.
 
 > **[VISUAL]** Logo del canal.
 
@@ -123,6 +125,8 @@ Y en ese tiempo pueden pasar muchas cosas, ¿no? Que cambie el precio del combus
 > **[VISUAL]** Título: "Lo que nadie te cuenta".
 
 **NARRACIÓN:**
+Y ahora, lo que nadie te cuenta de este negocio.
+
 Primero: la tiendita importa. Muchas gasolineras rentables no viven solo del combustible. La tienda de conveniencia, el café, el baño, el aire, la renta de espacios… todo eso deja márgenes mucho más altos que un peso por litro.
 
 Segundo: la marca no te salva. Puedes operar con la marca de Pemex o de otra empresa, pero si la ubicación es mala, el letrero no te va a traer autos.

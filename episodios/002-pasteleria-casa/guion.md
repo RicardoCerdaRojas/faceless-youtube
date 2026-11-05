@@ -23,7 +23,7 @@ Texto de miniatura: **"$600 EL PASTEL… ¿Y TE QUEDA ESTO?"** sobre un pastel e
 **NARRACIÓN:**
 Mira, un pastel de chocolate para veinte personas se vende en México entre quinientos y setecientos pesos. Si vendes uno al día a seiscientos, son dieciocho mil pesos al mes. Suena a un buen negocio para empezar desde la cocina de tu casa, ¿no?
 
-Pero esa cuenta tiene una trampa… y es la misma trampa en la que caen miles de familias que empiezan a vender pasteles.
+Pero, ¿cuánto de eso te queda de verdad? Porque entre ingredientes, gas, luz… y las horas que le dedicas a cada pastel, la cuenta cambia bastante.
 
 Así que hoy vamos a hacer los números completos: cuánto cuesta cada pastel, cuánto tiempo te toma, y cuánto te queda de verdad por cada hora que trabajas.
 
@@ -125,6 +125,8 @@ Pero una advertencia: no intentes ganar por precio. En Costco, un pastel grande 
 > **[VISUAL]** Título: "Lo que nadie te cuenta".
 
 **NARRACIÓN:**
+Y ahora, lo que nadie te cuenta de vender pasteles desde casa.
+
 Primero: cobra tu tiempo desde el primer pastel. Mucha gente calcula el precio solo con los ingredientes… y termina regalando su trabajo sin darse cuenta.
 
 Segundo: los pedidos no llegan parejos. Hay temporadas fuertes, como diciembre, el Día de las Madres o las graduaciones, y hay semanas muertas. Planea pensando en el promedio, no en tu mejor mes.

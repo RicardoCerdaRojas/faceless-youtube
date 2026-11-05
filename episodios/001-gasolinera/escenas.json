@@ -1,87 +1,525 @@
 {
-  "episodio": "001-gasolinera",
-  "voz": {"model": "text2speech_v2", "variant": "elevenlabs", "voice_type": "preset", "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"},
-  "estilo": "Fine intaglio steel-plate engraving illustration: precise parallel hatching, cross-hatching and stippled shading, deep bottle-green ink on warm cream paper, a single warm orange accent used only on {ACENTO}. Full-bleed composition fading softly into the paper at the edges. NO ornamental frame, NO border, NO guilloche, NO lettering, NO numbers, NO text of any kind, not a banknote or certificate layout, no logos. Scene: ",
-  "escenas": [
-    {"id": 1, "voz": "Mira, una gasolinera promedio en México vende más de nueve millones de pesos al mes, y uno pensaría que el dueño está nadando en dinero, ¿no?",
-     "visual": {"tipo": "img", "job": "080e0143-befb-4da4-9b25-9d3d5ce2db5a"}},
-    {"id": 2, "voz": "Pero de cada litro que pagas a casi veinticuatro pesos, al dueño le puede quedar… menos de lo que cuesta un chicle. Y si la estación está en el lugar equivocado, ni eso: pierde dinero cada mes.",
-     "visual": {"tipo": "img", "job": "9e41aaef-75e0-42cc-a0e5-b7672a40d530"}},
-    {"id": 3, "voz": "Así que hoy vamos a abrir los números de una gasolinera, con calma, litro por litro, para responder una sola pregunta: ¿cuánto le queda de verdad al dueño?",
-     "visual": {"tipo": "graf", "kind": "titulo", "texto": "¿Cuánto le queda de verdad al dueño?", "sub": "Una gasolinera, litro por litro"}},
-    {"id": 4, "voz": "Empecemos por lo básico. El dueño de una gasolinera no produce la gasolina. La compra a un proveedor, la guarda en estos tanques bajo tierra y la revende.",
-     "visual": {"tipo": "img", "job": "8c982bf0-0720-4c8d-be38-c2ac3ddc5725"}},
-    {"id": 5, "voz": "Su negocio es la diferencia entre lo que él paga y lo que pagas tú en la bomba.",
-     "visual": {"tipo": "img", "acento": "the fuel flowing through the hose", "prompt": "a fuel tanker truck parked at a gas station at night, a worker connecting a thick hose to an underground tank fill port, the canopy lights glowing behind"}},
-    {"id": 6, "voz": "Y esa diferencia es mucho más chica de lo que imaginas, porque casi todo el precio de un litro ya tiene dueño antes de llegar a la estación.",
-     "visual": {"tipo": "img", "acento": "the single drop of fuel at the end", "prompt": "a long chain of the fuel journey drawn left to right: an offshore oil rig, an oil tanker ship, a refinery with towers, a highway with a tanker truck, ending at a single fuel pump nozzle with one drop"}},
-    {"id": 7, "voz": "Una buena parte es el precio internacional del petróleo, y otra parte enorme son impuestos: el IEPS y el IVA. Según Expansión, más o menos la mitad del precio responde al crudo… y cerca del cuarenta por ciento son impuestos.",
-     "visual": {"tipo": "graf", "kind": "barra", "titulo": "Un litro de gasolina ≈ $23.70", "partes": [["Petróleo y refinación", 50, false], ["Impuestos (IEPS e IVA)", 40, false], ["Logística y margen", 10, true]], "fuente": "Fuente: Expansión (2025). Proporciones aproximadas."}},
-    {"id": 8, "voz": "¿Y lo del gasolinero? Es esta franjita de acá. Veamos cuánto es en pesos.",
-     "visual": {"tipo": "graf", "kind": "barra", "titulo": "Lo del gasolinero", "partes": [["Petróleo y refinación", 50, false], ["Impuestos (IEPS e IVA)", 40, false], ["Logística y margen", 10, true]], "foco": true, "fuente": "Fuente: Expansión (2025). Proporciones aproximadas."}},
-    {"id": 9, "voz": "En abril de este año, en Hermosillo, la gasolina regular le costaba al gasolinero veintiún pesos con noventa y dos centavos el litro… y se vendía, en promedio, a veintitrés con setenta y seis. O sea, una diferencia de un peso con ochenta y cuatro centavos por litro.",
-     "visual": {"tipo": "graf", "kind": "tabla", "titulo": "Hermosillo, abril de 2026 (pesos por litro)", "cols": ["", "Le cuesta", "Lo vende", "Diferencia"], "filas": [["Regular", "21.92", "23.76", "1.84"]], "fuente": "Fuente: El Imparcial, 16/04/2026."}},
-    {"id": 10, "voz": "La premium dejaba un poco más, unos dos pesos con sesenta y cinco, y el diésel andaba por el peso con ochenta y seis.",
-     "visual": {"tipo": "graf", "kind": "tabla", "titulo": "Hermosillo, abril de 2026 (pesos por litro)", "cols": ["", "Le cuesta", "Lo vende", "Diferencia"], "filas": [["Regular", "21.92", "23.76", "1.84"], ["Premium", "26.41", "29.06", "2.65"], ["Diésel", "26.92", "28.78", "1.86"]], "fuente": "Fuente: El Imparcial, 16/04/2026."}},
-    {"id": 11, "voz": "Y a nivel nacional, el presidente de Onexpo, que es la organización que agrupa a los gasolineros, habla de un margen promedio de un peso con cincuenta centavos por litro de diésel.",
-     "visual": {"tipo": "graf", "kind": "cifra", "cifra": "≈ $1.50 – $1.85", "texto": "de margen bruto por litro", "fuente": "Fuentes: Onexpo Nacional vía Expansión (2026); El Imparcial (2026)."}},
-    {"id": 12, "voz": "Ahora, hay un detalle político. Desde febrero de dos mil veinticinco existe un acuerdo voluntario para que la Magna no pase de veinticuatro pesos, con un margen máximo de dos pesos por litro antes de IVA.",
-     "visual": {"tipo": "img", "acento": "the illuminated price board", "prompt": "a tall gas station price board standing by a Mexican avenue at dusk with blank illuminated panels, government buildings faintly visible in the distance, cars passing"}},
-    {"id": 13, "voz": "Y un analista que cita Expansión lo dice claro: más de la mitad de las estaciones necesitan más de dos pesos de margen para ser rentables.",
-     "visual": {"tipo": "graf", "kind": "cita", "texto": "Más de la mitad de las estaciones necesitan más de $2 de margen por litro para ser rentables.", "fuente": "Analista citado por Expansión, 28/02/2025 (paráfrasis)."}},
-    {"id": 14, "voz": "Pero ojo, que eso todavía no es ganancia. De ese peso y medio hay que pagar todo lo demás.",
-     "visual": {"tipo": "img", "acento": "the few coins in the open palm", "prompt": "close-up of a gas station attendant's weathered open hand at night holding just a few small coins, the pump and hose blurred behind"}},
-    {"id": 15, "voz": "Una gasolinera tiene costos que no se ven desde el auto. Piensa en los despachadores, en varios turnos, porque abre muchas horas al día.",
-     "visual": {"tipo": "img", "acento": "the attendants' reflective vests", "prompt": "two gas station attendants in uniforms and caps working the night shift at the pumps, one refueling a car, the other cleaning a windshield, a wall clock on the store showing late hours"}},
-    {"id": 16, "voz": "La luz. La comisión de la terminal cada vez que pagas con tarjeta. El flete, si la estación queda lejos de donde se surte. El mantenimiento de bombas y tanques, la seguridad, los seguros… y una lista bien larga de permisos y verificaciones.",
-     "visual": {"tipo": "img", "acento": "the stack of paperwork", "prompt": "an engraved still life arranged on a workbench: a card payment terminal, a small model of a tanker truck, a wrench and pump spare parts, a security camera, a padlock, and a tall stack of official paperwork with stamps and seals"}},
-    {"id": 17, "voz": "En Hermosillo, el presidente local de Onexpo calculó el costo de operación en alrededor de un peso con cincuenta y cinco centavos por litro.",
-     "visual": {"tipo": "graf", "kind": "cifra", "cifra": "≈ $1.55", "texto": "de costo de operación por litro", "fuente": "Fuente: Onexpo Hermosillo vía El Imparcial (2026)."}},
-    {"id": 18, "voz": "Si haces la resta con el margen de la regular, quedan… menos de treinta centavos por litro.",
-     "visual": {"tipo": "graf", "kind": "resta", "a": "$1.84", "a_txt": "margen regular", "b": "$1.55", "b_txt": "costo de operación", "r": "$0.29", "r_txt": "por litro", "fuente": "Cálculo propio con datos de El Imparcial (2026)."}},
-    {"id": 19, "voz": "Y aun así, los propios gasolineros hablan de una ganancia de alrededor de un peso por litro en las estaciones que operan bien. ¿Cómo se explica esa diferencia? Esa es justamente la clave de todo este negocio.",
-     "visual": {"tipo": "img", "acento": "the lights of the busy station", "prompt": "a split view: on the left a lonely gas station on an empty dark street with no cars, on the right a busy brightly lit gas station on a major avenue with a line of cars at every pump"}},
-    {"id": 20, "voz": "Fíjate en esto: casi todos los costos de una gasolinera son fijos. Los despachadores cobran lo mismo si pasan diez autos o cien. La luz, el seguro y los permisos cuestan casi lo mismo.",
-     "visual": {"tipo": "img", "acento": "the headlights of the cars", "prompt": "a long line of cars, pickup trucks and taxis waiting at the pumps of a large gas station at rush hour, viewed from a slightly elevated angle"}},
-    {"id": 21, "voz": "Entonces, mientras más litros vendes, más se reparte ese costo fijo… y más te deja cada litro.",
-     "visual": {"tipo": "graf", "kind": "concepto", "lineas": ["Más litros vendidos", "→ el costo fijo se reparte", "→ cada litro deja más"]}},
-    {"id": 22, "voz": "Por eso la ubicación lo es todo. Según el expresidente nacional de Onexpo, Roberto Díaz de León, las estaciones que venden menos de doscientos mil litros al mes suelen operar con pérdidas, y a partir de unos trescientos mil empiezan a salir tablas. Hay análisis que ponen el promedio nacional en alrededor de trescientos noventa mil litros al mes.",
-     "visual": {"tipo": "graf", "kind": "umbral", "titulo": "Litros vendidos al mes", "marcas": [[200000, "< 200 mil: suele haber pérdidas"], [300000, "≈ 300 mil: punto de equilibrio"], [390000, "≈ 390 mil: promedio nacional"]], "fuente": "Fuente: Onexpo vía Expansión, 23/06/2026."}},
-    {"id": 23, "voz": "Hagamos las cuentas con una ganancia de entre treinta centavos y un peso por litro, que es el rango que sale de lo que reportan los mismos gasolineros.",
-     "visual": {"tipo": "graf", "kind": "cifra", "cifra": "$0.30 – $1.00", "texto": "de ganancia por litro (supuesto)", "fuente": "Estimación propia a partir de datos de Onexpo. Antes de impuestos."}},
-    {"id": 24, "voz": "Una estación chica, de ciento cincuenta mil litros al mes, queda bajo el umbral. Lo más probable es que pierda dinero, o que apenas sobreviva.",
-     "visual": {"tipo": "graf", "kind": "escenario", "nombre": "Estación chica", "litros": "150,000 L/mes", "ventas": "$3.6 millones", "gana": "Bajo el umbral: probable pérdida", "fuente": "Escenario estimado. Antes de impuestos."}},
-    {"id": 25, "voz": "Una estación promedio, de trescientos noventa mil litros, vende cerca de nueve millones doscientos mil pesos al mes. Al dueño le quedarían entre ciento diecisiete mil y trescientos noventa mil pesos.",
-     "visual": {"tipo": "graf", "kind": "escenario", "nombre": "Estación promedio", "litros": "390,000 L/mes", "ventas": "$9.2 millones", "gana": "$117,000 – $390,000 al mes", "fuente": "Escenario estimado. Antes de impuestos."}},
-    {"id": 26, "voz": "Y una estación grande, en una avenida principal o en carretera, con novecientos mil litros, vende más de veintiún millones al mes… y podría dejar entre doscientos setenta mil y novecientos mil pesos.",
-     "visual": {"tipo": "graf", "kind": "escenario", "nombre": "Estación grande", "litros": "900,000 L/mes", "ventas": "$21.3 millones", "gana": "$270,000 – $900,000 al mes", "fuente": "Escenario estimado. Antes de impuestos."}},
-    {"id": 27, "voz": "Ahora mira la proporción: de nueve millones en ventas, al dueño le queda, en el mejor de los casos, un cuatro por ciento. En el peor, poco más del uno.",
-     "visual": {"tipo": "graf", "kind": "proporcion", "titulo": "De cada $100 que vende una estación promedio…", "min": 1.3, "max": 4.2, "texto": "al dueño le quedan entre $1.30 y $4.20", "fuente": "Escenario estimado. Antes de impuestos."}},
-    {"id": 28, "voz": "Claro que para ganar eso primero hay que invertir. Con datos de la Comisión Reguladora de Energía, El Financiero reportó que la inversión promedio para abrir una gasolinera va desde unos cinco millones cuatrocientos mil pesos en Quintana Roo… hasta doce millones y medio en Nuevo León. Y eso, muchas veces, sin contar el terreno.",
-     "visual": {"tipo": "graf", "kind": "barras_h", "titulo": "Inversión promedio para abrir una gasolinera", "items": [["Quintana Roo", 5.36], ["Morelos", 10.38], ["Aguascalientes", 12.04], ["Nuevo León", 12.52]], "unidad": "millones de pesos", "fuente": "Fuente: CRE vía El Financiero, 15/06/2023."}},
-    {"id": 29, "voz": "Digamos que inviertes diez millones en una estación promedio, y te quedan entre ciento diecisiete mil y trescientos noventa mil pesos al mes.",
-     "visual": {"tipo": "img", "acento": "the steel frame of the canopy", "prompt": "a gas station under construction on an empty lot at sunrise, steel frame of the canopy rising, large fuel tanks waiting to be buried, construction workers and a crane"}},
-    {"id": 30, "voz": "Recuperarías tu inversión en algo entre dos y siete años, antes de impuestos. ¿Y si la estación vende poco? Puede que nunca.",
-     "visual": {"tipo": "graf", "kind": "plazo", "titulo": "¿Cuándo recuperas $10 millones?", "min": 2, "max": 7, "texto": "Entre 2 y 7 años (estación promedio)", "fuente": "Estimación propia. Antes de impuestos y sin terreno."}},
-    {"id": 31, "voz": "Y en ese tiempo pueden pasar muchas cosas, ¿no? Que cambie el precio del combustible, que haya nuevos topes, que abran otra gasolinera en la esquina… o que lleguen más autos eléctricos.",
-     "visual": {"tipo": "img", "acento": "the glowing charging cable", "prompt": "an electric car charging at a modern charging post installed right next to traditional fuel pumps at a gas station, evening, a few gasoline cars waiting at the pumps"}},
-    {"id": 32, "voz": null, "dur": 2.5,
-     "visual": {"tipo": "graf", "kind": "seccion", "texto": "Lo que nadie te cuenta"}},
-    {"id": 33, "voz": "Primero: la tiendita importa. Muchas gasolineras rentables no viven solo del combustible. La tienda de conveniencia, el café, el baño, el aire, la renta de espacios… todo eso deja márgenes mucho más altos que un peso por litro.",
-     "visual": {"tipo": "img", "acento": "the steaming coffee cup", "prompt": "interior of a small gas station convenience store at night, shelves of snacks and drinks, a coffee machine with a steaming cup on the counter, a clerk at the register and a customer"}},
-    {"id": 34, "voz": "Segundo: la marca no te salva. Puedes operar con la marca de Pemex o de otra empresa, pero si la ubicación es mala, el letrero no te va a traer autos.",
-     "visual": {"tipo": "img", "acento": "the tall blank brand sign glowing", "prompt": "a tall illuminated blank brand sign on a pole towering over an empty gas station at night with no cars, tumbleweed-like dust on a quiet road"}},
-    {"id": 35, "voz": "Tercero: es un negocio regulado y vigilado. Profeco publica seguido qué gasolineras venden más caro, y hay topes de precio acordados con el gobierno. O sea, tu margen no depende solo de ti.",
-     "visual": {"tipo": "img", "acento": "the inspector's clipboard", "prompt": "a government inspector with a clipboard and a badge standing beside a fuel pump, writing notes while the station manager watches with crossed arms"}},
-    {"id": 36, "voz": "Y cuarto: los litros incompletos. Profeco también revisa que los litros que marca la bomba sean litros completos, y las estaciones que hacen trampa enfrentan sanciones. Las honestas compiten contra esa trampa… con márgenes mínimos.",
-     "visual": {"tipo": "img", "acento": "the fuel inside the measuring can", "prompt": "close-up of an inspector filling a calibrated metal measuring can from a fuel nozzle to verify a full liter, the level mark on the can visible as a simple line"}},
-    {"id": 37, "voz": "Entonces, ¿es buen negocio una gasolinera? Puede serlo, pero no por lo que la gente cree. No es un negocio de márgenes altos. Es un negocio de volumen, de ubicación y de controlar muy bien los costos.",
-     "visual": {"tipo": "img", "acento": "the single coin on the light pan", "prompt": "an antique balance scale: on the heavy, lowered pan a tall pile of banknote bundles and fuel barrels, on the raised pan a single small coin"}},
-    {"id": 38, "voz": "Una buena estación puede dejar cientos de miles de pesos al mes… y una mala ubicación puede hacer que pierdas dinero vendiendo millones.",
-     "visual": {"tipo": "img", "job": "080e0143-befb-4da4-9b25-9d3d5ce2db5a", "zoom": "out"}},
-    {"id": 39, "voz": "Ahora te pregunto a ti: si tuvieras diez millones de pesos, ¿pondrías una gasolinera o los invertirías en otra cosa? Déjamelo en los comentarios. Y cuéntame qué negocio quieres que analicemos en el próximo video.",
-     "visual": {"tipo": "graf", "kind": "pregunta", "texto": "Si tuvieras $10 millones…", "sub": "¿pondrías una gasolinera? Te leo en los comentarios."}},
-    {"id": 40, "voz": null, "dur": 6,
-     "visual": {"tipo": "graf", "kind": "final", "job": "722c89f0-e82b-447f-9105-b85b42664a25", "texto": "Próximo episodio", "sub": "¿Cuánto deja de verdad una pastelería desde casa?"}}
-  ]
+ "episodio": "001-gasolinera",
+ "voz": {
+  "model": "text2speech_v2",
+  "variant": "elevenlabs",
+  "voice_type": "preset",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ "estilo": "Fine intaglio steel-plate engraving illustration: precise parallel hatching, cross-hatching and stippled shading, deep bottle-green ink on warm cream paper, a single warm orange accent used only on {ACENTO}. Full-bleed composition fading softly into the paper at the edges. NO ornamental frame, NO border, NO guilloche, NO lettering, NO numbers, NO text of any kind, not a banknote or certificate layout, no logos. Scene: ",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, una gasolinera promedio en México vende más de nueve millones de pesos al mes. Es un montón de dinero, ¿no?",
+   "visual": {
+    "tipo": "img",
+    "job": "080e0143-befb-4da4-9b25-9d3d5ce2db5a"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Pero, ¿cuánto de eso termina de verdad en el bolsillo del dueño? ¿De dónde sale la ganancia, a dónde se va el resto… y qué tiene que pasar para que una gasolinera sea un buen negocio?",
+   "visual": {
+    "tipo": "img",
+    "job": "9e41aaef-75e0-42cc-a0e5-b7672a40d530"
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Hoy vamos a abrir los números de una gasolinera, con calma, litro por litro, para entender cómo gana dinero.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cómo gana dinero una gasolinera?",
+    "sub": "Los números, litro por litro"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Empecemos por lo básico. El dueño de una gasolinera no produce la gasolina. La compra a un proveedor, la guarda en estos tanques bajo tierra y la revende.",
+   "visual": {
+    "tipo": "img",
+    "job": "8c982bf0-0720-4c8d-be38-c2ac3ddc5725"
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Su negocio es la diferencia entre lo que él paga y lo que pagas tú en la bomba.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the fuel flowing through the hose",
+    "prompt": "a fuel tanker truck parked at a gas station at night, a worker connecting a thick hose to an underground tank fill port, the canopy lights glowing behind"
+   }
+  },
+  {
+   "id": 6,
+   "voz": "Y esa diferencia es mucho más chica de lo que imaginas, porque casi todo el precio de un litro ya tiene dueño antes de llegar a la estación.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the single drop of fuel at the end",
+    "prompt": "a long chain of the fuel journey drawn left to right: an offshore oil rig, an oil tanker ship, a refinery with towers, a highway with a tanker truck, ending at a single fuel pump nozzle with one drop"
+   }
+  },
+  {
+   "id": 7,
+   "voz": "Una buena parte es el precio internacional del petróleo, y otra parte enorme son impuestos: el IEPS y el IVA. Según Expansión, más o menos la mitad del precio responde al crudo… y cerca del cuarenta por ciento son impuestos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "Un litro de gasolina ≈ $23.70",
+    "partes": [
+     [
+      "Petróleo y refinación",
+      50,
+      false
+     ],
+     [
+      "Impuestos (IEPS e IVA)",
+      40,
+      false
+     ],
+     [
+      "Logística y margen",
+      10,
+      true
+     ]
+    ],
+    "fuente": "Fuente: Expansión (2025). Proporciones aproximadas."
+   }
+  },
+  {
+   "id": 8,
+   "voz": "¿Y lo del gasolinero? Es esta franjita de acá. Veamos cuánto es en pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "Lo del gasolinero",
+    "partes": [
+     [
+      "Petróleo y refinación",
+      50,
+      false
+     ],
+     [
+      "Impuestos (IEPS e IVA)",
+      40,
+      false
+     ],
+     [
+      "Logística y margen",
+      10,
+      true
+     ]
+    ],
+    "foco": true,
+    "fuente": "Fuente: Expansión (2025). Proporciones aproximadas."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "En abril de este año, en Hermosillo, la gasolina regular le costaba al gasolinero veintiún pesos con noventa y dos centavos el litro… y se vendía, en promedio, a veintitrés con setenta y seis. O sea, una diferencia de un peso con ochenta y cuatro centavos por litro.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "tabla",
+    "titulo": "Hermosillo, abril de 2026 (pesos por litro)",
+    "cols": [
+     "",
+     "Le cuesta",
+     "Lo vende",
+     "Diferencia"
+    ],
+    "filas": [
+     [
+      "Regular",
+      "21.92",
+      "23.76",
+      "1.84"
+     ]
+    ],
+    "fuente": "Fuente: El Imparcial, 16/04/2026."
+   }
+  },
+  {
+   "id": 10,
+   "voz": "La premium dejaba un poco más, unos dos pesos con sesenta y cinco, y el diésel andaba por el peso con ochenta y seis.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "tabla",
+    "titulo": "Hermosillo, abril de 2026 (pesos por litro)",
+    "cols": [
+     "",
+     "Le cuesta",
+     "Lo vende",
+     "Diferencia"
+    ],
+    "filas": [
+     [
+      "Regular",
+      "21.92",
+      "23.76",
+      "1.84"
+     ],
+     [
+      "Premium",
+      "26.41",
+      "29.06",
+      "2.65"
+     ],
+     [
+      "Diésel",
+      "26.92",
+      "28.78",
+      "1.86"
+     ]
+    ],
+    "fuente": "Fuente: El Imparcial, 16/04/2026."
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Y a nivel nacional, el presidente de Onexpo, que es la organización que agrupa a los gasolineros, habla de un margen promedio de un peso con cincuenta centavos por litro de diésel.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $1.50 – $1.85",
+    "texto": "de margen bruto por litro",
+    "fuente": "Fuentes: Onexpo Nacional vía Expansión (2026); El Imparcial (2026)."
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Ahora, hay un detalle político. Desde febrero de dos mil veinticinco existe un acuerdo voluntario para que la Magna no pase de veinticuatro pesos, con un margen máximo de dos pesos por litro antes de IVA.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the illuminated price board",
+    "prompt": "a tall gas station price board standing by a Mexican avenue at dusk with blank illuminated panels, government buildings faintly visible in the distance, cars passing"
+   }
+  },
+  {
+   "id": 13,
+   "voz": "Y un analista que cita Expansión lo dice claro: más de la mitad de las estaciones necesitan más de dos pesos de margen para ser rentables.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cita",
+    "texto": "Más de la mitad de las estaciones necesitan más de $2 de margen por litro para ser rentables.",
+    "fuente": "Analista citado por Expansión, 28/02/2025 (paráfrasis)."
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Pero ojo, que eso todavía no es ganancia. De ese peso y medio hay que pagar todo lo demás.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the few coins in the open palm",
+    "prompt": "close-up of a gas station attendant's weathered open hand at night holding just a few small coins, the pump and hose blurred behind"
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Una gasolinera tiene costos que no se ven desde el auto. Piensa en los despachadores, en varios turnos, porque abre muchas horas al día.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the attendants' reflective vests",
+    "prompt": "two gas station attendants in uniforms and caps working the night shift at the pumps, one refueling a car, the other cleaning a windshield, a wall clock on the store showing late hours"
+   }
+  },
+  {
+   "id": 16,
+   "voz": "La luz. La comisión de la terminal cada vez que pagas con tarjeta. El flete, si la estación queda lejos de donde se surte. El mantenimiento de bombas y tanques, la seguridad, los seguros… y una lista bien larga de permisos y verificaciones.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the stack of paperwork",
+    "prompt": "an engraved still life arranged on a workbench: a card payment terminal, a small model of a tanker truck, a wrench and pump spare parts, a security camera, a padlock, and a tall stack of official paperwork with stamps and seals"
+   }
+  },
+  {
+   "id": 17,
+   "voz": "En Hermosillo, el presidente local de Onexpo calculó el costo de operación en alrededor de un peso con cincuenta y cinco centavos por litro.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $1.55",
+    "texto": "de costo de operación por litro",
+    "fuente": "Fuente: Onexpo Hermosillo vía El Imparcial (2026)."
+   }
+  },
+  {
+   "id": 18,
+   "voz": "Si haces la resta con el margen de la regular, quedan… menos de treinta centavos por litro.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$1.84",
+    "a_txt": "margen regular",
+    "b": "$1.55",
+    "b_txt": "costo de operación",
+    "r": "$0.29",
+    "r_txt": "por litro",
+    "fuente": "Cálculo propio con datos de El Imparcial (2026)."
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Y aun así, los propios gasolineros hablan de una ganancia de alrededor de un peso por litro en las estaciones que operan bien. ¿Cómo se explica esa diferencia? Esa es justamente la clave de todo este negocio.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the lights of the busy station",
+    "prompt": "a split view: on the left a lonely gas station on an empty dark street with no cars, on the right a busy brightly lit gas station on a major avenue with a line of cars at every pump"
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Fíjate en esto: casi todos los costos de una gasolinera son fijos. Los despachadores cobran lo mismo si pasan diez autos o cien. La luz, el seguro y los permisos cuestan casi lo mismo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the headlights of the cars",
+    "prompt": "a long line of cars, pickup trucks and taxis waiting at the pumps of a large gas station at rush hour, viewed from a slightly elevated angle"
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Entonces, mientras más litros vendes, más se reparte ese costo fijo… y más te deja cada litro.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Más litros vendidos",
+     "→ el costo fijo se reparte",
+     "→ cada litro deja más"
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Por eso la ubicación lo es todo. Según el expresidente nacional de Onexpo, Roberto Díaz de León, las estaciones que venden menos de doscientos mil litros al mes suelen operar con pérdidas, y a partir de unos trescientos mil empiezan a salir tablas. Hay análisis que ponen el promedio nacional en alrededor de trescientos noventa mil litros al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "umbral",
+    "titulo": "Litros vendidos al mes",
+    "marcas": [
+     [
+      200000,
+      "< 200 mil: suele haber pérdidas"
+     ],
+     [
+      300000,
+      "≈ 300 mil: punto de equilibrio"
+     ],
+     [
+      390000,
+      "≈ 390 mil: promedio nacional"
+     ]
+    ],
+    "fuente": "Fuente: Onexpo vía Expansión, 23/06/2026."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Hagamos las cuentas con una ganancia de entre treinta centavos y un peso por litro, que es el rango que sale de lo que reportan los mismos gasolineros.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$0.30 – $1.00",
+    "texto": "de ganancia por litro (supuesto)",
+    "fuente": "Estimación propia a partir de datos de Onexpo. Antes de impuestos."
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Una estación chica, de ciento cincuenta mil litros al mes, queda bajo el umbral. Lo más probable es que pierda dinero, o que apenas sobreviva.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Estación chica",
+    "litros": "150,000 L/mes",
+    "ventas": "$3.6 millones",
+    "gana": "Bajo el umbral: probable pérdida",
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Una estación promedio, de trescientos noventa mil litros, vende cerca de nueve millones doscientos mil pesos al mes. Al dueño le quedarían entre ciento diecisiete mil y trescientos noventa mil pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Estación promedio",
+    "litros": "390,000 L/mes",
+    "ventas": "$9.2 millones",
+    "gana": "$117,000 – $390,000 al mes",
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Y una estación grande, en una avenida principal o en carretera, con novecientos mil litros, vende más de veintiún millones al mes… y podría dejar entre doscientos setenta mil y novecientos mil pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Estación grande",
+    "litros": "900,000 L/mes",
+    "ventas": "$21.3 millones",
+    "gana": "$270,000 – $900,000 al mes",
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Ahora mira la proporción: de nueve millones en ventas, al dueño le queda, en el mejor de los casos, un cuatro por ciento. En el peor, poco más del uno.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "proporcion",
+    "titulo": "De cada $100 que vende una estación promedio…",
+    "min": 1.3,
+    "max": 4.2,
+    "texto": "al dueño le quedan entre $1.30 y $4.20",
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Claro que para ganar eso primero hay que invertir. Con datos de la Comisión Reguladora de Energía, El Financiero reportó que la inversión promedio para abrir una gasolinera va desde unos cinco millones cuatrocientos mil pesos en Quintana Roo… hasta doce millones y medio en Nuevo León. Y eso, muchas veces, sin contar el terreno.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Inversión promedio para abrir una gasolinera",
+    "items": [
+     [
+      "Quintana Roo",
+      5.36
+     ],
+     [
+      "Morelos",
+      10.38
+     ],
+     [
+      "Aguascalientes",
+      12.04
+     ],
+     [
+      "Nuevo León",
+      12.52
+     ]
+    ],
+    "unidad": "millones de pesos",
+    "fuente": "Fuente: CRE vía El Financiero, 15/06/2023."
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Digamos que inviertes diez millones en una estación promedio, y te quedan entre ciento diecisiete mil y trescientos noventa mil pesos al mes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the steel frame of the canopy",
+    "prompt": "a gas station under construction on an empty lot at sunrise, steel frame of the canopy rising, large fuel tanks waiting to be buried, construction workers and a crane"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Recuperarías tu inversión en algo entre dos y siete años, antes de impuestos. ¿Y si la estación vende poco? Puede que nunca.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "plazo",
+    "titulo": "¿Cuándo recuperas $10 millones?",
+    "min": 2,
+    "max": 7,
+    "texto": "Entre 2 y 7 años (estación promedio)",
+    "fuente": "Estimación propia. Antes de impuestos y sin terreno."
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Y en ese tiempo pueden pasar muchas cosas, ¿no? Que cambie el precio del combustible, que haya nuevos topes, que abran otra gasolinera en la esquina… o que lleguen más autos eléctricos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing charging cable",
+    "prompt": "an electric car charging at a modern charging post installed right next to traditional fuel pumps at a gas station, evening, a few gasoline cars waiting at the pumps"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Y ahora, lo que nadie te cuenta de este negocio.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Primero: la tiendita importa. Muchas gasolineras rentables no viven solo del combustible. La tienda de conveniencia, el café, el baño, el aire, la renta de espacios… todo eso deja márgenes mucho más altos que un peso por litro.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the steaming coffee cup",
+    "prompt": "interior of a small gas station convenience store at night, shelves of snacks and drinks, a coffee machine with a steaming cup on the counter, a clerk at the register and a customer"
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Segundo: la marca no te salva. Puedes operar con la marca de Pemex o de otra empresa, pero si la ubicación es mala, el letrero no te va a traer autos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tall blank brand sign glowing",
+    "prompt": "a tall illuminated blank brand sign on a pole towering over an empty gas station at night with no cars, tumbleweed-like dust on a quiet road"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "Tercero: es un negocio regulado y vigilado. Profeco publica seguido qué gasolineras venden más caro, y hay topes de precio acordados con el gobierno. O sea, tu margen no depende solo de ti.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the inspector's clipboard",
+    "prompt": "a government inspector with a clipboard and a badge standing beside a fuel pump, writing notes while the station manager watches with crossed arms"
+   }
+  },
+  {
+   "id": 36,
+   "voz": "Y cuarto: los litros incompletos. Profeco también revisa que los litros que marca la bomba sean litros completos, y las estaciones que hacen trampa enfrentan sanciones. Las honestas compiten contra esa trampa… con márgenes mínimos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the fuel inside the measuring can",
+    "prompt": "close-up of an inspector filling a calibrated metal measuring can from a fuel nozzle to verify a full liter, the level mark on the can visible as a simple line"
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Entonces, ¿es buen negocio una gasolinera? Puede serlo, pero no por lo que la gente cree. No es un negocio de márgenes altos. Es un negocio de volumen, de ubicación y de controlar muy bien los costos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the single coin on the light pan",
+    "prompt": "an antique balance scale: on the heavy, lowered pan a tall pile of banknote bundles and fuel barrels, on the raised pan a single small coin"
+   }
+  },
+  {
+   "id": 38,
+   "voz": "Una buena estación puede dejar cientos de miles de pesos al mes… y una mala ubicación puede hacer que pierdas dinero vendiendo millones.",
+   "visual": {
+    "tipo": "img",
+    "job": "080e0143-befb-4da4-9b25-9d3d5ce2db5a",
+    "zoom": "out"
+   }
+  },
+  {
+   "id": 39,
+   "voz": "Ahora te pregunto a ti: si tuvieras diez millones de pesos, ¿pondrías una gasolinera o los invertirías en otra cosa? Déjamelo en los comentarios. Y cuéntame qué negocio quieres que analicemos en el próximo video.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "Si tuvieras $10 millones…",
+    "sub": "¿pondrías una gasolinera? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 40,
+   "voz": null,
+   "dur": 6,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "722c89f0-e82b-447f-9105-b85b42664a25",
+    "texto": "Próximo episodio",
+    "sub": "¿Cuánto deja de verdad una pastelería desde casa?"
+   }
+  }
+ ]
 }
