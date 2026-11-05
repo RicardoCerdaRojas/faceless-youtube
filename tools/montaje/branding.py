@@ -64,8 +64,8 @@ def banner(panorama, out):
     zona_w, zona_h = 1700, 470
     x0, y0 = (W - zona_w) // 2, (H - zona_h) // 2
     capa = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(capa).rounded_rectangle([x0, y0, x0 + zona_w, y0 + zona_h], radius=30, fill=235)
-    capa = capa.filter(ImageFilter.GaussianBlur(30))
+    ImageDraw.Draw(capa).rounded_rectangle([x0, y0, x0 + zona_w, y0 + zona_h], radius=40, fill=252)
+    capa = capa.filter(ImageFilter.GaussianBlur(14))
     img = Image.composite(Image.new("RGB", (W, H), CREMA), img, capa)
     d = ImageDraw.Draw(img)
     centrar(d, y0 + 60, "¿Cuánto Le Queda?", anton(200), VERDE, W)
