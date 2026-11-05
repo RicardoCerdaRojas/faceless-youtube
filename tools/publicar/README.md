@@ -25,6 +25,17 @@ Las credenciales **nunca entran al repo**. Viven en tu computador, en `~/.config
    - **Ojo:** si la dejas en modo de prueba, la autorización vence cada 7 días.
    - No pidas la verificación de Google. La app queda "no verificada", y eso está bien para uso propio.
 
+### 3b. Información de la marca (para pasar a producción)
+
+Las páginas están en `publicador/` del repo, servidas por GitHub Pages:
+
+- Página principal: https://ricardocerdarojas.github.io/faceless-youtube/publicador/
+- Política de privacidad: https://ricardocerdarojas.github.io/faceless-youtube/publicador/privacidad.html
+- Condiciones: https://ricardocerdarojas.github.io/faceless-youtube/publicador/terminos.html
+- Dominio autorizado: `ricardocerdarojas.github.io`
+
+Después de publicar la app, vuelve a ejecutar `autorizar`: las autorizaciones dadas en modo Prueba siguen venciendo a los 7 días.
+
 ### 4. Crear la credencial
 
 1. **APIs y servicios** → **Credenciales** → **Crear credenciales** → **ID de cliente de OAuth**.
