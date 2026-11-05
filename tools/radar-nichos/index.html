@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar de Nichos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: herramienta de una columna; panel de búsqueda arriba, tabla de canales debajo con detalle desplegable por fila */
+:root{
+  --bg:#f4f3ef; --surface:#ffffff; --ink:#1b1c20; --muted:#666873; --line:#dcd9d1; --chip:#ecE9e2;
+  --accent:#c4321b; --accent-ink:#ffffff; --accent-soft:#f6dcd5;
+  --good:#2b7a4b; --warn:#a86b12; --bad:#b42318; --auto:#3550c4;
+  --f-display:"Archivo",system-ui,sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#131417;--surface:#1b1d21;--ink:#ebeae6;--muted:#9b9da6;--line:#2d3036;--chip:#25282d;
+  --accent:#ff6b4f;--accent-ink:#1b0b07;--accent-soft:#3a1d17;--good:#5cc58a;--warn:#e3a84b;--bad:#ff7a6b;--auto:#8ea3ff;color-scheme:dark}
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body);padding:28px max(16px,env(safe-area-inset-right,0px)) 60px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1240px;margin:0 auto;display:grid;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px}
+h1{font:800 32px/1 var(--f-display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);margin:6px 0 0;max-width:62ch}
+h2{font:700 13px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;margin:0 0 12px;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px 14px}
+.grid .wide{grid-column:1/-1}
+label{display:grid;gap:5px;font-size:13px;font-weight:500;color:var(--muted)}
+input,select{font:15px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:9px 10px;width:100%;min-width:0}
+input:focus-visible,select:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+button{font:600 14px var(--f-body);border-radius:7px;padding:10px 16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button:disabled{opacity:.5;cursor:default}
+button.small{padding:6px 10px;font-size:13px}
+details>summary{cursor:pointer;font-weight:600;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"▸ ";color:var(--muted)}
+details[open]>summary::before{content:"▾ "}
+.hint{font-size:13px;color:var(--muted);margin:0}
+.quota{font:500 13px var(--f-mono);color:var(--muted);display:grid;gap:6px;min-width:220px}
+.bar{height:6px;background:var(--chip);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.status{font:13px var(--f-mono);color:var(--muted)}
+.error{background:var(--accent-soft);color:var(--ink);border:1px solid var(--accent);border-radius:8px;padding:10px 12px;font-size:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:1080px;font-size:14px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle;white-space:nowrap}
+th{font:600 12px var(--f-body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);cursor:pointer;user-select:none;position:sticky;top:0;background:var(--surface)}
+th.num,td.num{text-align:right;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+tr.main:hover{background:var(--chip);cursor:pointer}
+tr.main.open{background:var(--chip)}
+.ch{display:flex;align-items:center;gap:9px;max-width:300px;white-space:normal}
+.ch img{width:30px;height:30px;border-radius:50%;flex:none;background:var(--chip)}
+.ch b{display:block;font-weight:600;line-height:1.2}
+.ch small{color:var(--muted);font-family:var(--f-mono);font-size:12px}
+.score{display:inline-grid;place-items:center;min-width:42px;padding:3px 8px;border-radius:6px;font:700 14px var(--f-mono)}
+.s-hi{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.s-mid{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.s-lo{background:var(--chip);color:var(--muted)}
+.a-hi{background:color-mix(in srgb,var(--auto) 22%,transparent);color:var(--auto)}
+.a-mid{background:color-mix(in srgb,var(--auto) 10%,transparent);color:var(--auto)}
+.bar i.ai{background:var(--auto)}
+.flag.good{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good);margin-top:4px}
+.flag{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:999px;background:var(--accent-soft);color:var(--ink);margin:2px 3px 0 0;white-space:nowrap}
+td.detail{background:var(--bg);white-space:normal;padding:16px}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.dgrid>div{min-width:0}
+.bk{display:grid;grid-template-columns:150px 1fr 40px;gap:8px;align-items:center;font-size:13px;margin-bottom:5px}
+.bk .bar{height:8px}
+.bk span:last-child{font-family:var(--f-mono);text-align:right}
+ol.vids{margin:0;padding-left:20px;display:grid;gap:6px;font-size:14px}
+ol.vids a{color:var(--ink)}
+ol.vids small{color:var(--muted);font-family:var(--f-mono);display:block}
+.claude{border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--surface);font-size:14px;display:grid;gap:6px}
+.claude dt{font-weight:600}
+.claude dd{margin:0 0 4px}
+.empty{padding:40px 20px;text-align:center;color:var(--muted)}
+.empty b{display:block;font:700 18px var(--f-display);color:var(--ink);margin-bottom:6px}
+.seg{border:0;padding:0;margin:0;min-width:0}
+.seg legend{font-size:13px;font-weight:500;color:var(--muted);padding:0;margin-bottom:5px}
+.seg .opts{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:3px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{display:grid;gap:1px;padding:6px 10px;border-radius:6px;cursor:pointer;color:var(--ink);font-weight:600;font-size:14px;transition:background .15s}
+.seg label small{font-weight:400;font-size:11px;color:var(--muted)}
+.seg input:checked+label{background:var(--accent);color:var(--accent-ink)}
+.seg input:checked+label small{color:var(--accent-ink);opacity:.85}
+.seg input:focus-visible+label{outline:2px solid var(--accent);outline-offset:2px}
+.rpmtable{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.rpmtable label{grid-template-columns:1fr 70px;align-items:center;font-weight:400}
+.rpmtable input{padding:5px 7px;font-family:var(--f-mono)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>Radar de <span>Nichos</span></h1>
+    <p class="sub">Busca los videos más vistos de un tema en un período, toma sus canales, descarta los grandes o antiguos y mide cada uno con sus últimos 15 videos largos.</p>
+  </div>
+  <div class="quota" id="quota"></div>
+</header>
+
+<details class="panel" id="setup">
+  <summary>Configuración</summary>
+  <div class="grid" style="margin-top:14px">
+    <label class="wide">API key de YouTube Data API v3
+      <input id="ytKey" type="password" autocomplete="off" placeholder="AIza…">
+    </label>
+    <label>API key de Anthropic (opcional)
+      <input id="antKey" type="password" autocomplete="off" placeholder="sk-ant-…">
+    </label>
+    <fieldset class="seg">
+      <legend>Modelo de Claude</legend>
+      <div class="opts">
+        <input type="radio" name="model" id="m-haiku" value="claude-haiku-5-5"><label for="m-haiku">Haiku<small>Rápido y barato · para filtrar</small></label>
+        <input type="radio" name="model" id="m-sonnet" value="claude-sonnet-5-5"><label for="m-sonnet">Sonnet<small>Más fino · para finalistas</small></label>
+      </div>
+    </fieldset>
+    <p class="hint wide">Las keys quedan guardadas solo en este navegador. La de Anthropic sirve para el botón «Evaluar con Claude»; sin ella, usa «Copiar resumen» y pégalo en el chat.</p>
+    <div class="row wide"><button id="saveKeys" type="button">Guardar</button><span class="status" id="keyStatus"></span></div>
+  </div>
+  <details style="margin-top:16px">
+    <summary>Supuestos de RPM (USD por 1.000 vistas, formato largo, audiencia en inglés)</summary>
+    <p class="hint" style="margin:8px 0 12px">Son valores de referencia aproximados, no datos reales. Se multiplican por un factor de idioma (inglés 1, alemán 1, francés 0,7, español 0,35, portugués 0,3, otros 0,5). Ajústalos cuando tengas datos de tu propio canal.</p>
+    <div class="rpmtable" id="rpmTable"></div>
+    <div class="row" style="margin-top:10px"><button class="small" id="saveRpm" type="button">Guardar RPM</button><button class="small" id="resetRpm" type="button">Restaurar valores</button></div>
+  </details>
+</details>
+
+<form class="panel" id="searchForm">
+  <h2>Buscar por tema</h2>
+  <div class="grid">
+    <label class="wide">Tema o palabra clave
+      <input id="q" type="text" placeholder="ej: historia de apellidos, misterios sin resolver, documentales de animales" required>
+    </label>
+    <label>Idioma
+      <select id="lang"><option value="es">Español</option><option value="en">Inglés</option><option value="pt">Portugués</option><option value="">Cualquiera</option></select>
+    </label>
+    <label>País (opcional, código ISO)
+      <input id="region" type="text" maxlength="2" placeholder="US, ES, MX…">
+    </label>
+    <label>Formato
+      <select id="format"><option value="long">Solo largos (4 min o más)</option><option value="any">Todos</option></select>
+    </label>
+    <label>Videos publicados en los últimos
+      <select id="windowDays"><option value="30">30 días</option><option value="90" selected>90 días</option><option value="180">180 días</option><option value="365">12 meses</option></select>
+    </label>
+    <label>Suscriptores mínimos
+      <input id="minSubs" type="number" min="0" step="500" value="1000">
+    </label>
+    <label>Suscriptores máximos
+      <input id="maxSubs" type="number" min="0" step="10000" value="300000">
+    </label>
+    <label>Edad máxima del canal
+      <select id="maxAge"><option value="12">12 meses</option><option value="24" selected>24 meses</option><option value="36">36 meses</option><option value="0">Sin límite</option></select>
+    </label>
+    <label>Profundidad
+      <select id="pages"><option value="1">Normal</option><option value="2">Amplia</option></select>
+      <span class="hint" id="pagesHint" style="font-weight:400"></span>
+    </label>
+  </div>
+  <div class="row" style="margin-top:16px">
+    <button class="primary" id="go" type="submit">Buscar nichos</button>
+    <span class="status" id="status"></span>
+  </div>
+</form>
+
+<form class="panel" id="oneForm">
+  <h2>Analizar un canal puntual</h2>
+  <div class="row">
+    <input id="one" type="text" placeholder="@handle, URL del canal o ID UC…" style="flex:1 1 280px">
+    <button id="goOne" type="submit">Analizar</button>
+  </div>
+  <p class="hint" style="margin-top:8px">Cuesta 3 unidades de cuota. No aplica los filtros de tamaño ni edad.</p>
+</form>
+
+<div id="errorBox"></div>
+
+<section>
+  <div class="row" style="justify-content:space-between;margin-bottom:10px">
+    <div class="status" id="summary"></div>
+    <div class="row">
+      <label style="grid-auto-flow:column;align-items:center;gap:8px">Mostrar
+        <select id="autoFilter" style="width:auto;padding:6px 8px">
+          <option value="all">Todos los canales</option>
+          <option value="opp">Solo oportunidades</option>
+          <option value="60">Probablemente automatizados</option>
+          <option value="35">Mixtos y automatizados</option>
+        </select>
+      </label>
+      <button class="small" id="copy" type="button" disabled>Copiar resumen</button>
+      <button class="small" id="csv" type="button" disabled>Exportar CSV</button>
+    </div>
+  </div>
+  <div class="tablewrap" id="results"></div>
+  <p class="hint" style="margin-top:10px">Shorts = videos de 3 minutos o menos. Los videos de menos de 7 días no entran en la mediana, porque todavía están sumando vistas.</p>
+</section>
+
+</div>
+
+<script>
+"use strict";
+const API = "https://www.googleapis.com/youtube/v3/";
+const DAY = 864e5;
+const DEFAULT_RPM = {"1":2.5,"2":6,"10":1,"15":3,"17":3,"19":5,"20":2.5,"22":3,"23":2,"24":2.5,"25":4,"26":5,"27":6,"28":8,"29":3};
+const CAT_NAMES = {"1":"Cine y animación","2":"Autos","10":"Música","15":"Mascotas","17":"Deportes","19":"Viajes","20":"Videojuegos","22":"Personas y blogs","23":"Comedia","24":"Entretenimiento","25":"Noticias y política","26":"Estilo y tutoriales","27":"Educación","28":"Ciencia y tecnología","29":"ONG y activismo"};
+const LANG_FACTOR = {en:1,de:1,fr:0.7,es:0.35,pt:0.3};
+const WEIGHTS = {ratio:.32,consist:.22,youth:.14,rpm:.16,active:.08,longform:.08};
+const W_LABEL = {ratio:"Vistas vs. suscriptores",consist:"Vistas repartidas",youth:"Canal reciente",rpm:"RPM estimado",active:"Frecuencia (largos)",longform:"Formato largo"};
+
+const $ = (s) => document.querySelector(s);
+const LS = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); return true; }catch(e){ return false; } }
+};
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const nf = new Intl.NumberFormat("es-CL");
+const cf = new Intl.NumberFormat("es-CL",{notation:"compact",maximumFractionDigits:1});
+const fmtNum = (n) => n == null ? "—" : (n >= 10000 ? cf.format(n) : nf.format(Math.round(n)));
+const pct = (x) => x == null || isNaN(x) ? "—" : Math.round(x*100) + "%";
+const fmtDur = (s) => { const h = Math.floor(s/3600), m = Math.floor(s%3600/60), x = s%60; return (h ? h+":"+String(m).padStart(2,"0") : m) + ":" + String(x).padStart(2,"0"); };
+const clamp = (x) => Math.max(0, Math.min(1, x));
+
+const state = { rows: [], drop: null, found: null, errors: [], sort: {key:"score", dir:-1}, open: new Set(), params: null, busy: false };
+
+/* ---------- caché y cuota ---------- */
+function cacheGet(k){ const c = LS.get("radar.cache", {}); const e = c[k]; return e && Date.now() - e.t < DAY ? e.v : null; }
+function cacheSet(k, v){
+  const c = LS.get("radar.cache", {}); const now = Date.now();
+  for (const x in c) if (now - c[x].t > DAY) delete c[x];
+  c[k] = {t: now, v};
+  if (!LS.set("radar.cache", c)) LS.set("radar.cache", {[k]: {t: now, v}});
+}
+async function cached(k, fn){ const h = cacheGet(k); if (h) return h; const v = await fn(); cacheSet(k, v); return v; }
+function pacificDay(){ return new Date().toLocaleDateString("en-CA", {timeZone: "America/Los_Angeles"}); }
+function getQuota(){ const q = LS.get("radar.quota", {day: "", used: 0}); return q.day === pacificDay() ? q : {day: pacificDay(), used: 0}; }
+function addQuota(n){ const q = getQuota(); q.used += n; LS.set("radar.quota", q); renderQuota(); }
+function renderQuota(){
+  const q = getQuota(); const p = Math.min(100, q.used / 100);
+  $("#quota").innerHTML = `<span>Cuota usada hoy (estimada): ${nf.format(q.used)} / 10.000</span><div class="bar"><i style="width:${p}%"></i></div><span>Se renueva a medianoche, hora del Pacífico</span>`;
+}
+
+/* ---------- YouTube ---------- */
+function ytError(status, body){
+  const reason = body?.error?.errors?.[0]?.reason || "";
+  const msg = body?.error?.message || "";
+  if (reason === "quotaExceeded") return "Se acabó la cuota diaria de la API (10.000 unidades). Se renueva a medianoche hora del Pacífico.";
+  if (reason === "keyInvalid" || /API key not valid/i.test(msg)) return "La API key de YouTube no es válida. Revísala en Configuración.";
+  if (reason === "accessNotConfigured" || /has not been used|is disabled/i.test(msg)) return "La YouTube Data API v3 no está habilitada en tu proyecto de Google Cloud.";
+  if (status === 403) return "Google rechazó la llamada (403). Si restringiste la key por sitio web, quita esa restricción: este archivo se abre desde tu computador. Detalle: " + msg;
+  return `Error ${status} de YouTube: ${msg || "sin detalle"}`;
+}
+async function yt(endpoint, params, cost){
+  const key = LS.get("radar.ytKey", "");
+  if (!key) throw new Error("Falta la API key de YouTube. Pégala en Configuración.");
+  const qs = new URLSearchParams(params).toString();
+  let res;
+  try { res = await fetch(API + endpoint + "?" + qs + "&key=" + encodeURIComponent(key)); }
+  catch (e) { throw new Error("No pude conectarme con YouTube. Revisa tu conexión a internet."); }
+  let body = {}; try { body = await res.json(); } catch (e) {}
+  if (!res.ok) throw new Error(ytError(res.status, body));
+  addQuota(cost);
+  return body;
+}
+function parseDur(s){
+  const m = /P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/.exec(s || "");
+  return m ? (+m[1]||0)*86400 + (+m[2]||0)*3600 + (+m[3]||0)*60 + (+m[4]||0) : 0;
+}
+function minChannel(c){
+  return { id: c.id, title: c.snippet.title, handle: c.snippet.customUrl || "", desc: (c.snippet.description || "").slice(0, 700),
+    created: c.snippet.publishedAt, country: c.snippet.country || "", thumb: c.snippet.thumbnails?.default?.url || "",
+    subs: c.statistics.hiddenSubscriberCount ? null : +c.statistics.subscriberCount,
+    views: +c.statistics.viewCount, videos: +c.statistics.videoCount,
+    uploads: c.contentDetails?.relatedPlaylists?.uploads || "" };
+}
+async function searchVideos(p){
+  const durations = p.format === "long" ? ["medium", "long"] : ["any"];
+  const after = new Date(Date.now() - p.windowDays*DAY).toISOString().slice(0, 10) + "T00:00:00Z";
+  const out = [];
+  for (const d of durations){
+    let token = "";
+    for (let page = 0; page < p.pages; page++){
+      const params = {part: "snippet", type: "video", q: p.q, order: "viewCount", maxResults: 50, publishedAfter: after, videoDuration: d};
+      if (p.lang) params.relevanceLanguage = p.lang;
+      if (p.region) params.regionCode = p.region;
+      if (token) params.pageToken = token;
+      const r = await cached("s:" + new URLSearchParams(params), async () => {
+        const b = await yt("search", params, 100);
+        return { next: b.nextPageToken || "", items: (b.items || []).filter(i => i.id?.videoId).map(i => ({v: i.id.videoId, c: i.snippet.channelId, t: i.snippet.title})) };
+      });
+      out.push(...r.items); token = r.next;
+      if (!token) break;
+    }
+  }
+  return out;
+}
+async function getChannels(ids){
+  const res = [];
+  for (let i = 0; i < ids.length; i += 50){
+    const b = await yt("channels", {part: "snippet,statistics,contentDetails", id: ids.slice(i, i+50).join(","), maxResults: 50}, 1);
+    for (const c of b.items || []) res.push(minChannel(c));
+  }
+  return res;
+}
+async function getUploads(ch){
+  if (!ch.uploads) return [];
+  return cached("u2:" + ch.id, async () => {
+    let pl;
+    try { pl = await yt("playlistItems", {part: "contentDetails", playlistId: ch.uploads, maxResults: 50}, 1); }
+    catch (e) { if (/cuota|key|habilitada/.test(e.message)) throw e; return []; }
+    const ids = (pl.items || []).map(i => i.contentDetails?.videoId).filter(Boolean);
+    if (!ids.length) return [];
+    const vb = await yt("videos", {part: "snippet,contentDetails,statistics,status", id: ids.join(","), maxResults: 50}, 1);
+    return (vb.items || []).map(v => { const d = (v.snippet.description || "").trim(); return { id: v.id, title: v.snippet.title, pub: v.snippet.publishedAt, dur: parseDur(v.contentDetails.duration),
+      views: +(v.statistics.viewCount || 0), likes: +(v.statistics.likeCount || 0), comments: +(v.statistics.commentCount || 0),
+      cat: v.snippet.categoryId, lang: (v.snippet.defaultAudioLanguage || v.snippet.defaultLanguage || "").slice(0, 2),
+      dh: d.slice(0, 120), dt: d.slice(-120), syn: typeof v.status?.containsSyntheticMedia === "boolean" ? v.status.containsSyntheticMedia : null }; });
+  });
+}
+
+/* ---------- métricas ---------- */
+function rpmTable(){ return Object.assign({}, DEFAULT_RPM, LS.get("radar.rpm", {})); }
+function computeMetrics(ch, vids, fallbackLang){
+  const now = Date.now();
+  const valid = vids.filter(v => v.dur > 0);
+  const shorts = valid.filter(v => v.dur <= 180), longs = valid.filter(v => v.dur > 180);
+  const sample = longs.filter(v => now - Date.parse(v.pub) >= 7*DAY).sort((a, b) => Date.parse(b.pub) - Date.parse(a.pub)).slice(0, 15);
+  const vs = sample.map(v => v.views).sort((a, b) => a - b);
+  const median = vs.length ? (vs.length % 2 ? vs[(vs.length-1)/2] : (vs[vs.length/2-1] + vs[vs.length/2]) / 2) : 0;
+  const total = vs.reduce((a, b) => a + b, 0);
+  const top3 = vs.slice(-3).reduce((a, b) => a + b, 0);
+  const conc = total ? top3 / total : null;
+  const ratio = ch.subs ? median / ch.subs : null;
+  const long30 = longs.filter(v => now - Date.parse(v.pub) <= 30*DAY).length;
+  const shortsShare = valid.length ? shorts.length / valid.length : 0;
+  const mode = (arr) => { const c = {}; for (const x of arr) if (x) c[x] = (c[x]||0) + 1; return Object.entries(c).sort((a, b) => b[1] - a[1])[0]?.[0] || ""; };
+  const cat = mode(valid.map(v => v.cat));
+  const vlang = mode(valid.map(v => v.lang)) || fallbackLang || "";
+  const rpm = (rpmTable()[cat] ?? 3) * (LANG_FACTOR[vlang] ?? 0.5);
+  const ageMonths = (now - Date.parse(ch.created)) / (30.44*DAY);
+  const engagement = sample.length ? sample.reduce((a, v) => a + (v.views ? v.likes / v.views : 0), 0) / sample.length : 0;
+  const s = {
+    ratio: ratio == null || ratio <= 0 ? 0 : clamp(Math.log10(ratio / 0.05) / Math.log10(60)),
+    consist: sample.length >= 4 && conc != null ? clamp((0.9 - conc) / 0.7) : 0,
+    youth: clamp((36 - ageMonths) / 24),
+    rpm: clamp((rpm - 0.3) / 7.7),
+    active: clamp(long30 / 8),
+    longform: 1 - shortsShare
+  };
+  let score = 0; for (const k in WEIGHTS) score += WEIGHTS[k] * s[k];
+  score = Math.round(score * 100);
+  const flags = [];
+  if (sample.length < 5) flags.push("pocos videos largos");
+  if (conc != null && conc > 0.6 && sample.length >= 4) flags.push("depende de virales");
+  if (shortsShare > 0.7) flags.push("mayoría Shorts");
+  if (sample.length >= 4 && engagement < 0.01) flags.push("engagement muy bajo");
+  const topVideos = [...longs].sort((a, b) => b.views - a.views).slice(0, 6);
+  const auto = computeAutomation(vids);
+  return {median, conc, ratio, long30, shortsShare, cat, vlang, rpm, ageMonths, engagement, sample, score, s, flags, topVideos, auto};
+}
+
+/* ---------- índice de automatización ---------- */
+const AUTO_W = {volume:.2, titles:.15, dur:.15, comments:.15, engagement:.1, desc:.1, hour:.05, synthetic:.1};
+const AUTO_LABEL = {volume:"Volumen de publicación", titles:"Títulos con plantilla", dur:"Duraciones parecidas", comments:"Pocos comentarios",
+  engagement:"Pocos likes", desc:"Descripciones calcadas", hour:"Siempre a la misma hora", synthetic:"Declarado como contenido IA"};
+function autoLabel(i){ return i == null ? "Sin datos suficientes" : i >= 60 ? "Probablemente automatizado" : i >= 35 ? "Mixto o semiautomatizado" : "Probablemente con persona dedicada"; }
+function computeAutomation(vids){
+  const now = Date.now();
+  const recent = vids.filter(v => v.dur > 0).sort((a, b) => Date.parse(b.pub) - Date.parse(a.pub)).slice(0, 20);
+  const sig = {}, raw = {};
+  const last30 = vids.filter(v => v.dur > 0 && now - Date.parse(v.pub) <= 30*DAY).length;
+  raw.perWeek = last30 / 4.29; sig.volume = clamp((raw.perWeek - 2) / 8);
+  if (recent.length >= 6){
+    const hrs = recent.map(v => new Date(v.pub).getUTCHours()); let best = 0;
+    for (let h = 0; h < 24; h++){ const n = hrs.filter(x => Math.min(Math.abs(x - h), 24 - Math.abs(x - h)) <= 1).length; if (n > best) best = n; }
+    raw.hourFrac = best / hrs.length; sig.hour = clamp((raw.hourFrac - 0.5) / 0.5);
+    const norm = (t) => t.toLowerCase().replace(/\d+/g, "#");
+    const openers = {}; for (const v of recent){ const o = norm(v.title).replace(/[^\p{L}#\s]/gu, " ").trim().split(/\s+/).slice(0, 3).join(" "); openers[o] = (openers[o] || 0) + 1; }
+    raw.titleFrac = Math.max(...Object.values(openers)) / recent.length;
+    const sets = recent.map(v => new Set(norm(v.title).split(/[^\p{L}#]+/u).filter(w => w.length > 2)));
+    let j = 0, n = 0;
+    for (let i = 0; i < sets.length; i++) for (let k = i + 1; k < sets.length; k++){
+      const a = sets[i], b = sets[k]; const uni = new Set([...a, ...b]).size;
+      if (uni){ j += [...a].filter(x => b.has(x)).length / uni; n++; }
+    }
+    raw.titleSim = n ? j / n : 0;
+    sig.titles = Math.max(clamp((raw.titleFrac - 0.2) / 0.5), clamp((raw.titleSim - 0.08) / 0.25));
+    const frac = (key) => { const c = {}; for (const v of recent){ const s = v[key]; if (s && s.length >= 40) c[s] = (c[s] || 0) + 1; } const m = Object.values(c); return m.length ? Math.max(...m) / recent.length : 0; };
+    if (recent.some(v => v.dh !== undefined)){
+      raw.headFrac = frac("dh"); raw.tailFrac = frac("dt");
+      sig.desc = Math.max(clamp((raw.headFrac - 0.3) / 0.5), 0.6 * clamp((raw.tailFrac - 0.6) / 0.4));
+    }
+  }
+  const longs = recent.filter(v => v.dur > 180);
+  if (longs.length >= 5){
+    const d = longs.map(v => v.dur); const mean = d.reduce((a, b) => a + b, 0) / d.length;
+    raw.durCv = Math.sqrt(d.reduce((a, b) => a + (b - mean) ** 2, 0) / d.length) / mean;
+    sig.dur = clamp((0.5 - raw.durCv) / 0.35);
+  }
+  const wv = recent.filter(v => v.views >= 500);
+  if (wv.length >= 4){
+    const mid = (arr) => { const s = [...arr].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
+    raw.cpk = mid(wv.map(v => v.comments / v.views * 1000)); sig.comments = clamp((3 - raw.cpk) / 2.5);
+    raw.eng = mid(wv.map(v => v.likes / v.views)); sig.engagement = clamp((0.03 - raw.eng) / 0.025);
+  }
+  const def = recent.filter(v => typeof v.syn === "boolean");
+  if (def.length){ raw.synFrac = def.filter(v => v.syn).length / def.length; sig.synthetic = clamp(raw.synFrac / 0.5); }
+  let tw = 0, s = 0;
+  for (const k in AUTO_W) if (sig[k] != null){ tw += AUTO_W[k]; s += AUTO_W[k] * sig[k]; }
+  return {index: tw >= 0.4 ? Math.round(s / tw * 100) : null, sig, raw};
+}
+function autoRaw(k, r){
+  switch (k){
+    case "volume": return `${r.perWeek.toFixed(1)} videos por semana`;
+    case "titles": return r.titleFrac == null ? "—" : `${pct(r.titleFrac)} abren igual · similitud ${pct(r.titleSim)}`;
+    case "dur": return r.durCv == null ? "—" : `variación ${pct(r.durCv)}`;
+    case "comments": return r.cpk == null ? "—" : `${r.cpk.toFixed(1)} por cada 1.000 vistas`;
+    case "engagement": return r.eng == null ? "—" : `${(r.eng * 100).toFixed(1)}% likes / vistas`;
+    case "desc": return r.headFrac == null ? "—" : `${pct(r.headFrac)} con el mismo inicio`;
+    case "hour": return r.hourFrac == null ? "—" : `${pct(r.hourFrac)} en la misma franja`;
+    case "synthetic": return r.synFrac == null ? "YouTube no lo informa para este canal" : `${pct(r.synFrac)} de los videos`;
+  }
+  return "";
+}
+const isOpportunity = (m) => m.auto.index != null && m.auto.index >= 60 && m.score >= 55;
+
+/* ---------- flujo ---------- */
+async function pool(items, n, fn){
+  let i = 0, err = null;
+  const workers = Array.from({length: Math.min(n, items.length)}, async () => {
+    while (i < items.length && !err){ const it = items[i++]; try { await fn(it); } catch (e) { err = e; } }
+  });
+  await Promise.all(workers);
+  if (err) throw err;
+}
+function setStatus(t){ $("#status").textContent = t; }
+function showError(msg){ $("#errorBox").innerHTML = msg ? `<div class="error">${esc(msg)}</div>` : ""; }
+function setBusy(b){ state.busy = b; $("#go").disabled = b; $("#goOne").disabled = b; }
+let renderTimer = 0;
+function scheduleRender(){ clearTimeout(renderTimer); renderTimer = setTimeout(render, 120); }
+
+async function runSearch(p){
+  setBusy(true); showError(""); state.rows = []; state.errors = []; state.open.clear(); state.params = p; state.drop = null; render();
+  try {
+    setStatus("Buscando videos…");
+    const vids = await searchVideos(p);
+    const hits = {}; for (const v of vids) (hits[v.c] = hits[v.c] || []).push(v);
+    const chIds = Object.keys(hits);
+    setStatus(`Encontré ${vids.length} videos de ${chIds.length} canales. Revisando canales…`);
+    const chans = await getChannels(chIds);
+    const drop = {size: 0, age: 0, hidden: 0};
+    const maxAgeMs = p.maxAge * 30.44 * DAY;
+    const keep = chans.filter(c => {
+      if (c.subs == null){ drop.hidden++; return false; }
+      if (c.subs < p.minSubs || c.subs > p.maxSubs){ drop.size++; return false; }
+      if (p.maxAge && Date.now() - Date.parse(c.created) > maxAgeMs){ drop.age++; return false; }
+      return true;
+    });
+    state.drop = drop; state.found = {videos: vids.length, channels: chIds.length};
+    let done = 0;
+    await pool(keep, 4, async (c) => {
+      try {
+        const v = await getUploads(c);
+        state.rows.push({ch: c, m: computeMetrics(c, v, p.lang), hits: hits[c.id] || [], claude: LS.get("radar.cl:" + c.id, null)});
+      } catch (e) {
+        if (/cuota|key|habilitada/.test(e.message)) throw e;
+        state.errors.push(c.title + ": " + e.message);
+      }
+      done++; setStatus(`Analizando canales ${done}/${keep.length}…`); scheduleRender();
+    });
+    setStatus(keep.length ? "Listo." : "Ningún canal pasó los filtros. Prueba con más suscriptores máximos, más edad o un período más largo.");
+  } catch (e) { showError(e.message); setStatus(""); }
+  finally { setBusy(false); render(); }
+}
+
+function parseChannelInput(s){
+  s = s.trim();
+  let m = /channel\/(UC[\w-]{22})/.exec(s) || /^(UC[\w-]{22})$/.exec(s);
+  if (m) return {id: m[1]};
+  m = /youtube\.com\/(@[\w.\-]+)/.exec(s) || /^(@?[\w.\-]+)$/.exec(s);
+  if (m) return {forHandle: m[1].startsWith("@") ? m[1] : "@" + m[1]};
+  return null;
+}
+async function analyzeOne(input){
+  const q = parseChannelInput(input);
+  if (!q){ showError("No reconozco ese canal. Usa @handle, la URL del canal o su ID que empieza con UC."); return; }
+  setBusy(true); showError("");
+  try {
+    setStatus("Buscando el canal…");
+    const b = await yt("channels", Object.assign({part: "snippet,statistics,contentDetails"}, q), 1);
+    if (!b.items?.length) throw new Error("No encontré ese canal en YouTube.");
+    const c = minChannel(b.items[0]);
+    const v = await getUploads(c);
+    state.rows = state.rows.filter(r => r.ch.id !== c.id);
+    state.rows.unshift({ch: c, m: computeMetrics(c, v, ""), hits: [], claude: LS.get("radar.cl:" + c.id, null), manual: true});
+    state.open.add(c.id);
+    setStatus("Canal analizado: " + c.title);
+  } catch (e) { showError(e.message); setStatus(""); }
+  finally { setBusy(false); render(); }
+}
+
+/* ---------- Claude ---------- */
+async function classify(id){
+  const row = state.rows.find(r => r.ch.id === id); if (!row) return;
+  const key = LS.get("radar.antKey", "");
+  if (!key){ showError("Para evaluar con Claude agrega una API key de Anthropic en Configuración, o usa «Copiar resumen» y pégalo en el chat."); return; }
+  const model = LS.get("radar.model", "claude-haiku-5-5");
+  row.claude = {loading: true}; render();
+  const vids = (row.m.sample.length ? row.m.sample : row.m.topVideos).slice(0, 12)
+    .map(v => `- ${v.title} (${fmtDur(v.dur)}, ${nf.format(v.views)} vistas)`).join("\n");
+  const prompt = `Eres analista de canales de YouTube. Evalúa si el formato de este canal lo puede replicar una persona que produce todo con Claude (investigación y guiones) y Higgsfield (generación de imágenes, video con IA, voz y doblaje), sin aparecer en cámara. Las imágenes adjuntas son miniaturas de sus videos más vistos.
+
+Canal: ${row.ch.title}
+Descripción: ${row.ch.desc || "(sin descripción)"}
+Suscriptores: ${row.ch.subs}
+Índice de automatización calculado por patrones de publicación: ${row.m.auto.index ?? "sin datos"} (${autoLabel(row.m.auto.index)}). Señales: ${Object.keys(row.m.auto.sig).map(k => AUTO_LABEL[k] + ": " + autoRaw(k, row.m.auto.raw)).join("; ")}
+Videos largos recientes:
+${vids || "(sin videos largos)"}
+
+Responde SOLO con JSON válido, sin texto antes ni después, con esta forma:
+{"faceless":"si|no|incierto","formato":"descripción breve del formato","produccion":"facil|media|dificil","por_que":"una frase","costo_higgsfield":"bajo|medio|alto","riesgos":["solo los que apliquen, p. ej. copyright, contenido no auténtico, desinformación, temas sensibles"],"valor_propio":"qué tendría que aportar un canal nuevo para no ser un clon","veredicto":"replicar|con cuidado|descartar","resumen":"máximo dos frases"}`;
+  const content = row.m.topVideos.slice(0, 3).map(v => ({type: "image", source: {type: "url", url: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}}));
+  content.push({type: "text", text: prompt});
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json", "anthropic-dangerous-direct-browser-access": "true"},
+      body: JSON.stringify({model, max_tokens: 900, messages: [{role: "user", content}]})
+    });
+    const j = await res.json().catch(() => ({}));
+    if (!res.ok){
+      const m = j?.error?.message || "";
+      throw new Error(res.status === 401 ? "La API key de Anthropic no es válida." : res.status === 404 ? `El modelo «${model}» no existe para tu cuenta. Cámbialo en Configuración.` : `Claude respondió con error ${res.status}: ${m}`);
+    }
+    const text = (j.content || []).filter(b => b.type === "text").map(b => b.text).join("");
+    const mm = /\{[\s\S]*\}/.exec(text);
+    if (!mm) throw new Error("Claude no devolvió un JSON reconocible.");
+    row.claude = JSON.parse(mm[0]);
+    row.claude._model = model.includes("sonnet") ? "Sonnet" : model.includes("haiku") ? "Haiku" : model;
+    LS.set("radar.cl:" + id, row.claude);
+  } catch (e) { row.claude = null; showError(e.message); }
+  render();
+}
+
+/* ---------- render ---------- */
+const COLS = [
+  {key: "channel", label: "Canal", get: r => r.ch.title.toLowerCase()},
+  {key: "score", label: "Puntaje", num: true, get: r => r.m.score},
+  {key: "auto", label: "Automatización", num: true, get: r => r.m.auto.index ?? -1},
+  {key: "subs", label: "Suscriptores", num: true, get: r => r.ch.subs ?? -1},
+  {key: "age", label: "Edad", num: true, get: r => r.m.ageMonths},
+  {key: "median", label: "Mediana vistas", num: true, get: r => r.m.median},
+  {key: "ratio", label: "Mediana / subs", num: true, get: r => r.m.ratio ?? -1},
+  {key: "conc", label: "Top 3", num: true, get: r => r.m.conc ?? 2},
+  {key: "long30", label: "Largos 30 d", num: true, get: r => r.m.long30},
+  {key: "shorts", label: "Shorts", num: true, get: r => r.m.shortsShare},
+  {key: "cat", label: "Categoría", get: r => CAT_NAMES[r.m.cat] || ""},
+  {key: "rpm", label: "RPM est.", num: true, get: r => r.m.rpm},
+  {key: "flags", label: "Alertas", get: r => r.m.flags.length}
+];
+function sortedRows(){
+  const c = COLS.find(x => x.key === state.sort.key) || COLS[1];
+  const f = state.autoFilter || "all";
+  const rows = state.rows.filter(r => f === "all" ? true : f === "opp" ? isOpportunity(r.m) : (r.m.auto.index ?? -1) >= +f);
+  return rows.sort((a, b) => { const x = c.get(a), y = c.get(b); return (x > y ? 1 : x < y ? -1 : 0) * state.sort.dir; });
+}
+function scoreClass(s){ return s >= 60 ? "s-hi" : s >= 40 ? "s-mid" : "s-lo"; }
+function cellsFor(r){
+  const m = r.m, ch = r.ch;
+  const link = ch.handle ? "https://www.youtube.com/" + ch.handle : "https://www.youtube.com/channel/" + ch.id;
+  return `
+    <td><div class="ch"><img src="${esc(ch.thumb)}" alt="" loading="lazy"><div><b>${esc(ch.title)}</b><small><a href="${esc(link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(ch.handle || ch.id)}</a>${ch.country ? " · " + esc(ch.country) : ""}</small></div></div></td>
+    <td class="num"><span class="score ${scoreClass(m.score)}">${m.score}</span></td>
+    <td class="num">${m.auto.index == null ? "—" : `<span class="score ${m.auto.index >= 60 ? "a-hi" : m.auto.index >= 35 ? "a-mid" : "s-lo"}" title="${esc(autoLabel(m.auto.index))}">${m.auto.index}</span>`}${isOpportunity(m) ? `<br><span class="flag good">oportunidad</span>` : ""}</td>
+    <td class="num">${fmtNum(ch.subs)}</td>
+    <td class="num">${Math.max(0, Math.round(m.ageMonths))} m</td>
+    <td class="num">${fmtNum(m.median)}</td>
+    <td class="num">${m.ratio == null ? "—" : m.ratio.toFixed(2)}</td>
+    <td class="num">${pct(m.conc)}</td>
+    <td class="num">${m.long30}</td>
+    <td class="num">${pct(m.shortsShare)}</td>
+    <td>${esc(CAT_NAMES[m.cat] || "—")}</td>
+    <td class="num">$${m.rpm.toFixed(2)}</td>
+    <td style="white-space:normal;min-width:140px">${m.flags.map(f => `<span class="flag">${esc(f)}</span>`).join("") || ""}</td>`;
+}
+function claudeBlock(r){
+  const c = r.claude;
+  if (c?.loading) return `<div class="claude">Evaluando con Claude…</div>`;
+  if (c && c.veredicto) return `<dl class="claude">
+    <dt>Veredicto: ${esc(c.veredicto)} · Faceless: ${esc(c.faceless)} · Producción: ${esc(c.produccion)} · Costo en Higgsfield: ${esc(c.costo_higgsfield)}</dt>
+    <dd>${esc(c.resumen)}</dd>
+    <dt>Formato</dt><dd>${esc(c.formato)}</dd>
+    <dt>Por qué esa dificultad</dt><dd>${esc(c.por_que)}</dd>
+    <dt>Riesgos</dt><dd>${esc((c.riesgos || []).join(", ") || "ninguno señalado")}</dd>
+    <dt>Qué aportar para no ser un clon</dt><dd>${esc(c.valor_propio)}</dd>
+    <dd class="hint">Evaluado con ${esc(c._model || "Claude")}. «Volver a evaluar» usa el modelo elegido en Configuración.</dd>
+    <dd><button class="small" type="button" data-claude="${esc(r.ch.id)}">Volver a evaluar</button></dd></dl>`;
+  return `<div class="claude"><span>Claude revisa títulos, descripción y miniaturas, y dice si el formato se puede producir con Claude + Higgsfield.</span><div><button class="small" type="button" data-claude="${esc(r.ch.id)}">Evaluar con Claude</button></div></div>`;
+}
+function detailFor(r){
+  const m = r.m;
+  const bars = Object.keys(WEIGHTS).map(k => `<div class="bk"><span>${W_LABEL[k]}</span><div class="bar"><i style="width:${Math.round(m.s[k]*100)}%"></i></div><span>${Math.round(WEIGHTS[k]*100)}%</span></div>`).join("");
+  const top = m.topVideos.map(v => `<li><a href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a><small>${nf.format(v.views)} vistas · ${fmtDur(v.dur)} · ${new Date(v.pub).toLocaleDateString("es-CL")}</small></li>`).join("") || "<li>Sin videos largos entre los últimos 50.</li>";
+  const hits = r.hits.length ? `<p class="hint" style="margin-top:10px">Apareció en la búsqueda con: ${r.hits.slice(0, 3).map(h => "«" + esc(h.t) + "»").join(", ")}</p>` : "";
+  const a = m.auto;
+  const abars = Object.keys(AUTO_W).map(k => a.sig[k] == null
+    ? `<div class="bk"><span>${AUTO_LABEL[k]}</span><span class="hint" style="grid-column:2/4;text-align:left">${k === "synthetic" ? esc(autoRaw(k, a.raw)) : "sin datos suficientes"}</span></div>`
+    : `<div class="bk" title="${esc(autoRaw(k, a.raw))}"><span>${AUTO_LABEL[k]}</span><div class="bar"><i class="ai" style="width:${Math.round(a.sig[k]*100)}%"></i></div><span>${Math.round(a.sig[k]*100)}</span></div><p class="hint" style="margin:-3px 0 7px 158px">${esc(autoRaw(k, a.raw))}</p>`).join("");
+  const autoBox = `<div><h2>Automatización: ${a.index == null ? "—" : a.index} · ${esc(autoLabel(a.index))}</h2>${abars}
+    <p class="hint" style="margin-top:6px">${isOpportunity(m) ? "Oportunidad: el formato parece automatizado y aun así rinde bien en este tema." : "Es una probabilidad basada en patrones de publicación, no una certeza. La API no permite saber si la voz es generada."}</p></div>`;
+  return `<div class="dgrid">
+    ${autoBox}
+    <div><h2>Desglose del puntaje</h2>${bars}<p class="hint" style="margin-top:8px">Engagement promedio (likes / vistas): ${pct(m.engagement)} · Muestra: ${m.sample.length} videos largos · Idioma detectado: ${esc(m.vlang || "—")}</p>${hits}</div>
+    <div><h2>Videos largos más vistos</h2><ol class="vids">${top}</ol></div>
+    <div><h2>Evaluación de formato</h2>${claudeBlock(r)}</div>
+  </div>`;
+}
+function render(){
+  const rows = sortedRows();
+  const sum = [];
+  if (state.found) sum.push(`${state.found.videos} videos · ${state.found.channels} canales encontrados`);
+  if (state.drop) sum.push(`descartados: ${state.drop.size} por tamaño, ${state.drop.age} por antigüedad, ${state.drop.hidden} con suscriptores ocultos`);
+  if (state.rows.length) sum.push(`${state.rows.length} analizados`);
+  if (state.errors.length) sum.push(`${state.errors.length} con error`);
+  $("#summary").textContent = sum.join(" · ");
+  $("#copy").disabled = $("#csv").disabled = !state.rows.length;
+  if (!rows.length){
+    $("#results").innerHTML = state.busy ? `<div class="empty"><b>Analizando…</b>Los canales van apareciendo a medida que se miden.</div>`
+      : `<div class="empty"><b>Todavía no hay canales</b>Escribe un tema y presiona «Buscar nichos». Cada búsqueda gasta entre 200 y 700 unidades de las 10.000 diarias; repetir la misma búsqueda el mismo día no gasta nada.</div>`;
+    return;
+  }
+  const head = COLS.map(c => `<th class="${c.num ? "num" : ""}" data-sort="${c.key}">${c.label}${state.sort.key === c.key ? (state.sort.dir < 0 ? " ↓" : " ↑") : ""}</th>`).join("");
+  const body = rows.map(r => {
+    const open = state.open.has(r.ch.id);
+    return `<tr class="main${open ? " open" : ""}" data-id="${esc(r.ch.id)}">${cellsFor(r)}</tr>` + (open ? `<tr><td class="detail" colspan="${COLS.length}">${detailFor(r)}</td></tr>` : "");
+  }).join("");
+  $("#results").innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+/* ---------- exportar ---------- */
+function rowsForExport(){
+  return sortedRows().map(r => ({
+    canal: r.ch.title, handle: r.ch.handle, url: r.ch.handle ? "https://www.youtube.com/" + r.ch.handle : "https://www.youtube.com/channel/" + r.ch.id,
+    puntaje: r.m.score, automatizacion: r.m.auto.index ?? "", tipo: autoLabel(r.m.auto.index), oportunidad: isOpportunity(r.m) ? "sí" : "", suscriptores: r.ch.subs, edad_meses: Math.round(r.m.ageMonths), mediana_vistas: Math.round(r.m.median),
+    mediana_sobre_subs: r.m.ratio == null ? "" : r.m.ratio.toFixed(2), top3: pct(r.m.conc), largos_30d: r.m.long30, shorts: pct(r.m.shortsShare),
+    categoria: CAT_NAMES[r.m.cat] || "", idioma: r.m.vlang, rpm_est: r.m.rpm.toFixed(2), alertas: r.m.flags.join("; "),
+    top_video: r.m.topVideos[0] ? `${r.m.topVideos[0].title} (${r.m.topVideos[0].views})` : "",
+    claude: r.claude?.veredicto ? `${r.claude.veredicto}: ${r.claude.resumen}` : ""
+  }));
+}
+function exportCsv(){
+  const data = rowsForExport(); if (!data.length) return;
+  const cols = Object.keys(data[0]);
+  const q = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  const csv = "﻿" + [cols.join(","), ...data.map(d => cols.map(c => q(d[c])).join(","))].join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
+  a.download = "radar-nichos-" + (state.params?.q || "canales").replace(/[^\wáéíóúñ]+/gi, "-").slice(0, 40) + ".csv";
+  document.body.appendChild(a); a.click(); a.remove();
+}
+async function copySummary(){
+  const p = state.params;
+  const lines = [p ? `Búsqueda: «${p.q}» · idioma ${p.lang || "cualquiera"} · ${p.region || "sin país"} · últimos ${p.windowDays} días · subs ${p.minSubs}–${p.maxSubs} · edad máx ${p.maxAge || "sin límite"} meses` : "Canales analizados"];
+  for (const r of sortedRows().slice(0, 15)){
+    const m = r.m;
+    lines.push(`\n${r.ch.title} (${r.ch.handle || r.ch.id}) — puntaje ${m.score} · automatización ${m.auto.index ?? "—"} (${autoLabel(m.auto.index)})${isOpportunity(m) ? " · OPORTUNIDAD" : ""}`);
+    lines.push(`  subs ${r.ch.subs} · edad ${Math.round(m.ageMonths)} m · mediana ${Math.round(m.median)} · mediana/subs ${m.ratio == null ? "—" : m.ratio.toFixed(2)} · top3 ${pct(m.conc)} · largos 30d ${m.long30} · shorts ${pct(m.shortsShare)} · ${CAT_NAMES[m.cat] || "—"} · RPM est. $${m.rpm.toFixed(2)}${m.flags.length ? " · alertas: " + m.flags.join(", ") : ""}`);
+    lines.push("  Más vistos: " + m.topVideos.slice(0, 4).map(v => `«${v.title}» (${v.views})`).join(" | "));
+  }
+  const text = lines.join("\n");
+  try { await navigator.clipboard.writeText(text); setStatus("Resumen copiado. Pégalo en el chat con Claude."); }
+  catch (e) {
+    const t = document.createElement("textarea"); t.value = text; document.body.appendChild(t); t.select();
+    try { document.execCommand("copy"); setStatus("Resumen copiado."); } catch (e2) { setStatus("No pude copiar automáticamente."); }
+    t.remove();
+  }
+}
+
+/* ---------- configuración y eventos ---------- */
+function renderRpm(){
+  const t = rpmTable();
+  $("#rpmTable").innerHTML = Object.keys(DEFAULT_RPM).map(k => `<label>${CAT_NAMES[k]}<input type="number" step="0.5" min="0" id="rpm-${k}" value="${t[k]}"></label>`).join("");
+}
+function loadSettings(){
+  $("#ytKey").value = LS.get("radar.ytKey", "");
+  $("#antKey").value = LS.get("radar.antKey", "");
+  const mdl = LS.get("radar.model", "claude-haiku-5-5");
+  ($("input[name=model][value='" + mdl + "']") || $("#m-haiku")).checked = true;
+  if (!LS.get("radar.ytKey", "")) $("#setup").open = true;
+  const last = LS.get("radar.last", null);
+  if (last) for (const k of ["q","lang","region","format","windowDays","minSubs","maxSubs","maxAge","pages"]) if (last[k] != null && $("#" + k)) $("#" + k).value = last[k];
+  renderRpm(); renderQuota(); updatePagesHint(); render();
+}
+$("#saveKeys").addEventListener("click", () => {
+  const ok = LS.set("radar.ytKey", $("#ytKey").value.trim()) && LS.set("radar.antKey", $("#antKey").value.trim());
+  $("#keyStatus").textContent = ok ? "Guardado en este navegador." : "Tu navegador no permite guardar; las keys se perderán al cerrar.";
+});
+document.querySelectorAll("input[name=model]").forEach(el => el.addEventListener("change", () => {
+  LS.set("radar.model", el.value);
+  $("#keyStatus").textContent = "Modelo: " + (el.value.includes("sonnet") ? "Sonnet" : "Haiku") + ".";
+}));
+$("#saveRpm").addEventListener("click", () => {
+  const o = {}; for (const k of Object.keys(DEFAULT_RPM)) o[k] = parseFloat($("#rpm-" + k).value) || 0;
+  LS.set("radar.rpm", o);
+  state.rows.forEach(r => { r.m = computeMetrics(r.ch, [...(cacheGet("u2:" + r.ch.id) || [])], state.params?.lang || ""); });
+  render();
+});
+$("#resetRpm").addEventListener("click", () => { LS.set("radar.rpm", {}); renderRpm(); });
+$("#searchForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!LS.get("radar.ytKey", "") && $("#ytKey").value.trim()) LS.set("radar.ytKey", $("#ytKey").value.trim());
+  const p = { q: $("#q").value.trim(), lang: $("#lang").value, region: $("#region").value.trim().toUpperCase(), format: $("#format").value,
+    windowDays: +$("#windowDays").value, minSubs: +$("#minSubs").value || 0, maxSubs: +$("#maxSubs").value || 1e12,
+    maxAge: +$("#maxAge").value, pages: +$("#pages").value };
+  if (!p.q) return;
+  LS.set("radar.last", p);
+  runSearch(p);
+});
+$("#oneForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!LS.get("radar.ytKey", "") && $("#ytKey").value.trim()) LS.set("radar.ytKey", $("#ytKey").value.trim());
+  if ($("#one").value.trim()) analyzeOne($("#one").value);
+});
+$("#results").addEventListener("click", (e) => {
+  const cb = e.target.closest("[data-claude]");
+  if (cb){ e.stopPropagation(); classify(cb.dataset.claude); return; }
+  const th = e.target.closest("th[data-sort]");
+  if (th){ const k = th.dataset.sort; state.sort = {key: k, dir: state.sort.key === k ? -state.sort.dir : (k === "channel" || k === "conc" || k === "age" ? 1 : -1)}; render(); return; }
+  const tr = e.target.closest("tr.main");
+  if (tr && !e.target.closest("a")){ const id = tr.dataset.id; state.open.has(id) ? state.open.delete(id) : state.open.add(id); render(); }
+});
+function updatePagesHint(){
+  const long = $("#format").value === "long", deep = $("#pages").value === "2";
+  const videos = (long ? 100 : 50) * (deep ? 2 : 1);
+  const cost = long ? (deep ? "≈ 500–700" : "≈ 250–400") : (deep ? "≈ 250–400" : "≈ 150–250");
+  $("#pagesHint").textContent = `Hasta ${videos} videos · ${cost} de cuota`;
+}
+$("#pages").addEventListener("change", updatePagesHint);
+$("#format").addEventListener("change", updatePagesHint);
+$("#csv").addEventListener("click", exportCsv);
+$("#autoFilter").addEventListener("change", (e) => { state.autoFilter = e.target.value; render(); });
+$("#copy").addEventListener("click", copySummary);
+loadSettings();
+</script>
+</body>
+</html>
