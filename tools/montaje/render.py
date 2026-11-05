@@ -287,7 +287,7 @@ def graf(v):
             d.text((140, y + 20), nom, font=fuente("serif", 52, 600), fill=VERDE)
             x0 = 620
             x1 = x0 + (W - 420 - x0) * val / maxv
-            col = NARANJA if i in (0, len(v["items"]) - 1) else VERDE_SUAVE
+            col = NARANJA if i in v.get("foco", (0, len(v["items"]) - 1)) else VERDE_SUAVE
             d.rectangle([x0, y + 10, x1, y + 100], fill=col)
             d.text((x1 + 20, y + 10), f"${val:.1f}", font=fuente("anton", 80), fill=col)
         d.text((620, 950), v["unidad"], font=fuente("serif", 36), fill=VERDE_SUAVE)
@@ -308,12 +308,12 @@ def graf(v):
     elif k == "lista":
         titulo_sup(d, v["titulo"])
         items = v["items"]
-        fi = fuente("serif", 60 if len(items) <= 4 else 54, 600)
-        paso = 120 if len(items) <= 4 else 105
-        y = 290
+        fi = fuente("serif", 74 if len(items) <= 4 else 66, 600)
+        paso = 130 if len(items) <= 4 else 112
+        y = 270
         for it in items:
-            d.rectangle([300, y + 28, 322, y + 50], fill=NARANJA)
-            d.text((360, y), it, font=fi, fill=VERDE)
+            d.rectangle([300, y + 34, 328, y + 62], fill=NARANJA)
+            d.text((370, y), it, font=fi, fill=VERDE)
             y += paso
         if v.get("total"):
             d.line([(300, y + 10), (W - 300, y + 10)], fill=VERDE, width=3)

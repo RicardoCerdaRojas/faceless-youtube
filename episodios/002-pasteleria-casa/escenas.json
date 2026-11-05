@@ -222,7 +222,11 @@
      ]
     ],
     "unidad": "pesos por hora de trabajo",
-    "fuente": "Salario mínimo 2026: $315.04 diarios (Bloomberg Línea)."
+    "fuente": "Salario mínimo 2026: $315.04 diarios (Bloomberg Línea).",
+    "foco": [
+     1,
+     2
+    ]
    }
   },
   {
