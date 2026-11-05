@@ -18,6 +18,6 @@
   "categoria": 27,
   "idioma": "es",
   "idioma_audio": "es-419",
-  "contenido_sintetico": true,
+  "contenido_sintetico": false,
   "playlist_id": null
 }

@@ -90,7 +90,7 @@ Cada video queda **privado y programado** para la hora de `publicar_en` (hora de
 ## Lo que queda manual en YouTube Studio
 
 - **Pantalla final**: la API no la permite. Agrega el video sugerido y el botón de suscripción en los últimos 6 segundos.
-- **Revisar que todo quedó bien** antes de la hora de publicación: miniatura, capítulos y el aviso de contenido alterado o sintético (`contenido_sintetico` en la ficha).
+- **Revisar que todo quedó bien** antes de la hora de publicación: miniatura, capítulos y el aviso de uso de IA.
 
 ## Campos de `ficha.json`
 
@@ -103,5 +103,5 @@ Cada video queda **privado y programado** para la hora de `publicar_en` (hora de
 | `publicar_en` | Fecha ISO con zona horaria, ej. `2026-11-09T18:00:00-06:00` |
 | `video_url`, `miniatura_url` | Enlaces de Higgsfield (miniatura ≤ 2 MB) |
 | `categoria` | 27 = Educación |
-| `contenido_sintetico` | Aviso de contenido alterado o sintético |
+| `contenido_sintetico` | Aviso de contenido alterado o sintético. `false` en este canal: solo va `true` si hay personas reales imitadas, grabaciones reales alteradas, escenas fotorrealistas que no ocurrieron o música generada como foco |
 | `playlist_id` | Opcional: lista donde se agrega el video |

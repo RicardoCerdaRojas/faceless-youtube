@@ -146,7 +146,7 @@ def _cuerpo(f: dict) -> dict:
             "privacyStatus": "private",  # obligatorio para programar con publishAt
             "publishAt": cuando.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
             "selfDeclaredMadeForKids": False,
-            "containsSyntheticMedia": bool(f.get("contenido_sintetico", True)),
+            "containsSyntheticMedia": bool(f.get("contenido_sintetico", False)),
             "embeddable": True,
             "license": "youtube",
         },
