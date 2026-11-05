@@ -325,7 +325,31 @@
    }
   },
   {
-   "id": 24,
+   "voz": "Para que se entienda en tu bolsillo: si llenas un tanque de cuarenta litros, pagas unos novecientos cincuenta pesos. Y de todo eso, al dueño de la gasolinera le quedan… entre doce y cuarenta pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$12 – $40",
+    "texto": "le quedan al dueño de un tanque de 40 litros (≈ $950)",
+    "fuente": "Estimación propia: 40 L × $0.30 a $1.00."
+   },
+   "id": 24
+  },
+  {
+   "voz": "Por eso tiene que vender muchísimos tanques. Una estación promedio, con trescientos noventa mil litros al mes, despacha unos trece mil litros al día. Son más de trescientos tanques llenos, todos los días.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "≈ 13,000 litros al día",
+     "≈ 325 tanques de 40 litros",
+     "todos los días"
+    ]
+   },
+   "id": 25
+  },
+  {
+   "id": 26,
    "voz": "Una estación chica, de ciento cincuenta mil litros al mes, queda bajo el umbral. Lo más probable es que pierda dinero, o que apenas sobreviva.",
    "visual": {
     "tipo": "graf",
@@ -338,7 +362,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 27,
    "voz": "Una estación promedio, de trescientos noventa mil litros, vende cerca de nueve millones doscientos mil pesos al mes. Al dueño le quedarían entre ciento diecisiete mil y trescientos noventa mil pesos.",
    "visual": {
     "tipo": "graf",
@@ -351,7 +375,7 @@
    }
   },
   {
-   "id": 26,
+   "id": 28,
    "voz": "Y una estación grande, en una avenida principal o en carretera, con novecientos mil litros, vende más de veintiún millones al mes… y podría dejar entre doscientos setenta mil y novecientos mil pesos.",
    "visual": {
     "tipo": "graf",
@@ -364,7 +388,7 @@
    }
   },
   {
-   "id": 27,
+   "id": 29,
    "voz": "Ahora mira la proporción: de nueve millones en ventas, al dueño le queda, en el mejor de los casos, un cuatro por ciento. En el peor, poco más del uno.",
    "visual": {
     "tipo": "graf",
@@ -377,7 +401,7 @@
    }
   },
   {
-   "id": 28,
+   "id": 30,
    "voz": "Claro que para ganar eso primero hay que invertir. Con datos de la Comisión Reguladora de Energía, El Financiero reportó que la inversión promedio para abrir una gasolinera va desde unos cinco millones cuatrocientos mil pesos en Quintana Roo… hasta doce millones y medio en Nuevo León. Y eso, muchas veces, sin contar el terreno.",
    "visual": {
     "tipo": "graf",
@@ -406,7 +430,7 @@
    }
   },
   {
-   "id": 29,
+   "id": 31,
    "voz": "Digamos que inviertes diez millones en una estación promedio, y te quedan entre ciento diecisiete mil y trescientos noventa mil pesos al mes.",
    "visual": {
     "tipo": "img",
@@ -415,7 +439,7 @@
    }
   },
   {
-   "id": 30,
+   "id": 32,
    "voz": "Recuperarías tu inversión en algo entre dos y siete años, antes de impuestos. ¿Y si la estación vende poco? Puede que nunca.",
    "visual": {
     "tipo": "graf",
@@ -428,7 +452,7 @@
    }
   },
   {
-   "id": 31,
+   "id": 33,
    "voz": "Y en ese tiempo pueden pasar muchas cosas, ¿no? Que cambie el precio del combustible, que haya nuevos topes, que abran otra gasolinera en la esquina… o que lleguen más autos eléctricos.",
    "visual": {
     "tipo": "img",
@@ -437,7 +461,7 @@
    }
   },
   {
-   "id": 32,
+   "id": 34,
    "voz": "Y ahora, lo que nadie te cuenta de este negocio.",
    "visual": {
     "tipo": "graf",
@@ -446,7 +470,7 @@
    }
   },
   {
-   "id": 33,
+   "id": 35,
    "voz": "Primero: la tiendita importa. Muchas gasolineras rentables no viven solo del combustible. La tienda de conveniencia, el café, el baño, el aire, la renta de espacios… todo eso deja márgenes mucho más altos que un peso por litro.",
    "visual": {
     "tipo": "img",
@@ -455,7 +479,7 @@
    }
   },
   {
-   "id": 34,
+   "id": 36,
    "voz": "Segundo: la marca no te salva. Puedes operar con la marca de Pemex o de otra empresa, pero si la ubicación es mala, el letrero no te va a traer autos.",
    "visual": {
     "tipo": "img",
@@ -464,7 +488,7 @@
    }
   },
   {
-   "id": 35,
+   "id": 37,
    "voz": "Tercero: es un negocio regulado y vigilado. Profeco publica seguido qué gasolineras venden más caro, y hay topes de precio acordados con el gobierno. O sea, tu margen no depende solo de ti.",
    "visual": {
     "tipo": "img",
@@ -473,7 +497,7 @@
    }
   },
   {
-   "id": 36,
+   "id": 38,
    "voz": "Y cuarto: los litros incompletos. Profeco también revisa que los litros que marca la bomba sean litros completos, y las estaciones que hacen trampa enfrentan sanciones. Las honestas compiten contra esa trampa… con márgenes mínimos.",
    "visual": {
     "tipo": "img",
@@ -482,7 +506,7 @@
    }
   },
   {
-   "id": 37,
+   "id": 39,
    "voz": "Entonces, ¿es buen negocio una gasolinera? Puede serlo, pero no por lo que la gente cree. No es un negocio de márgenes altos. Es un negocio de volumen, de ubicación y de controlar muy bien los costos.",
    "visual": {
     "tipo": "img",
@@ -491,7 +515,7 @@
    }
   },
   {
-   "id": 38,
+   "id": 40,
    "voz": "Una buena estación puede dejar cientos de miles de pesos al mes… y una mala ubicación puede hacer que pierdas dinero vendiendo millones.",
    "visual": {
     "tipo": "img",
@@ -500,8 +524,20 @@
    }
   },
   {
-   "id": 39,
-   "voz": "Ahora te pregunto a ti: si tuvieras diez millones de pesos, ¿pondrías una gasolinera o los invertirías en otra cosa? Déjamelo en los comentarios. Y cuéntame qué negocio quieres que analicemos en el próximo video.",
+   "voz": "¿Para quién sí? Para alguien con mucho capital, que consigue una ubicación con mucho flujo y sabe controlar los costos al centavo. ¿Para quién no? Para quien busca un negocio de margen amplio o un ingreso pasivo: aquí cada litro deja muy poco, y cualquier descuido se nota.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sí: capital, gran ubicación, control de costos",
+     "No: margen amplio o ingreso pasivo"
+    ]
+   },
+   "id": 41
+  },
+  {
+   "id": 42,
+   "voz": "Ahora te pregunto a ti: si tuvieras diez millones de pesos, ¿pondrías una gasolinera o los invertirías en otra cosa? Déjamelo en los comentarios. Y cuéntame qué negocio quieres que analicemos en el próximo video. Y si este video te sirvió, suscríbete: cada semana abrimos los números de un negocio distinto.",
    "visual": {
     "tipo": "graf",
     "kind": "pregunta",
@@ -510,14 +546,14 @@
    }
   },
   {
-   "id": 40,
+   "id": 43,
    "voz": null,
    "dur": 6,
    "visual": {
     "tipo": "graf",
     "kind": "final",
     "job": "722c89f0-e82b-447f-9105-b85b42664a25",
-    "texto": "Próximo episodio",
+    "texto": "Mira también",
     "sub": "¿Cuánto deja de verdad una pastelería desde casa?"
    }
   }
