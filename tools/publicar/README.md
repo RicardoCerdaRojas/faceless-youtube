@@ -62,6 +62,17 @@ El script termina diciendo a qué canal quedó conectado. Revisa que sea el corr
 
 Para subir miniaturas propias, el canal tiene que estar verificado: https://www.youtube.com/verify. Si no lo está, el video se sube igual y el script avisa que faltó la miniatura.
 
+## Personalizar el canal
+
+```bash
+python3 tools/publicar/publicar.py personalizar cuantolequeda --simular   # muestra lo que haría
+python3 tools/publicar/publicar.py personalizar cuantolequeda
+```
+
+Aplica la descripción, las palabras clave, el país, el idioma y el banner desde `canales/<canal>.json`. La foto de perfil no se puede cambiar por API: se sube a mano en Studio → Personalización → Imagen de marca (`avatar_url` del mismo archivo).
+
+`canales/<canal>.json` guarda además el `canal_id`. Si una autorización apunta a otro canal, el script se detiene antes de tocar nada.
+
 ## Uso
 
 ```bash

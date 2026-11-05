@@ -3,7 +3,8 @@
 Decidido el 5 de noviembre de 2026.
 
 - **Nombre:** ¿Cuánto Le Queda?
-- **Handle:** @cuantolequeda
+- **Handle:** @CuantoLeQueda
+- **ID del canal:** UCEzaH0ByWo0zxAxDUXPoHNg (https://www.youtube.com/@CuantoLeQueda)
 - **Lema:** Cómo ganan dinero los negocios, con números de verdad.
 - **Paleta y estilo:** los de `guia-visual.md` (verde botella, crema, naranja como acento único; grabado en acero).
 - **Tipografías:** Anton (titulares) y Source Serif 4 (textos de apoyo).
@@ -28,7 +29,7 @@ Se regeneran con `tools/montaje/branding.py` (moneda: job `f7bfb0c3-bacd-4401-8e
 >
 > Usamos rangos, supuestos a la vista y fuentes en cada descripción. Es información general, no asesoría financiera.
 >
-> Nuevo video cada semana. Déjanos en los comentarios qué negocio quieres que analicemos.
+> Nuevos videos lunes, miércoles y viernes. Déjanos en los comentarios qué negocio quieres que analicemos.
 
 ## Palabras clave del canal
 

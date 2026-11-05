@@ -56,6 +56,7 @@ def autorizar(canal: str) -> None:
     os.chmod(tp, 0o600)
     yt = _servicio(canal)
     ch = yt.channels().list(part="snippet", mine=True).execute()["items"][0]
+    _verificar_canal(canal, ch["id"])
     print(f"Listo: '{canal}' quedó autorizado para el canal «{ch['snippet']['title']}» ({ch['id']}).")
 
 
@@ -72,6 +73,15 @@ def _servicio(canal: str):
         creds.refresh(Request())
         tp.write_text(creds.to_json())
     return build("youtube", "v3", credentials=creds)
+
+
+def _verificar_canal(canal: str, canal_id: str) -> None:
+    cfg = Path(__file__).resolve().parents[2] / "canales" / f"{canal}.json"
+    if cfg.exists():
+        esperado = json.loads(cfg.read_text()).get("canal_id")
+        if esperado and esperado != canal_id:
+            sys.exit(f"La autorización '{canal}' apunta al canal {canal_id}, pero se esperaba {esperado}. "
+                     f"Vuelve a ejecutar: publicar.py autorizar {canal}")
 
 
 # ---------------------------------------------------------------- fichas
@@ -165,6 +175,7 @@ def subir(carpeta: Path, forzar: bool = False) -> None:
 
     yt = _servicio(f["canal"])
     ch = yt.channels().list(part="snippet", mine=True).execute()["items"][0]
+    _verificar_canal(f["canal"], ch["id"])
     print(f"{carpeta.name} → «{ch['snippet']['title']}», programado para {f['publicar_en']}")
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -202,6 +213,45 @@ def subir(carpeta: Path, forzar: bool = False) -> None:
     print(f"  registro en {registro} (haz commit para que quede en el repo)")
 
 
+def personalizar(canal: str, simular: bool = False) -> None:
+    """Aplica descripción, palabras clave, país, idioma y banner desde canales/<canal>.json."""
+    from googleapiclient.http import MediaFileUpload
+
+    raiz = Path(__file__).resolve().parents[2]
+    cfg = json.loads((raiz / "canales" / f"{canal}.json").read_text())
+    kw = " ".join(f'"{k}"' if " " in k else k for k in cfg.get("palabras_clave", []))
+    if len(cfg.get("descripcion", "").encode()) > 1000:
+        sys.exit("La descripción del canal supera 1.000 caracteres.")
+    if simular:
+        print(json.dumps({"descripcion": cfg["descripcion"], "keywords": kw, "pais": cfg.get("pais"),
+                          "idioma": cfg.get("idioma"), "banner": cfg.get("banner_url")}, ensure_ascii=False, indent=2))
+        return
+
+    yt = _servicio(canal)
+    ch = yt.channels().list(part="brandingSettings", mine=True).execute()["items"][0]
+    _verificar_canal(canal, ch["id"])
+    print(f"Canal «{ch['brandingSettings']['channel'].get('title')}» ({ch['id']})")
+    bs = ch["brandingSettings"]
+    bs.setdefault("channel", {})
+    bs["channel"]["description"] = cfg["descripcion"]
+    bs["channel"]["keywords"] = kw
+    if cfg.get("pais"):
+        bs["channel"]["country"] = cfg["pais"]
+    if cfg.get("idioma"):
+        bs["channel"]["defaultLanguage"] = cfg["idioma"]
+
+    if cfg.get("banner_url"):
+        with tempfile.TemporaryDirectory() as tmp:
+            b = _bajar(cfg["banner_url"], Path(tmp) / ("banner" + Path(cfg["banner_url"]).suffix))
+            r = yt.channelBanners().insert(media_body=MediaFileUpload(str(b))).execute()
+            bs.setdefault("image", {})["bannerExternalUrl"] = r["url"]
+            print("  banner subido")
+
+    yt.channels().update(part="brandingSettings", body={"id": ch["id"], "brandingSettings": bs}).execute()
+    print("  descripción, palabras clave, país e idioma actualizados")
+    print("  Falta a mano: foto de perfil (Studio → Personalización → Imagen de marca).")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Publicador de YouTube para varios canales")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -212,10 +262,15 @@ def main() -> None:
     s = sub.add_parser("subir", help="sube y programa episodios")
     s.add_argument("carpetas", nargs="+", type=Path)
     s.add_argument("--forzar", action="store_true", help="vuelve a subir aunque exista publicado.json")
+    p = sub.add_parser("personalizar", help="aplica descripción, palabras clave, país y banner del canal")
+    p.add_argument("canal")
+    p.add_argument("--simular", action="store_true", help="muestra lo que aplicaría sin tocar el canal")
     args = ap.parse_args()
 
     if args.cmd == "autorizar":
         autorizar(args.canal)
+    elif args.cmd == "personalizar":
+        personalizar(args.canal, args.simular)
     elif args.cmd == "revisar":
         ok = [revisar(c) for c in args.carpetas]
         sys.exit(0 if all(ok) else 1)
