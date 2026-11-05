@@ -142,8 +142,8 @@ def graf(v):
         f = fuente("anton", 120)
         w = d.textlength(v["texto"], font=f)
         d.text(((W - w) / 2, 450), v["texto"], font=f, fill=VERDE)
-        d.line([(W / 2 - 300, 420), (W / 2 + 300, 420)], fill=NARANJA, width=4)
-        d.line([(W / 2 - 300, 620), (W / 2 + 300, 620)], fill=NARANJA, width=4)
+        d.line([(W / 2 - 300, 400), (W / 2 + 300, 400)], fill=NARANJA, width=4)
+        d.line([(W / 2 - 300, 660), (W / 2 + 300, 660)], fill=NARANJA, width=4)
     elif k == "barra":
         titulo_sup(d, v["titulo"])
         x0, x1, y0, y1 = 140, W - 140, 440, 600
