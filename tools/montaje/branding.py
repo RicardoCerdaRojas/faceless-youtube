@@ -15,12 +15,9 @@ def anton(t):
 
 
 def serif(t, peso=500):
-    f = ImageFont.truetype("fonts/serif.ttf", t)
-    try:
-        f.set_variation_by_axes([peso])
-    except Exception:
-        pass
-    return f
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from render import fuente  # mismo manejo de ejes variables que el montaje
+    return fuente("serif", t, peso)
 
 
 def cubrir(img, w, h):
