@@ -49,7 +49,7 @@ def autorizar(canal: str) -> None:
 
     flow = InstalledAppFlow.from_client_secrets_file(str(_client_secret()), SCOPES)
     print("Se abrirá el navegador. Elige la cuenta y, si te lo pregunta, el canal correcto.")
-    creds = flow.run_local_server(port=0, prompt="consent", access_type="offline")
+    creds = flow.run_local_server(port=0, prompt="select_account consent", access_type="offline")
     tp = _token_path(canal)
     tp.parent.mkdir(parents=True, exist_ok=True)
     tp.write_text(creds.to_json())
