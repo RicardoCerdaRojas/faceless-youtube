@@ -4,8 +4,9 @@ Producido el 5 de noviembre de 2026.
 
 ## Resultado
 
-- Duración: 7 min 17 s (40 escenas)
-- Video: https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/bdd07601-ad9f-4b3e-92ad-714301b01d0a.mp4
+- Duración: 7 min 11 s (40 escenas)
+- Video (v3, vigente): https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/d5823a49-8bc3-4fd9-b829-ba62ed19c757.mp4
+- Video (v2, anterior): https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/bdd07601-ad9f-4b3e-92ad-714301b01d0a.mp4
 - Miniatura: https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/bfd06f11-03b1-4c4b-86b6-7ae9e188aac0.jpg
 
 ## Costo real en créditos de Higgsfield
@@ -33,3 +34,10 @@ Producido el 5 de noviembre de 2026.
 - El guion de ~1.170 palabras dio 7:17. Para pasar los 8 minutos (anuncios a mitad del video) hacen falta unas 1.300–1.400 palabras.
 - El estilo grabado tiende a dibujar autos y personas de época; para escenas actuales hay que pedir explícitamente "present day, modern, 2020s".
 - El montaje tarda unos 6 minutos en un sandbox XL; los comandos de espera deben ser cortos (menos de 60 s) para no cortar la conexión.
+
+## Cambios de la v3 (comentarios de Ricardo)
+
+- Gancho: ya no adelanta un veredicto negativo; plantea la pregunta y promete explicar cómo gana dinero una gasolinera. Nuevo título de apertura: "¿Cómo gana dinero una gasolinera?".
+- Sección "Lo que nadie te cuenta": ahora el narrador la anuncia (antes era una tarjeta muda).
+- Se mantiene la lámina final con el próximo episodio (le gustó).
+- Costo de la v3: 4 tomas de voz nuevas (~2 créditos); el montaje solo rehízo las escenas cambiadas.
