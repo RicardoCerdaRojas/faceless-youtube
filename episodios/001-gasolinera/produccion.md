@@ -5,7 +5,8 @@ Producido el 5 de noviembre de 2026.
 ## Resultado
 
 - Duración: 7 min 11 s (40 escenas)
-- Video (v3, vigente): https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/d5823a49-8bc3-4fd9-b829-ba62ed19c757.mp4
+- Video (v4, vigente, 8:02): https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/d35bd754-43d8-4072-a9da-4a7bce1c61a7.mp4
+- Video (v3, 7:11): https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/d5823a49-8bc3-4fd9-b829-ba62ed19c757.mp4
 - Video (v2, anterior): https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/bdd07601-ad9f-4b3e-92ad-714301b01d0a.mp4
 - Miniatura: https://d2ol7oe51mr4n9.cloudfront.net/user_3F8cx5xOQu3xSorE9KYyIyN9Uez/bfd06f11-03b1-4c4b-86b6-7ae9e188aac0.jpg
 
@@ -41,3 +42,9 @@ Producido el 5 de noviembre de 2026.
 - Sección "Lo que nadie te cuenta": ahora el narrador la anuncia (antes era una tarjeta muda).
 - Se mantiene la lámina final con el próximo episodio (le gustó).
 - Costo de la v3: 4 tomas de voz nuevas (~2 créditos); el montaje solo rehízo las escenas cambiadas.
+
+## Cambios de la v4
+
+- Tres escenas nuevas (el tanque de 40 litros, los tanques por día y para quién sí / para quién no) e invitación a suscribirse al cierre: pasa de 7:11 a 8:02, sobre el mínimo para anuncios a mitad del video.
+- Pantalla final: "Mira también" con la pastelería.
+- Costo: 4 tomas de voz (~3 créditos).
