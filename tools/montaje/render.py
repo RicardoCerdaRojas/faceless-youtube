@@ -249,7 +249,10 @@ def graf(v):
         f = fuente("anton", 120)
         w = d.textlength(v["nombre"], font=f)
         d.text(((W - w) / 2, 120), v["nombre"], font=f, fill=VERDE)
-        filas = [("Litros", v["litros"], VERDE), ("Ventas al mes", v["ventas"], VERDE), ("Al dueño le queda", v["gana"], NARANJA)]
+        if "filas" in v:
+            filas = [(a, b, NARANJA if j == len(v["filas"]) - 1 else VERDE) for j, (a, b) in enumerate(v["filas"])]
+        else:
+            filas = [("Litros", v["litros"], VERDE), ("Ventas al mes", v["ventas"], VERDE), ("Al dueño le queda", v["gana"], NARANJA)]
         for i, (a, b, col) in enumerate(filas):
             y = 360 + i * 170
             d.text((260, y + 20), a, font=fuente("serif", 52), fill=VERDE_SUAVE)
@@ -301,6 +304,22 @@ def graf(v):
         d.rectangle([px(v["min"]), y - 60, px(v["max"]), y - 20], fill=NARANJA)
         d.text((x1 - 60, y + 110), "años", font=fuente("serif", 40), fill=VERDE_SUAVE)
         texto_centrado(d, 760, v["texto"], fuente("anton", 76), NARANJA)
+        fuente_txt(d, v.get("fuente"))
+    elif k == "lista":
+        titulo_sup(d, v["titulo"])
+        items = v["items"]
+        fi = fuente("serif", 60 if len(items) <= 4 else 54, 600)
+        paso = 120 if len(items) <= 4 else 105
+        y = 290
+        for it in items:
+            d.rectangle([300, y + 28, 322, y + 50], fill=NARANJA)
+            d.text((360, y), it, font=fi, fill=VERDE)
+            y += paso
+        if v.get("total"):
+            d.line([(300, y + 10), (W - 300, y + 10)], fill=VERDE, width=3)
+            ft = fuente("anton", 110)
+            tw = d.textlength(v["total"], font=ft)
+            d.text((W - 300 - tw, y + 30), v["total"], font=ft, fill=NARANJA)
         fuente_txt(d, v.get("fuente"))
     elif k == "final":
         foto = Image.open(f"img/{v['_imgfile']}").convert("RGB")

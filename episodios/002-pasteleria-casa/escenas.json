@@ -1,0 +1,532 @@
+{
+ "episodio": "002-pasteleria-casa",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, un pastel de chocolate para veinte personas se vende en México entre quinientos y setecientos pesos. Si vendes uno al día a seiscientos, son dieciocho mil pesos al mes, desde la cocina de tu casa.",
+   "visual": {
+    "tipo": "img",
+    "job": "722c89f0-e82b-447f-9105-b85b42664a25"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Pero, ¿cuánto de eso te queda de verdad? Porque entre ingredientes, gas, luz… y las horas que le dedicas a cada pastel, la cuenta cambia bastante.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the chocolate cake",
+    "prompt": "a home baker's hands closing a white cardboard cake box with a finished chocolate cake inside, on a tiled Mexican kitchen counter, a smartphone and a small pile of coins beside it"
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Hoy vamos a hacer los números completos de una pastelería desde casa: cuánto cuesta empezar, cuánto cuesta cada pastel, y cuánto ganas por cada hora que trabajas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cuánto deja de verdad una pastelería desde casa?",
+    "sub": "Inversión, costos y horas de trabajo"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Una pastelería desde casa casi nunca tiene vitrina. Funciona por pedido: alguien te escribe por WhatsApp o por Instagram, te pide un pastel para un cumpleaños, tú lo haces y lo entregas… o pasan a recogerlo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing phone screen",
+    "prompt": "a woman in her forties at a kitchen table holding a modern smartphone showing a chat conversation with a photo of a decorated cake, a notebook with handwritten orders beside her, present day, modern, 2020s"
+   }
+  },
+  {
+   "voz": "Y la demanda existe todo el año: cumpleaños, bautizos, aniversarios, fiestas de oficina. En México casi cualquier celebración familiar tiene un pastel al centro de la mesa, y eso es justamente lo que hace atractivo este negocio.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the birthday cake candles",
+    "prompt": "a Mexican family birthday party in a home dining room, relatives gathered around a table with a birthday cake with lit candles in the center, papel picado above, present day, modern clothing"
+   },
+   "id": 5
+  },
+  {
+   "id": 6,
+   "voz": "La gran ventaja es que no pagas renta de local. Y la gran desventaja es que todo depende de ti: de tus manos, de tus horas… y de tu horno.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the warm light inside the oven",
+    "prompt": "a home baker alone in a modest Mexican kitchen late at night, crouching to look through the glass door of a lit oven where a cake is rising, a wall clock above, present day"
+   }
+  },
+  {
+   "id": 7,
+   "voz": "Lo bueno es que muchas familias ya tienen buena parte del equipo: una estufa con horno, un refrigerador, quizá una batidora de mano. Lo que suele faltar es lo específico de repostería.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the hand mixer",
+    "prompt": "an ordinary present-day Mexican home kitchen seen from the doorway: a gas stove with oven, a refrigerator, a hand mixer on the counter, embroidered dish towel, talavera tiles"
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Moldes de varios tamaños, mangas y duyas para decorar, una base giratoria, una báscula, un termómetro y cajas para entregar. Comprando cosas sencillas, todo eso se arma con unos dos a cuatro mil pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Lo específico de repostería",
+    "items": [
+     "Moldes de varios tamaños",
+     "Mangas y duyas",
+     "Base giratoria",
+     "Báscula y termómetro",
+     "Cajas para entregar"
+    ],
+    "total": "≈ $2,000 – $4,000",
+    "fuente": "Estimación propia con precios de tiendas en línea."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "Y si quieres una batidora de pedestal, que te ahorra mucho tiempo con las masas, las de entrada andan entre mil quinientos y dos mil setecientos pesos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the batter in the bowl",
+    "prompt": "a modern stand mixer with a steel bowl full of whipped batter on a kitchen counter, flour dusted around, present day appliance"
+   }
+  },
+  {
+   "id": 10,
+   "voz": "O sea, si ya tienes estufa con horno, puedes empezar con algo entre tres y siete mil pesos. Y si además tienes que comprar la estufa, súmale de seis a ocho mil pesos más.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$3,000 – $7,000",
+    "texto": "para empezar, si ya tienes estufa con horno (estimación)",
+    "fuente": "Estimación propia con precios de Amazon México, Coppel y Vencort (2024–2026)."
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Y hay una inversión que no se ve: aprender. Porque un pastel que se ve casero se vende como casero… y uno bien decorado puede venderse al doble.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the piped flowers on the elegant cake",
+    "prompt": "side by side on a counter: a plain homemade cake with uneven frosting on the left, and an elegantly decorated cake with piped flowers on the right, a piping bag resting between them"
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Ahora sí, vamos a las cuentas. Tomemos un pastel de chocolate para veinte personas, que vendes en seiscientos pesos. Está más o menos a la mitad del rango que reportan los sitios de cotización en México.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the chocolate cake",
+    "prompt": "a large round chocolate cake on a cake stand with one slice cut out and placed on a small plate, kitchen background softly fading"
+   }
+  },
+  {
+   "id": 13,
+   "voz": "Para hacer la cuenta, vamos a suponer que los ingredientes y el empaque te cuestan alrededor del treinta por ciento del precio: unos ciento ochenta pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$180",
+    "texto": "ingredientes y empaque (≈ 30 % del precio)",
+    "fuente": "Supuesto del modelo."
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Y ojo, que este número se mueve mucho. El huevo, por ejemplo, andaba en enero en unos cuarenta y dos pesos el paquete de doce, en promedio, según Profeco… y hay meses en que se dispara.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the eggs",
+    "prompt": "a carton of a dozen eggs, a bag of flour, a block of butter, a bar of dark chocolate and a sugar sack arranged as a still life on a wooden table"
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Después están los costos que casi todos olvidan: el gas del horno, la luz del refrigerador y de la batidora, el agua, el jabón. Pongamos otro siete por ciento: unos cuarenta y dos pesos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the gas flame",
+    "prompt": "close-up of the blue gas flame of a kitchen oven burner, beside it a small LP gas tank and an electricity meter on a wall, present day Mexican home"
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Entonces, de los seiscientos pesos, te quedan trescientos setenta y ocho. Parece un buen margen, ¿no? Pero todavía no contamos lo más importante.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$600",
+    "a_txt": "precio del pastel",
+    "b": "$222",
+    "b_txt": "ingredientes, gas y luz",
+    "r": "$378",
+    "r_txt": "te quedan",
+    "fuente": "Estimación propia. Antes de impuestos."
+   }
+  },
+  {
+   "id": 17,
+   "voz": "Tu tiempo. Un pastel no son los cuarenta minutos que está en el horno.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the clock hands",
+    "prompt": "a large round kitchen wall clock hanging above a counter covered with mixing bowls, cooling racks and a cake in progress, late afternoon light"
+   }
+  },
+  {
+   "id": 18,
+   "voz": "Hay que ir a comprar, preparar la mezcla, hornear, esperar a que enfríe, rellenar, decorar, empacar, contestar mensajes y entregar. Si lo sumas todo, un pastel sencillo fácilmente te toma entre cinco y seis horas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Comprar · mezclar · hornear",
+     "Enfriar · rellenar · decorar",
+     "Empacar · contestar · entregar",
+     "= 5 a 6 horas por pastel"
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Entonces, si te quedaron trescientos setenta y ocho pesos y trabajaste seis horas, ganaste sesenta y tres pesos por hora. Si lo hiciste en cinco, setenta y cinco.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$63 – $75",
+    "texto": "por hora de trabajo",
+    "fuente": "$378 ÷ 6 h y ÷ 5 h. Estimación propia."
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Para que tengas una referencia: el salario mínimo general en México este año es de trescientos quince pesos al día. En una jornada de ocho horas, son unos treinta y nueve pesos por hora. O sea, por cada hora que le dedicas a un pastel, ganas entre una vez y media y casi dos veces el salario mínimo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Pesos por hora",
+    "items": [
+     [
+      "Salario mínimo",
+      39.4
+     ],
+     [
+      "Pastel (6 h)",
+      63.0
+     ],
+     [
+      "Pastel (5 h)",
+      75.6
+     ]
+    ],
+    "unidad": "pesos por hora de trabajo",
+    "fuente": "Salario mínimo 2026: $315.04 diarios (Bloomberg Línea)."
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Nada mal… hasta que lo multiplicas por un mes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the circled days",
+    "prompt": "a paper wall calendar on a refrigerator door, many days marked with handwritten cake orders, magnets and a shopping list beside it"
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Mira estos tres casos. Con doce pasteles al mes, unos tres por semana, te quedan como cuatro mil quinientos pesos… y trabajas entre sesenta y setenta y dos horas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "12 pasteles al mes",
+    "filas": [
+     [
+      "Pasteles por semana",
+      "≈ 3"
+     ],
+     [
+      "Horas de trabajo",
+      "60 – 72"
+     ],
+     [
+      "Te quedan",
+      "≈ $4,500"
+     ]
+    ],
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Con veinte pasteles, unos siete mil quinientos pesos, por entre cien y ciento veinte horas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "20 pasteles al mes",
+    "filas": [
+     [
+      "Pasteles por semana",
+      "≈ 5"
+     ],
+     [
+      "Horas de trabajo",
+      "100 – 120"
+     ],
+     [
+      "Te quedan",
+      "≈ $7,500"
+     ]
+    ],
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Y con treinta pasteles, prácticamente uno al día, unos once mil trescientos pesos… con entre ciento cincuenta y ciento ochenta horas de trabajo. Eso ya es un empleo de tiempo completo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "30 pasteles al mes",
+    "filas": [
+     [
+      "Pasteles por semana",
+      "≈ 7"
+     ],
+     [
+      "Horas de trabajo",
+      "150 – 180"
+     ],
+     [
+      "Te quedan",
+      "≈ $11,300"
+     ]
+    ],
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 25,
+   "voz": "¿Te das cuenta? Haciendo un pastel diario, a tiempo completo, ganas apenas un poco más que el salario mínimo del mes, que este año anda por los nueve mil quinientos ochenta pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $9,580",
+    "texto": "salario mínimo mensual en 2026",
+    "fuente": "$315.04 diarios × 30.4 días (Bloomberg Línea)."
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Ese es el techo de vender pasteles sencillos. Y no tiene que ver con tu receta… tiene que ver con las horas del día.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the stack of cake boxes",
+    "prompt": "a tired home baker sitting at a kitchen table at night, head resting on one hand, a stack of finished cake boxes waiting by the door, present day"
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Entonces, ¿cómo se rompe ese techo?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Cómo romper el techo"
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Las reposteras a las que les va bien no hacen más pasteles. Hacen pasteles que valen más por cada hora de trabajo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the sugar flowers",
+    "prompt": "a baker's hands carefully smoothing fondant over a tall custom celebration cake on a turntable, sugar flowers and modeling tools around"
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Un pastel personalizado de fondant, para diez personas, se cotiza entre ochocientos y mil doscientos pesos. Si uno de mil pesos te toma siete horas, con los mismos porcentajes de costo te quedan seiscientos treinta pesos: noventa pesos por hora. Más del doble del salario mínimo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Pastel personalizado",
+    "filas": [
+     [
+      "Precio",
+      "$1,000"
+     ],
+     [
+      "Horas de trabajo",
+      "7"
+     ],
+     [
+      "Por hora",
+      "≈ $90"
+     ]
+    ],
+    "fuente": "Precios de referencia: Cronoshare (2026). Escenario estimado."
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Y hay otras salidas. Los pedidos para eventos y las mesas de postres, donde haces varios productos en una sola entrega. Los postres pequeños en tandas, donde una hora de trabajo te da muchas piezas. O, más adelante, enseñar lo que sabes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the central tiered cake",
+    "prompt": "an elegant dessert table at a family celebration: cupcakes, small tarts, cookies and a central tiered cake, papel picado garland softly above"
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Pero una advertencia: no intentes ganar por precio. En Costco, un pastel grande ha costado entre ciento noventa y nueve y cuatrocientos noventa y nueve pesos, y contra eso no se compite bajando precios.",
+   "visual": {
+    "tipo": "img",
+    "acento": "one sheet cake in front",
+    "prompt": "a refrigerated display case in a large warehouse supermarket filled with many identical big sheet cakes in clear plastic domes, shoppers' carts blurred, no logos, present day"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Se compite con lo que Costco no hace: un pastel personalizado, el sabor de la casa… y la atención directa.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Lo que el supermercado no hace:",
+     "pastel personalizado",
+     "sabor de la casa y atención directa"
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Y ahora, lo que nadie te cuenta de vender pasteles desde casa.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Primero: cobra tu tiempo desde el primer pastel. Mucha gente calcula el precio solo con los ingredientes… y termina regalando su trabajo sin darse cuenta.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the sand in the hourglass",
+    "prompt": "a hand writing on a paper notepad next to a calculator and a grocery receipt, ingredients in the background, an hourglass on the table"
+   }
+  },
+  {
+   "voz": "Una forma sencilla de hacerlo: suma los ingredientes y el gas, súmale tus horas multiplicadas por lo que quieres ganar por hora, y encima de eso, un margen para imprevistos. Si quieres ganar cien pesos por hora, ese pastel de seis horas ya no puede costar seiscientos pesos… tendría que acercarse a los novecientos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Cómo ponerle precio a un pastel",
+    "items": [
+     "Ingredientes, gas y luz: $222",
+     "+ tus horas: 6 × $100 = $600",
+     "+ un margen para imprevistos"
+    ],
+    "total": "≈ $900",
+    "fuente": "Ejemplo ilustrativo."
+   },
+   "id": 35
+  },
+  {
+   "id": 36,
+   "voz": "Segundo: los pedidos no llegan parejos. Hay temporadas fuertes, como diciembre, el Día de las Madres o las graduaciones, y hay semanas muertas. Planea pensando en el promedio, no en tu mejor mes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the crowded cake boxes",
+    "prompt": "a kitchen counter crowded with many cake boxes on one side and, on the other side, an empty quiet counter with a single cake, contrasting busy and slow weeks"
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Tercero: formalízate. Vender desde casa también implica darte de alta ante el SAT. Muchas personas que empiezan eligen el RESICO, el Régimen Simplificado de Confianza, que cobra de ISR entre el uno y el dos y medio por ciento de lo que facturas.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the laptop screen glow",
+    "prompt": "a woman at a kitchen table using a modern laptop to fill an online tax form, a folder of receipts and a cup of coffee beside her, present day, modern, 2020s"
+   }
+  },
+  {
+   "id": 38,
+   "voz": "Si vendes doce mil pesos al mes, eso es más o menos ciento veinte pesos. Pero confírmalo con un contador, porque depende de tu situación.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $120",
+    "texto": "de ISR al mes si vendes $12,000 (RESICO, tasa de 1 %)",
+    "fuente": "Tasas RESICO personas físicas. Confirma tu caso con un contador."
+   }
+  },
+  {
+   "id": 39,
+   "voz": "Y en lo sanitario, conviene presentar el aviso de funcionamiento ante Cofepris, que es gratuito, y preguntar en tu municipio qué licencia aplica donde vives.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Para formalizarte",
+    "items": [
+     "Alta en el SAT (RFC)",
+     "RESICO: ISR de 1 % a 2.5 %",
+     "Aviso de funcionamiento ante Cofepris (gratuito)",
+     "Licencia: depende de tu municipio"
+    ],
+    "total": "",
+    "fuente": "SAT; guía de trámite Cofepris (2026). Verifica en tu municipio."
+   }
+  },
+  {
+   "id": 40,
+   "voz": "Y cuarto: cuida la higiene y el frío. Un pastel con relleno de crema que pierde la cadena de frío puede enfermar a alguien… y una sola mala experiencia te puede costar la reputación que construiste en años.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the cream cake",
+    "prompt": "an open home refrigerator with a cream-filled cake on the middle shelf, a small thermometer hanging inside, clean organized shelves"
+   }
+  },
+  {
+   "id": 41,
+   "voz": "Entonces, ¿te conviene una pastelería desde casa? Si buscas un ingreso extra con muy poca inversión, y ya tienes el equipo básico, sí: es de los negocios con menos riesgo para empezar. Con doce pedidos al mes, recuperas lo invertido en uno o dos meses.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the slice of cake",
+    "prompt": "an antique balance scale on a kitchen table: on one pan a small stack of coins, on the other pan a single slice of cake, perfectly balanced"
+   }
+  },
+  {
+   "id": 42,
+   "voz": "Pero si lo que buscas es reemplazar un sueldo completo, vas a tener que subir el valor de cada pastel, no solo la cantidad.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the ribbon on the box",
+    "prompt": "a baker placing a single exquisite custom cake into a premium box with a ribbon, calm and confident, present day home kitchen"
+   }
+  },
+  {
+   "id": 43,
+   "voz": "Esto es un análisis general y no reemplaza una asesoría para tu caso. Pero si ya vendes pasteles, cuéntame en los comentarios cuánto cobras por un pastel y cuántas horas te toma, que me interesa mucho saberlo. Y dime qué negocio quieres que analicemos después.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Cuánto cobras por un pastel?",
+    "sub": "¿Y cuántas horas te toma? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 44,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "080e0143-befb-4da4-9b25-9d3d5ce2db5a",
+    "texto": "Mira también",
+    "sub": "¿Cuánto gana realmente el dueño de una gasolinera?"
+   },
+   "dur": 6
+  }
+ ]
+}
