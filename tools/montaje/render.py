@@ -271,9 +271,10 @@ def graf(v):
             r, c = divmod(i, 20)
             x, y = gx + c * (lado + gap), 300 + r * (lado + gap)
             box = [x, y, x + lado, y + lado]
-            if i < 1:
+            lleno, borde = int(round(v["min"])), int(round(v["max"]))
+            if i < lleno:
                 d.rectangle(box, fill=NARANJA)
-            elif i < 4:
+            elif i < borde:
                 d.rectangle(box, outline=NARANJA, width=5)
             else:
                 d.rectangle(box, fill=VERDE_CLARO)
@@ -282,15 +283,16 @@ def graf(v):
     elif k == "barras_h":
         titulo_sup(d, v["titulo"])
         maxv = max(x[1] for x in v["items"])
+        fl = fuente("serif", 52, 600)
+        x0 = max(620, 140 + max(d.textlength(n, font=fl) for n, _ in v["items"]) + 50)
         for i, (nom, val) in enumerate(v["items"]):
             y = 300 + i * 160
             d.text((140, y + 20), nom, font=fuente("serif", 52, 600), fill=VERDE)
-            x0 = 620
-            x1 = x0 + (W - 420 - x0) * val / maxv
+            x1 = x0 + (W - 480 - x0) * val / maxv
             col = NARANJA if i in v.get("foco", (0, len(v["items"]) - 1)) else VERDE_SUAVE
             d.rectangle([x0, y + 10, x1, y + 100], fill=col)
-            d.text((x1 + 20, y + 10), f"${val:.1f}", font=fuente("anton", 80), fill=col)
-        d.text((620, 950), v["unidad"], font=fuente("serif", 36), fill=VERDE_SUAVE)
+            d.text((x1 + 20, y + 10), v.get("fmt", "${:.1f}").format(val), font=fuente("anton", 80), fill=col)
+        d.text((x0, 950), v["unidad"], font=fuente("serif", 36), fill=VERDE_SUAVE)
         fuente_txt(d, v.get("fuente"))
     elif k == "plazo":
         titulo_sup(d, v["titulo"])

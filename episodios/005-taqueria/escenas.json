@@ -1,0 +1,539 @@
+{
+ "episodio": "005-taqueria",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, un taco al pastor en la Ciudad de México ya cuesta más de veinte pesos. Hace diez años, en las mismas taquerías, costaba diez.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing pineapple and meat",
+    "prompt": "a taquero slicing al pastor meat from a vertical spit with a long knife at night, a pineapple on top, steam rising, tortillas on the griddle, present day Mexican street taquería"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Y en una noche buena, una taquería chica puede atender a más de cien personas. Así que, ¿cuánto deja de verdad poner una taquería? ¿Cuánto le queda al taquero de cada taco?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Taco al pastor en CDMX",
+    "items": [
+     [
+      "2015",
+      10
+     ],
+     [
+      "2025",
+      22
+     ]
+    ],
+    "unidad": "pesos por taco (dos taquerías de referencia)",
+    "fmt": "${:.0f}",
+    "foco": [
+     1
+    ],
+    "fuente": "Xataka México, 08/08/2025."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Y no es cualquier negocio. El taco es probablemente la comida más mexicana que existe, y el al pastor es el favorito: según un estudio citado por La Verdad Noticias, se lleva casi tres de cada diez preferencias.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tacos on the plates",
+    "prompt": "a family sharing plates of tacos al pastor at a street taquería table at night, limes, radishes and salsas, present day Mexico"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Hoy vamos a hacer las cuentas completas de una taquería: cuánto cuesta abrirla, cuánto vende, a dónde se va cada peso… y cuánto queda al final del mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cuánto deja de verdad una taquería?",
+    "sub": "Inversión, costos y ganancia, taco por taco"
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Para hacer las cuentas vamos a usar un modelo publicado este año por Sin Escalas, con precios de la Central de Abasto. Es una taquería chica, con local, de ocho a doce mesas, que abre de seis de la tarde a dos de la mañana, seis días a la semana.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the string lights",
+    "prompt": "a small neighborhood taquería with a handful of plastic tables and stools, string lights, a griddle station at the front, customers eating at night, present day Mexico"
+   }
+  },
+  {
+   "id": 6,
+   "voz": "No es la única forma de hacerlo. Hay quien empieza con un puesto en la banqueta, y hay taquerías grandes que facturan millones. Pero este es un caso típico, y los números se pueden ajustar a tu realidad.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Puesto en la calle",
+     "→ taquería chica con local",
+     "→ taquería grande"
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "voz": "De hecho, un puesto casero puede arrancar con unos pocos miles de pesos. Pero en cuanto quieres un local, mesas y permisos, la inversión cambia de escala.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the griddle flame",
+    "prompt": "a simple street taco stand on a sidewalk with a small griddle, a folding table and a gas cylinder, a vendor serving one customer at dusk, present day Mexico"
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Empecemos por la inversión. En este modelo, abrirla cuesta unos doscientos cuarenta y cuatro mil pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Inversión inicial (taquería chica)",
+    "items": [
+     "Equipo: $78,000",
+     "Mobiliario: $25,000",
+     "Costos iniciales (local, permisos, adecuaciones): $91,000",
+     "Capital de trabajo: $50,000"
+    ],
+    "total": "≈ $244,000",
+    "fuente": "Modelo de Sin Escalas (feb. 2026), precios de Central de Abasto."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "La plancha, el trompo, el refrigerador, las mesas, las adecuaciones del local, los permisos… y un colchón de cincuenta mil pesos para aguantar las primeras semanas, cuando todavía no llegan tantos clientes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the griddle",
+    "prompt": "an engraved still life of taquería equipment: a flat steel griddle, a vertical spit, a cutting board with cleaver, plastic salsa bottles and stacked stools, no lettering"
+   }
+  },
+  {
+   "id": 10,
+   "voz": "Ahora, las ventas. El modelo supone que cada cliente gasta en promedio unos cien pesos, entre tacos y refresco, y que llegan unos ciento treinta y siete clientes por noche.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "≈ 137 clientes por noche",
+     "× $100 por cliente",
+     "≈ $14,400 al día"
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Piénsalo como una orden de cuatro o cinco tacos y un refresco. Esa es la compra típica de una noche cualquiera.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the pineapple pieces",
+    "prompt": "a paper plate with five tacos al pastor topped with onion, cilantro and pineapple, a glass soda bottle without label and a lime beside it, close-up, no lettering"
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Al mes, son unos trescientos setenta y cinco mil pesos. Suena a muchísimo, ¿no? Pero en una taquería, casi todo ese dinero ya tiene destino antes de que cierres la cortina. Veamos a dónde se va.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$375,000",
+    "texto": "de venta al mes",
+    "fuente": "Modelo de Sin Escalas (feb. 2026), precios de Central de Abasto."
+   }
+  },
+  {
+   "id": 13,
+   "voz": "El primer gran gasto es la carne: unos ciento cincuenta mil pesos al mes. Cuarenta de cada cien pesos que entran se van solo en carne.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the cuts of meat",
+    "prompt": "a butcher's counter at a busy wholesale market at dawn, pork and beef cuts on hooks and trays, a taquero inspecting meat with a cart, present day Mexico"
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Después, las tortillas, unos treinta y tres mil pesos. Y ojo, que el kilo de tortilla en México anda en promedio por los veinticuatro pesos, pero va desde diecisiete en Tlaxcala hasta más de treinta y uno en Sonora.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Kilo de tortilla, abril de 2026",
+    "items": [
+     [
+      "Tlaxcala",
+      17.0
+     ],
+     [
+      "Promedio nacional",
+      24.18
+     ],
+     [
+      "Sonora",
+      31.33
+     ]
+    ],
+    "unidad": "pesos por kilo",
+    "fmt": "${:.2f}",
+    "foco": [
+     1
+    ],
+    "fuente": "SNIIM vía N+, 14/04/2026."
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Luego vienen los refrescos y bebidas, unos treinta y dos mil. Las verduras y las salsas, veintidós mil. Los platos y vasos desechables, nueve mil quinientos. Y el gas, unos nueve mil.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the red salsa in the molcajete",
+    "prompt": "a taquería prep table with bowls of chopped onion, cilantro, lime wedges, several salsas in molcajetes, stacks of disposable plates and a gas cylinder underneath, no lettering"
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Todo eso, lo que sube y baja según cuánto vendes, suma doscientos cincuenta y cinco mil quinientos pesos. Sesenta y ocho de cada cien.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $100 que vende la taquería",
+    "partes": [
+     [
+      "Carne",
+      40,
+      false
+     ],
+     [
+      "Tortillas, bebidas, verduras, gas y desechables",
+      28,
+      false
+     ],
+     [
+      "Lo que queda para lo demás",
+      32,
+      true
+     ]
+    ],
+    "fuente": "Modelo de Sin Escalas (feb. 2026), precios de Central de Abasto."
+   }
+  },
+  {
+   "id": 17,
+   "voz": "Y todavía faltan los costos fijos, los que pagas aunque no venga nadie: la nómina, unos treinta y nueve mil pesos; la renta, dieciocho mil; y luz, agua, mantenimiento y permisos, otros trece mil. En total, setenta mil pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Costos fijos al mes",
+    "items": [
+     "Nómina: $39,000",
+     "Renta: $18,000",
+     "Servicios y mantenimiento: $9,800",
+     "Permisos y varios: $3,200"
+    ],
+    "total": "$70,000",
+    "fuente": "Modelo de Sin Escalas (feb. 2026), precios de Central de Abasto."
+   }
+  },
+  {
+   "id": 18,
+   "voz": "La nómina cubre a un equipo básico: alguien en el trompo, alguien en la plancha, quien atiende las mesas y quien limpia al cerrar. Y si haces las cosas bien, también hay que sumar el seguro social y las prestaciones.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the warm tortillas",
+    "prompt": "a small taquería team at work: one man slicing meat from the spit, a woman warming tortillas on the griddle, a young waiter carrying plates to tables, present day"
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Entonces, la cuenta final: trescientos setenta y cinco mil de ventas, menos doscientos cincuenta y cinco mil quinientos de insumos, menos setenta mil de costos fijos… quedan cuarenta y nueve mil quinientos pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$375,000",
+    "a_txt": "ventas",
+    "b": "$325,500",
+    "b_txt": "insumos y costos fijos",
+    "r": "$49,500",
+    "r_txt": "al mes",
+    "fuente": "Modelo de Sin Escalas (feb. 2026), precios de Central de Abasto. Antes de impuestos."
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Eso es un margen de trece por ciento. O sea que de un taco de veintiún pesos, al taquero le quedan… menos de tres pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $2.80",
+    "texto": "le quedan al dueño de un taco de $21 (estimación)",
+    "fuente": "13.2 % de margen. Cálculo propio."
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Y para ponerlo en perspectiva: es un margen más alto que el de una tienda OXXO, que ronda el diez por ciento, y mucho más alto que el de una gasolinera, donde al dueño le quedan entre uno y cuatro pesos de cada cien.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Lo que queda de cada $100 vendidos",
+    "items": [
+     [
+      "Gasolinera (mejor caso)",
+      4
+     ],
+     [
+      "OXXO",
+      10
+     ],
+     [
+      "Taquería (modelo)",
+      13.2
+     ]
+    ],
+    "unidad": "pesos de cada $100 (estimaciones)",
+    "fmt": "${:.1f}",
+    "foco": [
+     2
+    ],
+    "fuente": "Episodios 001 y 003; modelo de Sin Escalas."
+   }
+  },
+  {
+   "id": 22,
+   "voz": "La buena noticia es que, con esos números, la inversión de doscientos cuarenta y cuatro mil pesos se recupera en unos cinco meses. Eso es rapidísimo comparado con casi cualquier otro negocio.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 5 meses",
+    "texto": "para recuperar la inversión en el caso base",
+    "fuente": "Modelo de Sin Escalas (feb. 2026), precios de Central de Abasto."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Pero aquí viene la trampa. Este negocio es muy sensible a las ventas. Fíjate qué pasa si en vez de trescientos setenta y cinco mil vendes un poco menos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "La trampa: el volumen"
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Si vendes trescientos mil pesos al mes, un veinte por ciento menos, la ganancia no baja un veinte por ciento. Baja a unos veinticinco mil. Casi la mitad.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Ventas 20 % más bajas",
+    "filas": [
+     [
+      "Ventas al mes",
+      "$300,000"
+     ],
+     [
+      "Insumos y costos fijos",
+      "$274,300"
+     ],
+     [
+      "Te quedan",
+      "≈ $25,700"
+     ]
+    ],
+    "fuente": "Estimación propia con el modelo de Sin Escalas."
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Y si vendes doscientos cincuenta mil, te quedan menos de diez mil pesos. Por debajo de unos doscientos diecinueve mil al mes, pierdes dinero.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Ventas de $250,000",
+    "filas": [
+     [
+      "Ventas al mes",
+      "$250,000"
+     ],
+     [
+      "Insumos y costos fijos",
+      "$240,250"
+     ],
+     [
+      "Te quedan",
+      "≈ $9,750"
+     ]
+    ],
+    "fuente": "Estimación propia. Punto de equilibrio: ≈ $219,000 al mes."
+   }
+  },
+  {
+   "id": 26,
+   "voz": "¿Por qué pasa esto? Porque los setenta mil de costos fijos no se mueven. La renta y la nómina cuestan lo mismo en una noche llena que en una noche vacía.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Costos fijos: $70,000",
+     "Punto de equilibrio: ≈ $8,400 al día",
+     "≈ 84 clientes por noche"
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Es lo contrario de lo que vimos en la pastelería desde casa. Allá el techo eran tus horas: podías vender todo lo que alcanzabas a hornear. Aquí el límite es otro: cuánta gente pasa por tu esquina cada noche.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing taquería",
+    "prompt": "a busy Mexican street corner at night seen from above, people walking past a small glowing taquería, cars and a bus passing, present day"
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Otros análisis llegan a conclusiones parecidas: para una taquería promedio hablan de ventas de cien mil a trescientos mil pesos al mes, márgenes de diez a veinte por ciento, y ganancias de diez mil a sesenta mil pesos mensuales.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$10,000 – $60,000",
+    "texto": "de ganancia al mes en una taquería promedio",
+    "fuente": "La Verdad Noticias, 28/05/2026."
+   }
+  },
+  {
+   "id": 29,
+   "voz": "¿Y cómo se mejora el margen sin subir tanto los precios? Subiendo lo que gasta cada cliente. Una gringa, una quesadilla, una bebida más… cada peso extra en el ticket cae casi directo a la ganancia, porque los costos fijos ya están pagados.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the melted cheese",
+    "prompt": "a taquero placing a melted cheese gringa next to a plate of tacos on the counter, a customer reaching for it, present day Mexican taquería"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Y ahora, lo que nadie te cuenta de poner una taquería.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Primero: la carne manda. Como es el cuarenta por ciento de las ventas, si sube diez por ciento y no subes tus precios, se te va casi un tercio de la ganancia. Por eso los taqueros que duran cuidan cada kilo: compran temprano, comparan precios y miden cuántos tacos sale de cada trompo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the meat on the counter",
+    "prompt": "a taquero looking worried at a handwritten wholesale meat price board at a market stall, holding a notebook, present day, the price board blank without numbers"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Segundo: subir precios cuesta clientes. En enero, según la Alianza Nacional de Pequeños Comerciantes, el taco de suadero pasó de dieciocho a veintiún pesos en promedio. Y cada peso que subes, el cliente lo nota.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Taco de suadero, promedio",
+    "items": [
+     [
+      "Enero 2025",
+      18
+     ],
+     [
+      "Enero 2026",
+      21
+     ]
+    ],
+    "unidad": "pesos por taco",
+    "fmt": "${:.0f}",
+    "foco": [
+     1
+    ],
+    "fuente": "Anpec vía Publimetro, 18/01/2026."
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Tercero: la inseguridad también cobra. La misma organización estima que a un taquero le pueden quitar unos dos mil pesos al mes en cobro de piso, y que parte de las alzas de precio viene de ahí.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $2,000",
+    "texto": "al mes de cobro de piso estimado a un taquero",
+    "fuente": "Anpec vía Publimetro, 18/01/2026. Estimación gremial."
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Y cuarto: es un trabajo de noche, de pie y sin descanso. La nómina de este modelo paga a tu equipo… pero si tú mismo estás en la plancha seis noches a la semana, esa ganancia también es tu sueldo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the last glowing coals",
+    "prompt": "a lone taquero cleaning the griddle at two in the morning after closing, stools stacked on tables, the street empty outside, present day"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "Y quinto: los trámites. Además de darte de alta ante el SAT, necesitas la licencia de funcionamiento de tu municipio y, en muchos casos, revisiones de protección civil. Abrir sin papeles puede salir más caro que tramitarlos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the folder of documents",
+    "prompt": "a taquería owner at a municipal office counter handing over a folder of documents to a clerk, stamps and forms on the desk, present day, no readable text"
+   }
+  },
+  {
+   "id": 36,
+   "voz": "Entonces, ¿te conviene poner una taquería? Si consigues un buen lugar con flujo de gente, la inversión es moderada y se puede recuperar en pocos meses. Es de los negocios de comida con mejor relación entre inversión y ganancia.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the line of customers",
+    "prompt": "a lively taquería at night with a line of customers waiting at the counter, families and workers eating at tables, present day Mexican street"
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Pero el margen es delgado y depende de vender mucho todos los días. Antes de abrir, cuenta cuántas personas pasan por esa esquina de noche… porque la diferencia entre ganar cincuenta mil y perder dinero son unos cincuenta clientes por noche.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tally counter",
+    "prompt": "a person standing on a street corner at night with a small hand tally counter, counting passersby in front of an empty commercial space, present day"
+   }
+  },
+  {
+   "id": 38,
+   "voz": "¿Para quién sí? Para alguien que conoce el oficio, que puede estar presente casi todas las noches y que encuentra una esquina con flujo. ¿Para quién no? Para quien busca un ingreso pasivo: una taquería sin su dueño cerca suele perder clientes y, de paso, inventario.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sí: oficio, presencia y buena esquina",
+     "No: ingreso pasivo"
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "voz": "Esto es un análisis general y no reemplaza una asesoría para tu caso. Pero si tienes una taquería, cuéntame en los comentarios cuánto cobras por taco y cuántos vendes en una noche buena. Y dime qué negocio quieres que analicemos después.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Cuánto cobras por taco?",
+    "sub": "¿Y cuántos vendes en una noche buena? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 40,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "d6870954-abb2-4da2-ab21-e45bf5254a31",
+    "texto": "Mira también",
+    "sub": "¿Cuánto deja de verdad una pastelería desde casa?"
+   },
+   "dur": 6
+  }
+ ]
+}

@@ -1,0 +1,485 @@
+{
+ "episodio": "004-mcdonalds",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, un McDonald's promedio en Estados Unidos vende más de cuatro millones de dólares al año. En pesos, son más de setenta y seis millones. Unos doscientos mil pesos cada día.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the drive-thru window light",
+    "prompt": "a busy fast food restaurant at lunchtime seen from the parking lot, a long drive-thru line of cars wrapping around the building, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Con esas ventas, cualquiera pensaría que tener uno es hacerse millonario. Pero, ¿cuánto de eso le queda de verdad a quien tiene la franquicia? ¿Y cuánto se queda McDonald's?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $76 millones",
+    "texto": "de venta al año en un restaurante promedio de EE.UU.",
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter. Tipo de cambio: $18.79 por dólar (2/11/2026)."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Y hablamos de una marca con más de cuarenta y cuatro mil restaurantes en más de cien países. En México hay más de trescientos ochenta, en noventa y ocho ciudades, y alrededor del setenta por ciento de lo que usan viene de proveedores mexicanos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "+44,000 restaurantes en el mundo",
+     "+380 en México, en 98 ciudades",
+     "≈ 70 % de insumos nacionales"
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Hoy vamos a abrir los números de una franquicia de McDonald's: cuánto cuesta, cuánto vende, cuánto se paga a la marca… y cuánto queda al final.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cuánto le queda al dueño de un McDonald's?",
+    "sub": "Inversión, regalías, renta y ganancia"
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Antes de empezar, un detalle importante. En México, la marca la opera Arcos Dorados, que es el franquiciatario maestro de McDonald's en América Latina. Y Arcos Dorados no publica cuánto cuesta ni cuánto deja un restaurante.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the map on the screen",
+    "prompt": "a modern corporate boardroom with executives reviewing documents and a large screen showing a map of Latin America with no labels, present day, no logos"
+   }
+  },
+  {
+   "id": 6,
+   "voz": "En Estados Unidos, en cambio, McDonald's está obligado a publicar un documento de franquicia con cifras reales. Así que vamos a hacer las cuentas con esos números… y al final vemos qué cambia en México.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the open document",
+    "prompt": "a thick bound legal document open on a desk next to reading glasses and a calculator, pages full of tables drawn as abstract lines, no readable text"
+   }
+  },
+  {
+   "id": 7,
+   "voz": "Y la historia en México tiene un giro curioso. McDonald's dejó de dar franquicias aquí en dos mil cuatro. En dos mil diecisiete anunció que volvía a hacerlo, y en ese momento Arcos Dorados operaba directamente el sesenta y cuatro por ciento de los restaurantes. El resto estaba en manos de solo diecisiete franquiciatarios.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "McDonald's en México (2017)",
+    "partes": [
+     [
+      "Operados por Arcos Dorados",
+      64,
+      false
+     ],
+     [
+      "17 franquiciatarios",
+      36,
+      true
+     ]
+    ],
+    "fuente": "El Financiero, 14/03/2017."
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Empecemos por cómo funciona el negocio. McDonald's no solo vende hamburguesas. En muchos casos es dueño del terreno o del local… y se lo renta al franquiciatario. O sea, cobra dos veces: una regalía por usar la marca, y una renta por usar el inmueble.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "McDonald's cobra dos veces:",
+     "regalía por la marca",
+     "y renta por el local"
+    ]
+   }
+  },
+  {
+   "id": 9,
+   "voz": "Por eso hay quien dice, medio en broma, que McDonald's es en realidad un negocio de bienes raíces que también vende papas fritas.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the plot of land",
+    "prompt": "an engraved isometric cutaway of a fast food restaurant building sitting on a plot of land, the land beneath it shown as a separate layer like a deed, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 10,
+   "voz": "Ahora, la inversión. Según el documento de franquicia de este año, la cuota inicial es de cuarenta y cinco mil dólares, y la inversión total va de uno punto cuatro siete a dos punto ocho millones de dólares.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Inversión inicial en EE.UU. (2026)",
+    "items": [
+     "Cuota inicial: US$45 mil (≈ $846 mil)",
+     "Inversión mínima: US$1.47 M (≈ $27.7 M)",
+     "Inversión máxima: US$2.81 M (≈ $52.7 M)"
+    ],
+    "total": "",
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter. Tipo de cambio: $18.79 por dólar (2/11/2026)."
+   }
+  },
+  {
+   "id": 11,
+   "voz": "En pesos, estamos hablando de entre veintiocho y cincuenta y tres millones. Y no puedes pedir prestado todo: en Canadá, por ejemplo, la marca pide que el cuarenta por ciento de un restaurante nuevo se pague con dinero propio, no prestado.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "40 %",
+    "texto": "de enganche con dinero propio en un restaurante nuevo",
+    "fuente": "McDonald's Canadá, sección de franquicias."
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Y el dinero no basta. En México, el proceso de selección dura alrededor de un año, e incluye evaluaciones en restaurantes y una capacitación de al menos treinta y seis semanas de tiempo completo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the grill flames",
+    "prompt": "a trainee in a crew uniform learning at a fast food kitchen grill station while a supervisor observes with a clipboard, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 13,
+   "voz": "Además buscan gente con experiencia administrando negocios, con compromiso de largo plazo y que viva en la zona donde va a operar. No es una inversión para mirar desde lejos: el franquiciatario tiene que estar metido en el restaurante.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the folders on the table",
+    "prompt": "a franchise candidate in an interview with a panel of three evaluators at a table in a restaurant back office, folders and coffee cups, present day, no logos"
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Supongamos que pasaste todo eso. ¿Cuánto vende tu restaurante? En dos mil veinticinco, los restaurantes franquiciados en Estados Unidos con al menos un año de operación vendieron, en promedio, cuatro millones cincuenta y siete mil dólares.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "US$4,057,000",
+    "texto": "de venta promedio al año (franquiciados, 2025)",
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter."
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Y un dato interesante: los restaurantes que opera directamente la empresa vendieron todavía más, unos cuatro millones ochocientos setenta mil dólares en promedio. La marca suele quedarse con algunas de las mejores ubicaciones.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Venta promedio al año, EE.UU. (2025)",
+    "items": [
+     [
+      "Franquiciados",
+      4.057
+     ],
+     [
+      "Operados por la empresa",
+      4.871
+     ]
+    ],
+    "unidad": "millones de dólares",
+    "fmt": "US${:.2f} M",
+    "foco": [
+     1
+    ],
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter."
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Ahora, a dónde se va el dinero. El documento incluye un ejercicio con lo que le queda al operador antes de pagar renta, regalías, intereses e impuestos. Y ronda el veinticinco por ciento de las ventas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $100 que vende el restaurante",
+    "partes": [
+     [
+      "Comida, empaque, sueldos, publicidad y operación",
+      75,
+      false
+     ],
+     [
+      "Antes de renta y regalías",
+      25,
+      true
+     ]
+    ],
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter. Ejercicio pro forma."
+   }
+  },
+  {
+   "id": 17,
+   "voz": "O sea que setenta y cinco de cada cien dólares se van en la comida, el empaque, los sueldos de decenas de empleados, la publicidad, que es al menos un cuatro por ciento de las ventas, y la operación del día a día.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the fryer baskets",
+    "prompt": "a busy fast food kitchen during rush hour, several crew members assembling burgers, frying potatoes and packing bags, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 18,
+   "voz": "De los veinticinco que quedan, primero se paga la regalía a McDonald's: entre el cuatro y el cinco por ciento de las ventas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "4 – 5 %",
+    "texto": "de las ventas como regalía para la marca",
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter."
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Y después, la renta. Aquí no hay un número único: en dos mil veinticinco, la renta efectiva de los franquiciados fue desde cero hasta más del treinta y tres por ciento de las ventas. Para hacer la cuenta, vamos a suponer entre ocho y quince por ciento.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "8 – 15 %",
+    "texto": "de las ventas en renta (supuesto)",
+    "fuente": "Rango real 2025: 0 % a 33.4 % (documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter.)"
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Entonces queda esto: veinticinco, menos cinco de regalía, menos entre ocho y quince de renta… dejan entre cinco y doce dólares de cada cien. Y eso todavía antes de pagar el préstamo y los impuestos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "25 %",
+    "a_txt": "antes de renta y regalías",
+    "b": "13–20 %",
+    "b_txt": "regalía y renta",
+    "r": "5–12 %",
+    "r_txt": "para el operador",
+    "fuente": "Estimación propia. Antes de intereses, depreciación e impuestos."
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Con un restaurante promedio, eso es entre doscientos mil y cuatrocientos ochenta y siete mil dólares al año. En pesos, entre trescientos dieciocho mil y setecientos sesenta y tres mil al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Restaurante promedio (EE.UU.)",
+    "filas": [
+     [
+      "Ventas al año",
+      "US$4.06 M"
+     ],
+     [
+      "Le queda al operador",
+      "5 – 12 %"
+     ],
+     [
+      "En pesos al mes",
+      "$318 mil – $763 mil"
+     ]
+    ],
+    "fuente": "Estimación propia. Tipo de cambio: $18.79 por dólar (2/11/2026)."
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Mucho dinero, ¿no? Pero hay que compararlo con lo que invertiste. Si pusiste entre uno punto cinco y dos punto ocho millones de dólares, recuperarías la inversión en algo entre tres y catorce años.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "plazo",
+    "titulo": "¿Cuándo recuperas la inversión?",
+    "min": 3,
+    "max": 10,
+    "texto": "Entre 3 y 14 años (estimación)",
+    "fuente": "Estimación propia. Antes de impuestos; el rango continúa después de 10 años."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "En el mejor caso, con una renta baja y ventas altas, unos tres años. En el peor, con renta alta y la inversión más cara, más de una década. Y eso antes de impuestos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Mejor caso: ≈ 3 años",
+     "Peor caso: más de 10 años",
+     "Antes de impuestos"
+    ]
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Y aquí aparece la parte que pocos ven: la marca gana en cualquier escenario. La regalía y la renta se cobran sobre las ventas, no sobre la ganancia. Si al restaurante le va mal, McDonald's igual cobra.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tall stack of coins",
+    "prompt": "an antique balance scale on a restaurant counter: on one pan a tall neat stack of coins, on the other a crumpled paper bag of fries, the coins much heavier"
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Ahora, ¿qué pasa en México? Según su informe anual, Arcos Dorados obtuvo en México unos cuatrocientos ochenta y un millones de dólares en dos mil veinticinco. Con más de trescientos ochenta restaurantes, eso da alrededor de un millón doscientos setenta mil dólares por restaurante al año.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Venta promedio por restaurante al año",
+    "items": [
+     [
+      "Estados Unidos",
+      4.06
+     ],
+     [
+      "México (estimación)",
+      1.27
+     ]
+    ],
+    "unidad": "millones de dólares",
+    "fmt": "US${:.2f} M",
+    "foco": [
+     1
+    ],
+    "fuente": "FDD 2026; Arcos Dorados vía El CEO (2026). Estimación propia."
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Y la empresa sigue creciendo en la región: para este año, Arcos Dorados planeó abrir entre ciento cinco y ciento quince restaurantes en América Latina, con una inversión de hasta trescientos veinticinco millones de dólares.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the steel frame",
+    "prompt": "a new fast food restaurant under construction with cranes and workers at sunrise, a drive-thru lane being paved, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Es más o menos un tercio de lo que vende uno en Estados Unidos. Y aunque en México la renta y los sueldos son más bajos, el equipo, la marca y muchos insumos se pagan casi igual. Con los mismos porcentajes, la ganancia en pesos sería mucho más chica.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the restaurant windows",
+    "prompt": "a fast food restaurant on a Mexican avenue at dusk with families going in, a street vendor cart nearby and palm trees, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Y ahora, lo que nadie te cuenta de una franquicia de McDonald's.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Primero: no eliges dónde poner tu restaurante. La ubicación, y muchas veces el inmueble, los decide la marca.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the measuring wheel",
+    "prompt": "a site selection team measuring an empty corner lot at a busy intersection with a measuring wheel and tablet, traffic passing, present day, no logos"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Segundo: el contrato tiene fecha de vencimiento. En Canadá, por ejemplo, la licencia es por veinte años. Y durante ese tiempo te pueden pedir remodelaciones y equipo nuevo, que también pagas tú.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "20 años",
+    "texto": "de duración de la licencia (Canadá)",
+    "fuente": "McDonald's Canadá, sección de franquicias."
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Tercero: los primeros años son los más difíciles. Si financiaste el sesenta por ciento, una buena parte de la ganancia se va en pagar el préstamo, que en Canadá se puede financiar a un máximo de siete años.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the calculator",
+    "prompt": "a franchise owner sitting alone in an empty restaurant dining area after closing, reviewing loan papers with a calculator, chairs stacked on tables, present day, no logos"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Y cuarto: en América Latina no negocias con McDonald's directamente. Todo pasa por Arcos Dorados, que es quien decide si te da una franquicia o si prefiere operar el restaurante por su cuenta.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cita",
+    "texto": "Los interesados no pueden negociar directamente con McDonald's Corporation; las subfranquicias se otorgan solo cuando Arcos Dorados lo considera conveniente.",
+    "fuente": "El CEO, 06/08/2026 (paráfrasis)."
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Y quinto: la publicidad no es opcional. Al menos el cuatro por ciento de tus ventas se va al fondo de publicidad de la marca, aunque el comercial no muestre tu restaurante. Sumado a la regalía, son de ocho a nueve pesos de cada cien que nunca pasan por tu bolsillo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $100 vendidos, para la marca",
+    "partes": [
+     [
+      "Para operar el restaurante",
+      91,
+      false
+     ],
+     [
+      "Regalía y publicidad",
+      9,
+      true
+     ]
+    ],
+    "fuente": "Fuente: documento de franquicia de McDonald's EE.UU. 2026, vía Franchise Chatter. Sin contar la renta."
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Entonces, ¿es buen negocio una franquicia de McDonald's? Para el operador puede serlo, con ventas altas y una marca que trae clientes sola. Pero exige millones de entrada, años de compromiso y ceder una parte fija de cada venta.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the warm lights over the counter",
+    "prompt": "a calm franchise owner in a suit standing at the counter of a spotless fast food restaurant at opening time, crew preparing behind, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "¿Para quién sí? Para alguien con mucho capital propio, experiencia administrando gente y ganas de un negocio probado, donde el riesgo de que nadie llegue es muy bajo. ¿Para quién no? Para quien busca multiplicar rápido su dinero: con la misma inversión hay negocios que rinden más… aunque con más riesgo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sí: capital propio, experiencia, largo plazo",
+     "No: retorno rápido con poco riesgo"
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "voz": "Y el que gana siempre, en las buenas y en las malas, es la marca. Por eso, más que un negocio de hamburguesas, es un negocio de cobrar por cada hamburguesa que vende otro.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the single burger",
+    "prompt": "an engraved close-up of a single burger on a tray, beside it a small stack of coins being slid away by a hand from outside the frame, no logos"
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Ahora te pregunto a ti: si tuvieras treinta millones de pesos, ¿pondrías un McDonald's o armarías tu propia marca de hamburguesas? Déjamelo en los comentarios. Y dime qué negocio quieres que analicemos después.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Pondrías un McDonald's?",
+    "sub": "¿O armarías tu propia marca? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 38,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "OXXO",
+    "texto": "Mira también",
+    "sub": "¿Cuánto le queda al dueño de un OXXO?"
+   },
+   "dur": 6
+  }
+ ]
+}

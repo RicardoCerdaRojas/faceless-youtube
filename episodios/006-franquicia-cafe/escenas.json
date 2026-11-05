@@ -1,0 +1,534 @@
+{
+ "episodio": "006-franquicia-cafe",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, en México puedes comprar una franquicia de café desde unos seiscientos cincuenta mil pesos. Y hay otras que piden más de ocho millones. En muchas ciudades parece que abre una cafetería nueva cada semana.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the latte art in the cup",
+    "prompt": "a cozy modern coffee shop interior in Mexico City with a barista pouring latte art behind an espresso machine, customers working on laptops, present day, no logos, blank signage"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Con una marca conocida, el local lleno y el olor a café… parece el negocio perfecto para una familia que quiere emprender. Pero, ¿cuánto te queda de verdad al final del mes? ¿Y cuántos cafés tienes que vender para no perder dinero?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Inversión total de algunas franquicias de café",
+    "items": [
+     [
+      "Calufe",
+      0.65
+     ],
+     [
+      "Café Colibrí",
+      0.8
+     ],
+     [
+      "Punta del Cielo",
+      2.25
+     ],
+     [
+      "Cielito Querido (máx.)",
+      12.0
+     ]
+    ],
+    "unidad": "millones de pesos (aprox.)",
+    "fmt": "${:.2f} M",
+    "foco": [
+     0
+    ],
+    "fuente": "Emprendedor.com (2024); FranquiciasdeCafe.com.mx (2026)."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Y es un negocio con mucho encanto en México, que además es productor de café: Chiapas, Veracruz, Oaxaca, Puebla. Cada vez más gente está dispuesta a pagar por un buen café de especialidad.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the red coffee cherries",
+    "prompt": "coffee farmers harvesting red coffee cherries on a steep green mountainside plantation in southern Mexico, baskets on their backs, morning mist"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Hoy vamos a hacer las cuentas completas de una franquicia de café: cuánto cuesta, cuánto se paga a la marca, cuánto vende un local chico… y cuándo recuperas tu dinero.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Te conviene una franquicia de café?",
+    "sub": "Inversión, regalías y cuántos cafés hay que vender"
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Empecemos por cómo funciona una franquicia. Le pagas a una marca por usar su nombre, sus recetas, sus proveedores y su forma de operar. A cambio, normalmente pagas tres cosas: una cuota de entrada, una regalía mensual sobre tus ventas, y una aportación para publicidad.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Cuota de entrada",
+     "+ regalía mensual sobre ventas",
+     "+ fondo de publicidad"
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "voz": "La ventaja es que no empiezas de cero: la marca ya sabe qué funciona, y los clientes la reconocen. La desventaja es que una parte de cada venta se va, todos los meses, aunque ese mes te vaya mal.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the signing pen",
+    "prompt": "a franchise owner signing a contract at a café table with a brand representative, a cup of coffee and a thick binder of operations manual beside them, present day, no logos, no readable text"
+   }
+  },
+  {
+   "id": 7,
+   "voz": "En la práctica, la marca te da un manual de operación, capacitación para ti y tu equipo, el diseño del local y proveedores ya negociados. Todo eso tiene valor, sobre todo si nunca has tenido un negocio de comida.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the steaming milk pitcher",
+    "prompt": "a trainer teaching two new baristas how to steam milk at an espresso machine in a training room, an operations binder open on the counter, present day, no logos"
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Ahora, los costos de entrada. En la parte baja hay marcas como Calufe, con una inversión de unos seiscientos cincuenta mil pesos, o Café Colibrí, con unos ochocientos mil. En la parte alta, marcas como Punta del Cielo, con más de dos millones, o Cielito Querido, entre ocho y doce millones.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Inversión total aproximada",
+    "items": [
+     "Calufe: $650 mil (sin regalías)",
+     "Café Colibrí: ≈ $800 mil",
+     "Black Coffee Gallery: ≈ $950 mil",
+     "Punta del Cielo: ≈ $2.25 millones",
+     "Cielito Querido: $8 a $12 millones"
+    ],
+    "total": "",
+    "fuente": "Emprendedor.com (2024); FranquiciasdeCafe.com.mx (2026)."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "Y las regalías suelen andar por el seis por ciento de las ventas, más un dos por ciento para publicidad. Algunas cobran menos, y alguna, como Calufe, dice no cobrar regalías.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 6 % + 2 %",
+    "texto": "regalía más publicidad, sobre tus ventas",
+    "fuente": "Emprendedor.com (2024); FranquiciasdeCafe.com.mx (2026)."
+   }
+  },
+  {
+   "id": 10,
+   "voz": "Ese caso es interesante: sin regalías, el negocio necesita menos ventas para salir adelante. A cambio, normalmente la marca es menos conocida y el apoyo es más limitado. No hay almuerzo gratis.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sin regalías: necesitas vender menos",
+     "pero la marca atrae menos clientes"
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Para hacer las cuentas, vamos a usar un modelo publicado este año para una cafetería de cuarenta metros cuadrados en México. Y le vamos a sumar ese ocho por ciento de la franquicia.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the pastry display case",
+    "prompt": "a small forty square meter coffee shop seen from the sidewalk, a counter with an espresso machine, four small tables, a pastry display case, present day Mexico, blank signage"
+   }
+  },
+  {
+   "id": 12,
+   "voz": "En ese modelo, cada cliente gasta en promedio noventa y cinco pesos: un café y algo de repostería.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the croissant",
+    "prompt": "a latte in a ceramic cup and a croissant on a small plate on a wooden café table, a hand holding a phone to pay, present day, no logos"
+   }
+  },
+  {
+   "id": 13,
+   "voz": "De esos noventa y cinco pesos, los insumos se llevan un treinta por ciento: el café, la leche, el vaso, el pan. Unos veintiocho pesos con cincuenta.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $95 de ticket",
+    "partes": [
+     [
+      "Insumos",
+      30,
+      false
+     ],
+     [
+      "Regalía y publicidad",
+      8,
+      false
+     ],
+     [
+      "Lo que queda para pagar el local",
+      62,
+      true
+     ]
+    ],
+    "fuente": "Modelo de American Industrial Magazine (ago. 2026), cafetería de 40 m². Más 8 % de franquicia (supuesto)."
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Y con la franquicia, otro ocho por ciento se va a la marca: siete pesos con sesenta. Te quedan unos cincuenta y nueve pesos por cliente para pagar todo lo demás.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$95.00",
+    "a_txt": "ticket promedio",
+    "b": "$36.10",
+    "b_txt": "insumos y franquicia",
+    "r": "$58.90",
+    "r_txt": "por cliente",
+    "fuente": "Estimación propia con el modelo de AIM."
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Esos cincuenta y nueve pesos todavía no son ganancia. Ahora hay que ver cuánto cuesta tener la cafetería abierta.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que cuesta abrir la cortina"
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Ahora, los costos fijos, los que pagas aunque no entre nadie: la renta, unos dieciocho mil pesos; la nómina con prestaciones, treinta y ocho mil; luz, agua, gas e internet, seis mil; y el sistema, el contador, la limpieza y los seguros, otros nueve mil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Costos fijos al mes",
+    "items": [
+     "Renta: $18,000",
+     "Nómina con prestaciones: $38,000",
+     "Luz, agua, gas e internet: $6,000",
+     "Sistema, contador, limpieza y seguros: $9,000"
+    ],
+    "total": "$71,000",
+    "fuente": "Modelo de American Industrial Magazine (ago. 2026), cafetería de 40 m²."
+   }
+  },
+  {
+   "id": 17,
+   "voz": "La nómina normalmente cubre a dos o tres personas en turnos: alguien en la barra, alguien en caja y alguien que apoye en las horas pico. Si tú mismo atiendes la barra, parte de esa nómina se queda en tu casa… pero también tu tiempo queda amarrado al local.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the espresso machine",
+    "prompt": "an owner wearing an apron working behind the coffee bar alongside one young barista during a quiet afternoon, present day, no logos"
+   }
+  },
+  {
+   "id": 18,
+   "voz": "En total, setenta y un mil pesos al mes. Entonces, la pregunta clave: ¿cuántos clientes necesitas para cubrirlos?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "¿Cuántos cafés hay que vender?"
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Setenta y un mil pesos, divididos entre cincuenta y nueve por cliente, dan unos mil doscientos clientes al mes. Abriendo veintiséis días, son unos cuarenta y seis clientes al día… solo para no perder.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 46",
+    "texto": "clientes al día para no perder dinero (con franquicia)",
+    "fuente": "Estimación propia con el modelo de AIM."
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Sin franquicia, con los mismos números, el punto de equilibrio baja a unos cuarenta y uno. Esa es la diferencia que cuesta la marca: cinco clientes más todos los días.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Clientes al día para no perder",
+    "items": [
+     [
+      "Cafetería propia",
+      41
+     ],
+     [
+      "Con franquicia (8 %)",
+      46
+     ]
+    ],
+    "unidad": "clientes al día",
+    "fmt": "{:.0f}",
+    "foco": [
+     1
+    ],
+    "fuente": "Modelo de American Industrial Magazine (ago. 2026), cafetería de 40 m². Estimación propia."
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Ahora veamos tres escenarios. Con cincuenta clientes al día, vendes unos ciento veintitrés mil pesos al mes… y te quedan apenas cinco mil quinientos. Prácticamente estás trabajando para la renta.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "50 clientes al día",
+    "filas": [
+     [
+      "Ventas al mes",
+      "$123,500"
+     ],
+     [
+      "Costos y franquicia",
+      "$117,930"
+     ],
+     [
+      "Te quedan",
+      "≈ $5,570"
+     ]
+    ],
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Con setenta clientes al día, vendes casi ciento setenta y tres mil, y te quedan unos treinta y seis mil pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "70 clientes al día",
+    "filas": [
+     [
+      "Ventas al mes",
+      "$172,900"
+     ],
+     [
+      "Costos y franquicia",
+      "$136,700"
+     ],
+     [
+      "Te quedan",
+      "≈ $36,200"
+     ]
+    ],
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Si esa misma cafetería fuera propia, sin el ocho por ciento de la marca, con setenta clientes te quedarían unos cincuenta mil pesos en vez de treinta y seis mil. La marca te cuesta unos catorce mil al mes… y tiene que traerte suficientes clientes extra para justificarlo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Con 70 clientes al día",
+    "items": [
+     [
+      "Con franquicia",
+      36.2
+     ],
+     [
+      "Cafetería propia",
+      50.0
+     ]
+    ],
+    "unidad": "miles de pesos al mes (estimación)",
+    "fmt": "${:.1f} mil",
+    "foco": [
+     0
+    ],
+    "fuente": "Estimación propia con el modelo de AIM."
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Y con noventa clientes al día, vendes unos doscientos veintidós mil, y te quedan casi sesenta y siete mil pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "90 clientes al día",
+    "filas": [
+     [
+      "Ventas al mes",
+      "$222,300"
+     ],
+     [
+      "Costos y franquicia",
+      "$155,470"
+     ],
+     [
+      "Te quedan",
+      "≈ $66,800"
+     ]
+    ],
+    "fuente": "Escenario estimado. Antes de impuestos."
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Fíjate en lo que pasa: entre cincuenta y noventa clientes, las ventas suben ochenta por ciento… pero la ganancia se multiplica por doce. Así funciona un negocio con costos fijos: los primeros clientes pagan el local, y los últimos son tu ganancia.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Los primeros clientes pagan el local",
+     "los últimos son tu ganancia"
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Ahora, ¿cuándo recuperas tu inversión? Digamos que la franquicia te costó un millón y medio de pesos. Con setenta clientes al día, tardarías unos cuarenta y dos meses: tres años y medio. Con noventa, unos veintidós meses.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "plazo",
+    "titulo": "¿Cuándo recuperas $1.5 millones?",
+    "min": 1.8,
+    "max": 3.5,
+    "texto": "Entre 22 meses y 3 años y medio",
+    "fuente": "Estimación propia. Antes de impuestos."
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Y aquí hay un dato para comparar. Algunos sitios de franquicias hablan de recuperar la inversión en dieciocho a treinta meses. Con estos números, eso solo pasa si atiendes noventa clientes o más todos los días.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cita",
+    "texto": "Una franquicia de café bien ubicada tarda entre 18 y 30 meses en recuperar la inversión.",
+    "fuente": "FranquiciasdeCafe.com.mx, 2026 (paráfrasis)."
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Y ahora, lo que nadie te cuenta de las franquicias de café.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Primero: noventa clientes al día es mucho. Si abres unas diez horas y media, es un cliente cada siete minutos, desde que abres hasta que cierras, todos los días. Antes de firmar, ve a la zona y cuenta cuánta gente entra a las cafeterías que ya están ahí. En un local de cuarenta metros, eso también significa filas y mesas llenas en las horas pico.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tally counter",
+    "prompt": "a person sitting on a bench across the street from a coffee shop counting customers with a small notebook and a tally counter, morning light, present day, no logos"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Segundo: la regalía se cobra sobre las ventas, no sobre la ganancia. En el escenario de cincuenta clientes, le pagas a la marca casi diez mil pesos al mes… y a ti te quedan cinco mil quinientos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Escenario de 50 clientes al día",
+    "items": [
+     [
+      "Para la marca (8 %)",
+      9.9
+     ],
+     [
+      "Para ti",
+      5.6
+     ]
+    ],
+    "unidad": "miles de pesos al mes",
+    "fmt": "${:.1f} mil",
+    "foco": [
+     0
+    ],
+    "fuente": "Estimación propia."
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Tercero: la competencia está en cada esquina. Desde cadenas grandes hasta el café de la tienda de conveniencia, que en muchos casos cuesta una fracción de tu precio. Tu cliente tiene que tener una razón para pagar noventa y cinco pesos contigo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the cheap paper cups",
+    "prompt": "a street with three different coffee shops on the same block and a convenience store selling cheap coffee in paper cups, present day Mexico, no logos, blank signage"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Y cuarto: no compras solo una marca, compras un contrato. Antes de firmar, pide hablar con franquiciatarios actuales, pregunta cuántos locales han cerrado, y revisa qué pasa si quieres vender o salirte.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the highlighter",
+    "prompt": "a person reading a thick franchise contract at a kitchen table at night with a highlighter, a coffee mug and a laptop beside them, present day, no readable text"
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Y quinto: tu insumo principal tiene precio internacional. El precio del café en grano ha tenido años muy volátiles, y aunque tu franquicia negocie con proveedores, tarde o temprano esas subidas llegan a tu costo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the coffee beans on the scale",
+    "prompt": "sacks of green coffee beans stacked in a warehouse with a scoop of beans spilling onto a wooden scale, present day"
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Entonces, ¿te conviene una franquicia de café? Puede convenir si encuentras una ubicación con mucho paso de gente y una marca que de verdad atraiga clientes. La marca te ahorra errores de principiante, y eso vale.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the line of customers",
+    "prompt": "a busy coffee shop at morning rush with a line of office workers at the counter, two baristas working fast, present day, no logos"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "Pero no es un negocio pasivo, ni de ganancias rápidas. Con un flujo medio, la ganancia se parece a un buen sueldo, y la inversión tarda años en volver. Si tienes la ubicación y no necesitas la marca, una cafetería propia necesita menos clientes para salir adelante. Si la marca no te trae más clientes que los que conseguirías solo, estás pagando por un letrero.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the coffee cup",
+    "prompt": "an antique balance scale on a café counter: on one pan a coffee cup, on the other a small stack of coins, the scale nearly balanced"
+   }
+  },
+  {
+   "id": 36,
+   "voz": "¿Para quién sí? Para alguien con capital, sin experiencia en el giro, que valora un sistema probado y tiene acceso a una buena ubicación. ¿Para quién no? Para quien necesita recuperar su dinero rápido, o quien no puede estar al frente del local.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sí: capital, buena ubicación, sin experiencia",
+     "No: prisa por recuperar, dueño ausente"
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Esto es un análisis general y no reemplaza una asesoría para tu caso. Pero si tienes una cafetería, cuéntame en los comentarios cuántos clientes atiendes en un día normal. Y dime qué negocio quieres que analicemos después.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Cuántos clientes atiendes al día?",
+    "sub": "¿Franquicia o café propio? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 38,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "TAQUERIA",
+    "texto": "Mira también",
+    "sub": "¿Cuánto deja de verdad una taquería?"
+   },
+   "dur": 6
+  }
+ ]
+}

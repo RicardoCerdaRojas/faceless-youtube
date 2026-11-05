@@ -1,0 +1,482 @@
+{
+ "episodio": "003-oxxo",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, en México hay casi veinticinco mil tiendas OXXO. Y cada una vende, en promedio, más de un millón cien mil pesos al mes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing store windows",
+    "prompt": "a brightly lit corner convenience store at night on a Mexican street, glass front glowing, a few customers inside and a motorcycle parked outside, present day, modern, no logos, blank signage"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Eso es más de treinta y seis mil pesos al día, todos los días. Entonces, ¿cuánto de eso le queda al dueño? Y una pregunta que casi nadie se hace… ¿quién es el dueño de un OXXO?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$1,101,700",
+    "texto": "de venta promedio al mes por tienda",
+    "fuente": "Fuente: Tracción Media con datos de FEMSA, 2T 2026."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Hoy vamos a abrir los números de una tienda OXXO, peso por peso, para ver cuánto vende, cuánto gasta y quién se queda con la ganancia.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cuánto le queda al dueño de un OXXO?",
+    "sub": "Ventas, márgenes y quién se queda con la ganancia"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Empecemos con la primera sorpresa: OXXO no vende franquicias. No puedes comprar una tienda, ni pagar una cuota para poner la tuya.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cita",
+    "texto": "OXXO no opera con franquicias: no se puede comprar una tienda ni operarla como franquicia.",
+    "fuente": "Expansión, 28/08/2026 (paráfrasis)."
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Lo que sí existe es la figura del líder de tienda. Es la persona que maneja la sucursal, con un equipo de unas seis personas, y en muchas ciudades trabaja con un contrato de comisión mercantil. No pone dinero para empezar… pero tampoco es el dueño.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the handheld scanner screen",
+    "prompt": "a store manager in a uniform vest checking inventory on a handheld scanner inside a convenience store aisle, two employees restocking shelves behind, present day, no logos"
+   }
+  },
+  {
+   "id": 6,
+   "voz": "¿Y qué es una comisión mercantil? Es un contrato en el que una parte le encarga a otra hacer actos de comercio a cambio de una retribución. No hay jefe en el sentido laboral: el comisionista actúa con independencia… pero por cuenta de la empresa.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Comisión mercantil:",
+     "la empresa encarga, tú operas,",
+     "cobras una comisión"
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "voz": "Entonces, el dueño de casi todas las tiendas es la misma empresa: FEMSA, a través de su división de Proximidad. Y eso cambia por completo la pregunta.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the lit windows",
+    "prompt": "a large modern corporate office building at dusk with many lit windows, a delivery truck passing in front, present day, no logos, no lettering"
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Y la historia es interesante. La primera tienda abrió en Monterrey en mil novecientos setenta y ocho. Veinte años después ya eran mil. Y hoy son casi veinticinco mil en México, más cientos en Chile, Colombia, Perú y Brasil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Tiendas OXXO",
+    "items": [
+     [
+      "1998",
+      1000
+     ],
+     [
+      "2026",
+      24708
+     ]
+    ],
+    "unidad": "tiendas en México",
+    "foco": [
+     1
+    ],
+    "fuente": "Expansión, 28/08/2026.",
+    "fmt": "{:,.0f}"
+   }
+  },
+  {
+   "id": 9,
+   "voz": "Ahora sí, los números. Empecemos por cuánto vende una tienda. Según los datos de FEMSA del segundo trimestre de este año, una tienda vende en promedio un millón ciento un mil pesos al mes. Y el ticket promedio viene subiendo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $36,000",
+    "texto": "de venta promedio al día por tienda",
+    "fuente": "Fuente: Tracción Media con datos de FEMSA, 2T 2026."
+   }
+  },
+  {
+   "id": 10,
+   "voz": "Y ese dinero viene de muchísimas compras chiquitas. OXXO atiende a unos trece millones de clientes al día. Repartidos entre todas las tiendas, son más de quinientas personas por tienda… y cada una deja, en promedio, unos setenta pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "≈ 13 millones de clientes al día",
+     "≈ 520 clientes por tienda",
+     "≈ $70 por compra (estimación)"
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Una parte de esa subida no es que la gente compre más cosas. En el tercer trimestre, OXXO explicó que el ticket creció en buena medida por el IEPS a refrescos y cigarros, que subió esos precios.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the soft drink bottles",
+    "prompt": "a convenience store checkout counter with soft drinks, a pack of cigarettes, snacks and a card terminal, a customer's hand paying, present day, no brand names, blank packaging"
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Pero vender un millón no es ganar un millón. Primero hay que pagar la mercancía: los refrescos, las papas, el café, el pan.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the crates of drinks",
+    "prompt": "a delivery driver unloading crates of bottled drinks and boxes of snacks from a small truck at the back door of a convenience store at dawn, present day, no logos"
+   }
+  },
+  {
+   "id": 13,
+   "voz": "En el tercer trimestre, el margen bruto de OXXO fue de cuarenta y cuatro punto ocho por ciento. O sea que, de cada cien pesos que entran a la caja, unos cincuenta y cinco se van en pagar lo que se vendió.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $100 que vende OXXO",
+    "partes": [
+     [
+      "Costo de la mercancía",
+      55,
+      false
+     ],
+     [
+      "Margen bruto",
+      45,
+      true
+     ]
+    ],
+    "fuente": "Margen bruto del 3T 2026: 44.8 % (Expansión)."
+   }
+  },
+  {
+   "id": 14,
+   "voz": "En una tienda promedio, eso deja cerca de cuatrocientos noventa mil pesos al mes para pagar todo lo demás.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $490,000",
+    "texto": "de margen bruto al mes por tienda (estimación)",
+    "fuente": "$1,101,700 × 44.8 %. Cálculo propio."
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Y todo lo demás es mucho. La renta del local. La luz de los refrigeradores, que nunca se apagan. Los sueldos de dos o tres turnos, porque muchas tiendas abren las veinticuatro horas. La comisión del líder de tienda, la logística, la seguridad, la publicidad… y las oficinas que administran casi veinticinco mil tiendas.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the refrigerator lights",
+    "prompt": "a row of glass-door refrigerators full of drinks glowing in an empty convenience store at three in the morning, a single cashier at the counter, a wall clock, present day, no logos"
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Después de pagar todo eso, la división de Proximidad de FEMSA reportó un margen de operación de alrededor del diez por ciento.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 10 %",
+    "texto": "de margen de operación (división Proximidad)",
+    "fuente": "Fuente: Tracción Media con datos de FEMSA, 2T 2026."
+   }
+  },
+  {
+   "id": 17,
+   "voz": "Si lo llevamos a una tienda promedio: de un millón cien mil en ventas, unos seiscientos diez mil se van en la mercancía. De los cuatrocientos noventa mil que quedan, unos trescientos ochenta mil se van en operar la tienda… y quedan alrededor de ciento diez mil pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$490,000",
+    "a_txt": "margen bruto",
+    "b": "$380,000",
+    "b_txt": "renta, sueldos, luz, logística",
+    "r": "$110,000",
+    "r_txt": "al mes por tienda",
+    "fuente": "Estimación propia con datos de FEMSA. Antes de impuestos."
+   }
+  },
+  {
+   "id": 18,
+   "voz": "Tracción Media hizo un cálculo parecido con los datos de FEMSA y le dio unos ciento dieciséis mil pesos de utilidad de operación por tienda al mes. O sea, de cada cien pesos que vende un OXXO, quedan unos diez.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "proporcion",
+    "titulo": "De cada $100 que vende una tienda…",
+    "min": 10,
+    "max": 10,
+    "texto": "quedan unos $10 de utilidad de operación",
+    "fuente": "Fuente: Tracción Media con datos de FEMSA, 2T 2026."
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Y fíjate en el contraste con la gasolinera que analizamos en otro video. La gasolinera vende nueve millones al mes y al dueño le quedan entre uno y cuatro pesos de cada cien. Un OXXO vende ocho veces menos… pero de cada cien pesos deja unos diez.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Lo que queda de cada $100 vendidos",
+    "items": [
+     [
+      "Gasolinera (mejor caso)",
+      4
+     ],
+     [
+      "OXXO",
+      10
+     ]
+    ],
+    "unidad": "pesos de cada $100 (estimación)",
+    "foco": [
+     1
+    ],
+    "fuente": "Episodio 001 y datos de FEMSA (2T 2026).",
+    "fmt": "${:.0f}"
+   }
+  },
+  {
+   "id": 20,
+   "voz": "La diferencia está en lo que vende cada uno. En la gasolina, casi todo el precio son impuestos y combustible. En un OXXO, una bolsa de papas o un café preparado dejan mucho más margen que un litro de gasolina.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the cup of coffee",
+    "prompt": "a still life on a convenience store counter: a cup of freshly brewed coffee, a bag of chips, a sweet bread and a hot dog on a paper tray, present day, blank packaging, no logos"
+   }
+  },
+  {
+   "id": 21,
+   "voz": "¿Y quién se queda con esos diez pesos? La empresa. No el líder de tienda. Así que veamos cuánto gana la persona que maneja un OXXO.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "¿Y el que maneja la tienda?"
+   }
+  },
+  {
+   "id": 22,
+   "voz": "OXXO no publica cuánto gana un líder de tienda. La referencia más cercana es Indeed, que calcula un promedio de unos doce mil seiscientos pesos al mes para jefe de tienda, en un rango que va de cinco mil trescientos a veintitrés mil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Pesos al mes",
+    "items": [
+     [
+      "Líder de tienda (Indeed)",
+      12.6
+     ],
+     [
+      "Utilidad por tienda",
+      116.7
+     ]
+    ],
+    "unidad": "miles de pesos al mes",
+    "foco": [
+     1
+    ],
+    "fuente": "Indeed (sep. 2026); Tracción Media con datos de FEMSA (2T 2026).",
+    "fmt": "${:.1f} mil"
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Si comparas, la utilidad que genera una tienda promedio es unas nueve veces lo que gana, en promedio, la persona que la maneja. Son cifras de fuentes distintas, así que tómalo como una referencia, no como un cálculo exacto.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 9 veces",
+    "texto": "la utilidad de la tienda frente al pago del líder (referencia)",
+    "fuente": "Tracción Media con datos de Indeed y FEMSA."
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Y hay un detalle importante. Cuando el contrato es de comisión mercantil, no es un empleo: no te da automáticamente seguro social, ni aguinaldo, ni vacaciones de ley.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the stack of receipts",
+    "prompt": "a tired store manager counting the cash register at the end of a night shift in a convenience store, a calculator and receipts on the counter, present day, no logos"
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Ahora, ¿por qué funciona tan bien este negocio para FEMSA? Por la escala. Diez pesos de cada cien no suena a tanto… pero en el segundo trimestre, la división ganó ocho mil seiscientos cuarenta y nueve millones de pesos. Casi tres mil millones al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$8,649 millones",
+    "texto": "de utilidad de operación en un trimestre (Proximidad)",
+    "fuente": "Fuente: Tracción Media con datos de FEMSA, 2T 2026."
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Con casi veinticinco mil tiendas, cada tienda es una pieza pequeña de una máquina enorme: compra en volumen, negocia con proveedores, decide dónde abrir… y también dónde cerrar.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tiny stores",
+    "prompt": "an isometric engraved map of a Mexican city with dozens of tiny identical convenience stores on many street corners, a distribution warehouse in the center with trucks radiating out, no lettering"
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Y ahora, lo que nadie te cuenta de los OXXO.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Primero: también cierran. En el tercer trimestre, OXXO abrió ciento noventa y un tiendas en México… pero cerró ciento cuarenta, sobre todo tiendas antiguas que vendían poco.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "OXXO México, 3T 2026",
+    "items": [
+     [
+      "Aperturas",
+      191
+     ],
+     [
+      "Cierres",
+      140
+     ],
+     [
+      "Crecimiento neto",
+      51
+     ]
+    ],
+    "unidad": "tiendas",
+    "foco": [
+     1
+    ],
+    "fuente": "Expansión, 2026.",
+    "fmt": "{:,.0f}"
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Segundo: la ubicación no la eliges tú. La decide un equipo de expansión que estudia el tráfico, la esquina y la competencia. Por eso a veces ves dos OXXO a pocas cuadras.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the two store fronts",
+    "prompt": "two identical small convenience stores on opposite corners of the same busy intersection, cars and pedestrians passing between them, present day, no logos"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Tercero: la forma más directa de ganar con un OXXO, si no eres FEMSA, es ser el dueño del local. La empresa compra o renta terrenos y locales, y recibe propuestas por su sitio de inmuebles. Eso sí, los montos de renta no son públicos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the handshake",
+    "prompt": "a property owner and a company representative shaking hands in front of an empty corner commercial space with a for-rent feel, a measuring tape and a folder in hand, present day, no lettering"
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Y cuarto: OXXO ya no es solo una tienda. Ahí pagas la luz, recibes depósitos, compras café… y cada servicio es otra razón para que entres y compres algo más.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the coffee machine",
+    "prompt": "a customer paying a utility bill at a convenience store counter while another buys a coffee from a machine, a card terminal glowing, present day, no logos"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Incluso tiene su propia app financiera, Spin, que en dos mil veintitrés ya pasaba los seis millones de clientes. La tienda se volvió una puerta de entrada a muchos otros negocios.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the phone screen",
+    "prompt": "a person holding a modern smartphone with a banking app open next to a convenience store counter, a card terminal and a receipt nearby, present day, blank screen interface, no logos"
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Y quinto: crecer ya no es tan fácil. En el tercer trimestre, las ventas subieron más de diez por ciento, pero la utilidad de operación solo creció cinco punto ocho. La empresa lo atribuyó a los costos de cerrar tiendas, a sueldos más altos y a un margen bruto menor.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "OXXO México, 3T 2026 (crecimiento anual)",
+    "items": [
+     [
+      "Ventas",
+      10.3
+     ],
+     [
+      "Utilidad de operación",
+      5.8
+     ]
+    ],
+    "unidad": "por ciento",
+    "foco": [
+     1
+    ],
+    "fuente": "Expansión, 2026.",
+    "fmt": "{:.1f} %"
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Entonces, ¿cuánto le queda al dueño de un OXXO? Si hablamos de la empresa, alrededor de diez pesos por cada cien que vende, multiplicado por casi veinticinco mil tiendas.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the tall stack of coins",
+    "prompt": "an antique balance scale: on one pan a tall stack of coins, on the other a tiny model of a convenience store, the coins outweighing it"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "Pero si la pregunta es si tú puedes ser el dueño… la respuesta es que no. Lo más cercano es manejar una tienda por comisión, o rentarle tu local. Es un gran negocio, solo que no está a la venta.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing store",
+    "prompt": "a person standing outside a glowing convenience store at night looking in through the glass from the dark sidewalk, present day, no logos"
+   }
+  },
+  {
+   "id": 36,
+   "voz": "Lo que sí te puedes llevar de este análisis son tres lecciones que sirven para cualquier tienda: la ubicación manda, el volumen paga los costos fijos, y los servicios, como el café o los pagos, son lo que hace que la gente vuelva todos los días. En otro video vamos a hacer las cuentas de una tiendita de abarrotes propia, para ver qué tanto se parece.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the candy jar",
+    "prompt": "a small family-run neighborhood grocery store in Mexico with a hand-painted facade without words, a shopkeeper behind the counter and a child buying candy, present day"
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Ahora te pregunto a ti: ¿manejarías un OXXO por comisión, o prefieres un negocio propio aunque sea más chico? Déjamelo en los comentarios. Y cuéntame qué negocio quieres que analicemos en el próximo video.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Manejarías un OXXO por comisión?",
+    "sub": "¿O prefieres un negocio propio? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 38,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "080e0143-befb-4da4-9b25-9d3d5ce2db5a",
+    "texto": "Mira también",
+    "sub": "¿Cuánto gana realmente el dueño de una gasolinera?"
+   },
+   "dur": 6
+  }
+ ]
+}
