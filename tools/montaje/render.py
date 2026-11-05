@@ -56,11 +56,20 @@ def fuente(nombre, tam, peso=None):
     path = f"fonts/{nombre}.ttf"
     try:
         f = ImageFont.truetype(path, tam)
-        if peso:
+        if nombre == "serif":
             try:
-                f.set_variation_by_axes([60 if nombre == "serif" else 0, peso])
-            except Exception:
-                pass
+                axes = f.get_variation_axes()
+                vals = []
+                for a in axes:
+                    nm = a.get("name", b"")
+                    nm = nm.decode() if isinstance(nm, bytes) else str(nm)
+                    if "eight" in nm or nm.lower().startswith("wght"):
+                        vals.append(max(a["minimum"], min(a["maximum"], peso or 500)))
+                    else:
+                        vals.append(max(a["minimum"], min(a["maximum"], 32)))
+                f.set_variation_by_axes(vals)
+            except Exception as ex:
+                print("aviso fuente:", ex)
     except Exception:
         f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", tam)
     _cache[key] = f
@@ -154,7 +163,8 @@ def graf(v):
             if foco:
                 d.text((x + ancho - d.textlength(pctxt, font=fuente("anton", 72)), y0 - 110), pctxt, font=fuente("anton", 72), fill=NARANJA)
                 lw = d.textlength(etiqueta, font=f)
-                d.text((x + ancho - lw, ty), etiqueta, font=f, fill=NARANJA)
+                d.text((x + ancho - lw, ty + 60), etiqueta, font=f, fill=NARANJA)
+                d.line([(x + ancho / 2, y1 + 5), (x + ancho / 2, ty + 55)], fill=NARANJA, width=3)
             else:
                 d.text((cx - d.textlength(pctxt, font=fuente("anton", 72)) / 2, y0 - 110), pctxt, font=fuente("anton", 72), fill=VERDE if not v.get("foco") else VERDE_SUAVE)
                 lw = d.textlength(etiqueta, font=f)
@@ -252,19 +262,19 @@ def graf(v):
         fuente_txt(d, v.get("fuente"))
     elif k == "proporcion":
         titulo_sup(d, v["titulo"])
-        lado, gap = 52, 14
-        gx = (W - (10 * lado + 9 * gap)) / 2
+        lado, gap = 44, 12
+        gx = (W - (20 * lado + 19 * gap)) / 2
         for i in range(100):
-            r, c = divmod(i, 10)
-            x, y = gx + c * (lado + gap), 230 + r * (lado + gap) * 0.62
-            box = [x, y, x + lado, y + lado * 0.62]
+            r, c = divmod(i, 20)
+            x, y = gx + c * (lado + gap), 300 + r * (lado + gap)
+            box = [x, y, x + lado, y + lado]
             if i < 1:
                 d.rectangle(box, fill=NARANJA)
             elif i < 4:
                 d.rectangle(box, outline=NARANJA, width=5)
             else:
                 d.rectangle(box, fill=VERDE_CLARO)
-        texto_centrado(d, 860, v["texto"], fuente("anton", 76), NARANJA)
+        texto_centrado(d, 680, v["texto"], fuente("anton", 76), NARANJA)
         fuente_txt(d, v.get("fuente"))
     elif k == "barras_h":
         titulo_sup(d, v["titulo"])
