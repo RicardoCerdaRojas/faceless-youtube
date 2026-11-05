@@ -343,20 +343,20 @@
   },
   {
    "id": 26,
-   "voz": "Y la empresa sigue creciendo en la región: para este año, Arcos Dorados planeó abrir entre ciento cinco y ciento quince restaurantes en América Latina, con una inversión de hasta trescientos veinticinco millones de dólares.",
-   "visual": {
-    "tipo": "img",
-    "acento": "the steel frame",
-    "prompt": "a new fast food restaurant under construction with cranes and workers at sunrise, a drive-thru lane being paved, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
-   }
-  },
-  {
-   "id": 27,
    "voz": "Es más o menos un tercio de lo que vende uno en Estados Unidos. Y aunque en México la renta y los sueldos son más bajos, el equipo, la marca y muchos insumos se pagan casi igual. Con los mismos porcentajes, la ganancia en pesos sería mucho más chica.",
    "visual": {
     "tipo": "img",
     "acento": "the restaurant windows",
     "prompt": "a fast food restaurant on a Mexican avenue at dusk with families going in, a street vendor cart nearby and palm trees, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Y la empresa sigue creciendo en la región: para este año, Arcos Dorados planeó abrir entre ciento cinco y ciento quince restaurantes en América Latina, con una inversión de hasta trescientos veinticinco millones de dólares.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the steel frame",
+    "prompt": "a new fast food restaurant under construction with cranes and workers at sunrise, a drive-thru lane being paved, present day, present day, generic fast food restaurant with no logos, no golden arches, no brand colors, no lettering"
    }
   },
   {
@@ -475,7 +475,7 @@
    "visual": {
     "tipo": "graf",
     "kind": "final",
-    "job": "OXXO",
+    "job": "163bdf20-8ed7-4d1c-bb42-2b82fe99782c",
     "texto": "Mira también",
     "sub": "¿Cuánto le queda al dueño de un OXXO?"
    },

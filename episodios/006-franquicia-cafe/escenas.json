@@ -326,31 +326,6 @@
   },
   {
    "id": 23,
-   "voz": "Si esa misma cafetería fuera propia, sin el ocho por ciento de la marca, con setenta clientes te quedarían unos cincuenta mil pesos en vez de treinta y seis mil. La marca te cuesta unos catorce mil al mes… y tiene que traerte suficientes clientes extra para justificarlo.",
-   "visual": {
-    "tipo": "graf",
-    "kind": "barras_h",
-    "titulo": "Con 70 clientes al día",
-    "items": [
-     [
-      "Con franquicia",
-      36.2
-     ],
-     [
-      "Cafetería propia",
-      50.0
-     ]
-    ],
-    "unidad": "miles de pesos al mes (estimación)",
-    "fmt": "${:.1f} mil",
-    "foco": [
-     0
-    ],
-    "fuente": "Estimación propia con el modelo de AIM."
-   }
-  },
-  {
-   "id": 24,
    "voz": "Y con noventa clientes al día, vendes unos doscientos veintidós mil, y te quedan casi sesenta y siete mil pesos al mes.",
    "visual": {
     "tipo": "graf",
@@ -374,7 +349,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 24,
    "voz": "Fíjate en lo que pasa: entre cincuenta y noventa clientes, las ventas suben ochenta por ciento… pero la ganancia se multiplica por doce. Así funciona un negocio con costos fijos: los primeros clientes pagan el local, y los últimos son tu ganancia.",
    "visual": {
     "tipo": "graf",
@@ -383,6 +358,31 @@
      "Los primeros clientes pagan el local",
      "los últimos son tu ganancia"
     ]
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Si esa misma cafetería fuera propia, sin el ocho por ciento de la marca, con setenta clientes te quedarían unos cincuenta mil pesos en vez de treinta y seis mil. La marca te cuesta unos catorce mil al mes… y tiene que traerte suficientes clientes extra para justificarlo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Con 70 clientes al día",
+    "items": [
+     [
+      "Con franquicia",
+      36.2
+     ],
+     [
+      "Cafetería propia",
+      50.0
+     ]
+    ],
+    "unidad": "miles de pesos al mes (estimación)",
+    "fmt": "${:.1f} mil",
+    "foco": [
+     0
+    ],
+    "fuente": "Estimación propia con el modelo de AIM."
    }
   },
   {
@@ -524,7 +524,7 @@
    "visual": {
     "tipo": "graf",
     "kind": "final",
-    "job": "TAQUERIA",
+    "job": "dda9f04f-6a07-40de-b147-86aecfca326d",
     "texto": "Mira también",
     "sub": "¿Cuánto deja de verdad una taquería?"
    },

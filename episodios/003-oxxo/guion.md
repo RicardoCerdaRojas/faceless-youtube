@@ -125,7 +125,7 @@ Y ahora, lo que nadie te cuenta de los OXXO.
 
 > **[28 · VISUAL]** OXXO México, 3T 2026
 
-Primero: también cierran. En el tercer trimestre, OXXO abrió ciento noventa y un tiendas en México… pero cerró ciento cuarenta, sobre todo tiendas antiguas que vendían poco.
+Primero: también cierran. En el tercer trimestre, OXXO abrió ciento noventa y una tiendas en México… pero cerró ciento cuarenta, sobre todo tiendas antiguas que vendían poco.
 
 > **[29 · VISUAL]** two identical small convenience stores on opposite corners of the same busy intersection, cars and pedestrians passing between them, present day, no logos
 
