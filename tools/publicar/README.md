@@ -86,6 +86,16 @@ Aplica la descripción, las palabras clave, el país, el idioma y el banner desd
 
 ## Uso
 
+Atajo recomendado (activa el entorno virtual solo, y lo crea si no existe):
+
+```bash
+cd ~/dev/faceless-youtube && git pull
+./publicar.sh subir episodios/007-abarrotes
+```
+
+Equivale a `source .venv/bin/activate` + `python3 tools/publicar/publicar.py …`.
+
+
 ```bash
 # Revisar fichas sin subir nada (largos, fechas, campos que faltan)
 python3 tools/publicar/publicar.py revisar episodios/00*
