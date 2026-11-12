@@ -194,3 +194,118 @@ Este video es información general y no constituye asesoría financiera. Las cif
 ```
 
 **Etiquetas:** franquicia de café, cafetería, cuánto gana una cafetería, franquicias en México, Café Colibrí, Punta del Cielo, Cielito Querido, regalías, punto de equilibrio, emprender
+
+
+### 007 · ¿Cuánto deja DE VERDAD una tiendita de la esquina?
+
+```text
+En México hay más de 1.2 millones de tienditas, y el tendero promedio vende unos $30,000 al mes. ¿Cuánto le queda de verdad, y cuántas horas trabaja para ganarlo? Hicimos las cuentas: margen, inversión, ganancia por hora y la diferencia entre poner la tienda en tu casa o en un local rentado.
+
+Capítulos:
+0:00 Introducción
+0:46 Cómo funciona una tiendita
+1:29 La inversión
+2:09 Cuánto vende y cuánto queda
+3:16 La trampa: tus horas
+4:10 Las tiendas que sí ganan
+5:46 Lo que nadie te cuenta
+7:15 Veredicto
+
+Fuentes:
+• ANPEC vía Infobae: https://www.infobae.com/mexico/2026/08/06/inseguridad-e-inflacion-le-pegan-a-las-tiendas-de-la-esquina-anpec/
+• ANPEC vía El CEO: https://elceo.com/negocios/tienditas-de-la-esquina-margenes-de-ganancia-se-reducen-por-el-alza-de-precios-e-impuestos/
+• ANPEC vía Xataka México: https://www.xataka.com.mx/empresas-y-economia/tienditas-mexico-cada-vez-venden-existe-otro-problema-ahora-trabajan
+• ANPEC vía Publimetro: https://www.publimetro.com.mx/noticias/2026/08/04/crimen-organizado-toma-las-tienditas-decide-que-se-vende-y-a-que-precio/
+• Eje Central: https://www.ejecentral.com.mx/nuestro-eje/cuanto-cuesta-poner-una-tiendita-de-la-esquina-que-aumentara-22-sus-ventas-durante-el-mundial-2026
+• Expansión: https://expansion.mx/tecnologia/2026/08/12/mercado-libre-nos-da-6-pesos-por-paquete-tienditas
+• El Cronista: https://www.cronista.com/mexico/finanzas-economia/el-ieps-asfixia-a-las-tienditas-de-la-esquina-y-esquilma-una-quinta-parte-de-sus-ganancias-dice-la-anpec/
+• Bloomberg Línea: https://www.bloomberglinea.com/latinoamerica/mexico/salario-minimo-en-mexico-aumentara-a-mxn31504-diarios-para-2026/
+
+Este video es información general y no constituye asesoría financiera. Las cifras estimadas se marcan como tales en pantalla.
+
+¿Qué negocio quieres que analicemos? Déjalo en los comentarios.
+
+#negocios #emprendimiento #México
+```
+
+**Etiquetas:** tienda de abarrotes, tiendita de la esquina, cuánto gana una tienda de abarrotes, poner una tienda de abarrotes, negocio desde casa, ANPEC, emprender con poco dinero, negocios en México, margen de ganancia
+
+**Publica:** 2026-11-20T18:00:00-06:00
+
+### 008 · ¿Cómo gana dinero Smart Fit cobrando $299 al mes?
+
+```text
+Smart Fit abrió 392 gimnasios en un año y en México cobra desde $299 al mes. ¿Cómo gana dinero un gimnasio tan barato? Abrimos sus números: socios por gimnasio, inversión, márgenes y el truco del modelo low cost.
+
+Capítulos:
+0:00 Introducción
+0:37 El tamaño de Smart Fit
+2:00 La inversión
+2:30 Cuánto factura un gimnasio
+3:34 Cuánto queda
+4:16 El truco: no todos van
+5:42 Lo que nadie te cuenta
+7:00 Veredicto
+
+Fuentes:
+• Smart Fit 3T26 vía Mercado & Consumo: https://mercadoeconsumo.com.br/05/11/2026/noticias/smart-fit-tem-lucro-de-r-248-mi-no-3o-trimestre-alta-de-40/
+• Eu Quero Investir: https://euqueroinvestir.com/mercados/smart-fit-balanco-3t26
+• Eu Quero Investir: https://euqueroinvestir.com/acoes/smart-fit-surpreende-no-3t26-com-mexico-e-totalpass-mas-brasil-segue-pressionado
+• Quartr: https://quartr.com/events/smartfit-escola-de-gin-stica-e-dan-a-s-a-smft3-company-presentation_F6UBjsGf
+• Emprendedor: https://emprendedor.com/smart-fit-acelera-su-expansion-en-mexico-invertira-mas-de-1500-mdp-y-abrira-70-gimnasios/
+• ADN40: https://www.adn40.mx/es-tendencia/2026-01-15/gimnasios-baratos-en-mexico-precios-y-sucursales-en-2026/
+• Mercado Fitness: https://mercadofitness.com/pdf/radiografia-mexico-2024-mercado-fitness.pdf
+• AgendaPro: https://agendapro.com/blog/como-abrir-un-gimnasio-en-mexico/
+• DeDinero: https://www.dedinero.com.mx/ahorro-e-inversion/anytime-fitness-descubre-cuanto-dinero-necesitas-para-abrir-un-gimnasio-y-que-ganancias-promete/
+• DellaVigna y Malmendier: https://eml.berkeley.edu/~ulrike/Papers/gym.pdf
+
+Este video es información general y no constituye asesoría financiera. Las cifras estimadas se marcan como tales en pantalla.
+
+¿Qué negocio quieres que analicemos? Déjalo en los comentarios.
+
+#negocios #emprendimiento #México
+```
+
+**Etiquetas:** Smart Fit, cuánto gana un gimnasio, negocio de gimnasios, gimnasio low cost, poner un gimnasio, franquicia de gimnasio, Anytime Fitness, economía de negocios, negocios en México
+
+**Publica:** 2026-11-23T18:00:00-06:00
+
+### 009 · ¿Cuánto deja DE VERDAD una tortillería?
+
+```text
+Un kilo de tortilla cuesta en promedio $24.20… ¿y al tortillero cuánto le queda? Hicimos las cuentas de una tortillería: inversión, costo por kilo, ventas, ganancia y por qué este negocio vende cada vez menos kilos.
+
+Capítulos:
+0:00 Introducción
+0:59 Cómo funciona
+1:28 La inversión
+2:07 Cuánto se vende
+2:54 Cuánto cuesta producir un kilo
+4:44 La trampa: el volumen
+5:47 Lo que nadie te cuenta
+7:09 Veredicto
+
+Fuentes:
+• Expansión: https://expansion.mx/economia/2026/04/15/tortilla-30-pesos-kilo-gobierno-productores-chocan-aumento
+• Publimetro: https://www.publimetro.com.mx/noticias/2026/04/16/necesario-aumento-a-la-tortilla-producirla-cuesta-25-y-ya-no-deja/
+• Xataka México: https://www.xataka.com.mx/empresas-y-economia/mexico-no-deja-comer-tortillas-no-compra-tortilleria-30-anos-cerraron-75-negocios
+• El Imparcial: https://www.elimparcial.com/mexico/2026/04/16/profeco-desmiente-aumento-en-el-precio-de-la-tortilla-kilo-se-mantiene-en-242-pesos-y-no-hay-alzas-recientes-en-mexico/
+• N+: https://www.nmas.com.mx/economia/precio-kilo-de-tortilla-mas-barata-en-mexico-donde-cuesta-17-pesos-14-abril-2026/
+• El Imparcial: https://www.elimparcial.com/mexico/2026/04/20/precio-de-la-tortilla-en-mexico-sube-61-en-siete-anos-y-presiona-el-gasto-diario-de-millones-de-familias/
+• El Imparcial: https://www.elimparcial.com/dinero/2026/04/14/claudia-sheinbaum-afirma-que-no-hay-justificacion-para-aumentar-el-precio-de-la-tortilla-y-cuestiona-diferencias-en-costos-de-alimentos-en-mexico/
+• El Imparcial: https://www.elimparcial.com/mexico/2026/04/30/6000-pesos-por-tonelada-de-maiz-ofrece-el-gobierno-a-1300-tortillerias-en-186-centros-para-frenar-el-alza-en-el-precio-de-la-tortilla-y-proteger-el-gasto-diario-de-millones-de-familias-mexicanas/
+• Uno TV: https://www.unotv.com/negocios/kilo-de-tortilla-sube-hasta-27-por-inseguridad-y-extorsion-consejo-nacional-de-la-tortilla/
+• Expansión: https://expansion.mx/empresas/2026/03/18/venta-tortillas-hieleras-multas-profeco-debate-sanidad
+• Infobae: https://www.infobae.com/mexico/2024/01/30/quieres-poner-una-tortilleria-esto-cuestan-las-maquinas-para-hacerlas/
+• ANPEC: https://anpec.com.mx/boletines/156ENDEFENSADELASTORTILLERASDEBARRIO.pdf
+
+Este video es información general y no constituye asesoría financiera. Las cifras estimadas se marcan como tales en pantalla.
+
+¿Qué negocio quieres que analicemos? Déjalo en los comentarios.
+
+#negocios #emprendimiento #México
+```
+
+**Etiquetas:** tortillería, cuánto gana una tortillería, poner una tortillería, precio de la tortilla, negocio de tortillas, máquina tortilladora, emprender en México, negocios de comida, Consejo Nacional de la Tortilla
+
+**Publica:** 2026-11-25T18:00:00-06:00
