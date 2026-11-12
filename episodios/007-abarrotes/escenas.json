@@ -1,0 +1,538 @@
+{
+ "episodio": "007-abarrotes",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, en México hay más de un millón doscientas mil tienditas de la esquina. Casi en cada cuadra hay una: con su refrigerador de refrescos, sus papitas colgadas y un tendero que te conoce por tu nombre.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the glowing drinks refrigerator",
+    "prompt": "a traditional Mexican corner grocery store at dusk, metal shutter rolled up, crates of bottled drinks by the door, bags of snacks hanging on strings, a shopkeeper behind the counter, neighbors walking by, present day, blank signage, blank packaging, no logos"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Son tantas que juntas le ganan a cualquier cadena. Para que te des una idea: OXXO tiene casi veinticinco mil tiendas. Las tienditas son casi cincuenta veces más.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "1.2 millones",
+    "texto": "tienditas de barrio en México (estimación)",
+    "fuente": "ANPEC vía Infobae, 06/08/2026. OXXO: ≈ 25,000 tiendas (FEMSA)."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Y muchísimas familias han pensado alguna vez en poner una. En el cuarto que da a la calle, en la cochera… con poco dinero, y sin tener que pedirle trabajo a nadie.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the new wooden shelf",
+    "prompt": "a Mexican family converting the front room of their house into a small grocery store, the father fixing a wooden shelf to the wall, the mother arranging canned goods, garage door open to the street, present day, blank packaging"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Así que hoy vamos a hacer las cuentas de una tienda de abarrotes: cuánto cuesta ponerla, cuánto vende, cuánto le queda al tendero… y cuántas horas tiene que trabajar para ganarlo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cuánto deja de verdad una tiendita?",
+    "sub": "Ventas, margen y horas, peso por peso"
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Primero, cómo funciona. La tiendita gana con algo muy simple: compra la mercancía al proveedor o al mayoreo, y la vende por pieza, un poco más cara. Esa diferencia es el margen.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Compras al proveedor o al mayoreo",
+     "Vendes por pieza, un poco más caro",
+     "La diferencia es tu margen"
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "voz": "Los refrescos, el pan, las botanas y los lácteos los dejan los repartidores en la puerta. Lo demás, el aceite, el arroz, el papel, el jabón, el tendero lo va a comprar a la central o a una tienda de mayoreo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the crates of bottles",
+    "prompt": "a delivery man unloading crates of bottled drinks from a small truck in front of a corner grocery store at dawn, the shopkeeper signing a delivery note, present day, blank packaging, no logos, no readable text"
+   }
+  },
+  {
+   "id": 7,
+   "voz": "¿Y de cuánto es ese margen? Según la Alianza Nacional de Pequeños Comerciantes, la ANPEC, hoy anda entre veinte y veinticinco por ciento. Antes de la pandemia era casi treinta. O sea que de cada cien pesos que vendes, unos setenta y ocho ya eran del proveedor.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $100 que vende una tiendita",
+    "partes": [
+     [
+      "Lo que pagaste al proveedor",
+      78,
+      false
+     ],
+     [
+      "Margen bruto",
+      22,
+      true
+     ]
+    ],
+    "fuente": "ANPEC vía Xataka (04/12/2025) y El CEO (20/01/2026). Se usa 22 %, estimación."
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Ahora, la inversión. Poner una tiendita cuesta, en promedio, entre cincuenta mil y ciento cincuenta mil pesos: el equipo y los refrigeradores, la primera mercancía, pintar y acomodar el lugar… y la renta, si no es en tu casa.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Inversión para poner una tiendita",
+    "items": [
+     "Equipo y refrigeración: $15,000 – $40,000",
+     "Mercancía inicial: $20,000 – $50,000",
+     "Adecuaciones: $5,000 – $20,000",
+     "Renta: $3,000 – $10,000 al mes"
+    ],
+    "total": "$50,000 – $150,000",
+    "fuente": "Eje Central, 22/04/2026."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "Fíjate que la parte más grande no son los muebles. Es la mercancía. Una tienda con los anaqueles medio vacíos no vende, así que desde el primer día tienes que tener un poco de todo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the bottles of cooking oil",
+    "prompt": "an engraved still life of grocery store shelves fully stocked with cans, bags of rice and beans, bottles of cooking oil, rolls of toilet paper and soap bars, blank labels, no lettering, present day"
+   }
+  },
+  {
+   "id": 10,
+   "voz": "Y no olvides los trámites. En la Ciudad de México, una tienda de abarrotes se registra como negocio de bajo impacto en el sistema SIAPEM, y en el resto del país necesitas la licencia de tu municipio. Además, claro, darte de alta en el SAT.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the stamped folder",
+    "prompt": "a shopkeeper at a municipal office counter handing over a folder of forms to a clerk, rubber stamps on the desk, present day, no readable text"
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Ahora sí, cuánto vende. Según los datos de la ANPEC, un tendero promedio vende unos treinta mil pesos al mes. Hasta hace poco eran cuarenta mil. Las ventas vienen bajando.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$30,000",
+    "texto": "de venta al mes, el tendero promedio",
+    "fuente": "ANPEC vía El CEO, 20/01/2026. Antes: ≈ $40,000."
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Eso es más o menos mil pesos al día. Y la compra típica en una tiendita es chiquita: más de la mitad de los clientes gasta entre cincuenta y cien pesos por visita.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "$30,000 al mes",
+     "≈ $1,000 al día",
+     "Compras de $50 a $100"
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "voz": "Un refresco, un pan, unos huevos, una recarga para el celular… La tiendita vive de compras chiquitas, de la gente que no quiere caminar hasta el súper por dos cosas.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the soda bottle",
+    "prompt": "a woman buying a few items at a corner grocery store counter: a glass soda bottle, a bag of bread rolls, a few eggs in a small plastic bag, the shopkeeper handing her change, present day, blank packaging, no logos"
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Ahora hagamos la cuenta. De treinta mil pesos de venta, con un margen de veintidós por ciento, quedan unos seis mil seiscientos pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$30,000",
+    "a_txt": "ventas",
+    "b": "$23,400",
+    "b_txt": "lo que pagaste al proveedor",
+    "r": "$6,600",
+    "r_txt": "al mes",
+    "fuente": "Estimación propia con margen de 22 %."
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Y eso coincide con lo que calcula la ANPEC: al tendero promedio le quedan entre seis mil y ocho mil pesos al mes. Hace poco eran entre ocho y diez mil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$6,000 – $8,000",
+    "texto": "le quedan al mes al tendero promedio",
+    "fuente": "ANPEC vía El CEO, 20/01/2026. Antes: $8,000 – $10,000."
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Pero aquí viene lo importante. ¿Cuántas horas cuesta ganar eso? Siete de cada diez tienditas abren toda la semana, y casi cuatro de cada diez abren más de doce horas al día.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the single light bulb",
+    "prompt": "an older shopkeeper behind the counter of a small grocery store late at night, a single bare bulb lit above him, the street dark outside, a wall clock, present day, blank packaging"
+   }
+  },
+  {
+   "id": 17,
+   "voz": "Y esa es la trampa de la tiendita: tus horas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "La trampa: tus horas"
+   }
+  },
+  {
+   "id": 18,
+   "voz": "Haz la cuenta: siete mil pesos al mes, trabajando doce horas diarias, los treinta días… son unos diecinueve pesos por hora.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "$7,000 al mes",
+     "÷ 12 horas × 30 días",
+     "≈ $19 por hora"
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "voz": "El salario mínimo de este año es de trescientos quince pesos al día: unos treinta y nueve pesos por hora. O sea que el tendero promedio gana… la mitad del salario mínimo por cada hora detrás del mostrador.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Lo que ganas por hora",
+    "items": [
+     [
+      "Tendero promedio",
+      19.4
+     ],
+     [
+      "Salario mínimo 2026",
+      39.4
+     ]
+    ],
+    "unidad": "pesos por hora",
+    "fmt": "${:.0f}",
+    "foco": [
+     0
+    ],
+    "fuente": "ANPEC; salario mínimo de $315.04 diarios (Bloomberg Línea). Estimación propia."
+   }
+  },
+  {
+   "id": 20,
+   "voz": "¿Y entonces por qué hay más de un millón? Porque casi nadie hace la cuenta así. La tienda está en la casa, no paga renta, y la atienden entre todos: la mamá en la mañana, el papá en la tarde, los hijos cuando salen de la escuela.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the open notebook",
+    "prompt": "inside a family grocery store a teenager doing homework at the counter while his grandmother serves a customer, a doorway to the family kitchen behind, present day Mexico, blank packaging"
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Es un negocio muy de familia. Según la ANPEC, más de la mitad de las tienditas las atienden mujeres, y más de ocho de cada diez tenderos son jefes o jefas de hogar. Para muchos, la tiendita es el sustento de la casa.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "53 % las atienden mujeres",
+     "84 % son jefes o jefas de hogar",
+     "La tiendita sostiene la casa"
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Ahora, no todas son la tienda promedio. Hay tiendas que venden mucho más. Eleventa, un sistema de punto de venta, reporta ganancias de entre nueve mil y cuarenta mil pesos al mes en tiendas de abarrotes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$9,000 – $40,000",
+    "texto": "de ganancia al mes en tiendas de abarrotes",
+    "fuente": "Datos de Eleventa vía Expansión, 12/08/2026."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Hagamos el caso de una tienda que sí vende: cuatro mil pesos al día, ciento veinte mil al mes. Con el mismo margen quedan veintiséis mil cuatrocientos. Menos la luz, lo que se echa a perder o se roban, y otros gastos… te quedan unos veinte mil seiscientos pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Tienda en casa con buen flujo",
+    "filas": [
+     [
+      "Ventas al mes ($4,000 al día)",
+      "$120,000"
+     ],
+     [
+      "Margen bruto (22 %)",
+      "$26,400"
+     ],
+     [
+      "Luz, merma y varios",
+      "−$5,800"
+     ],
+     [
+      "Te quedan",
+      "≈ $20,600"
+     ]
+    ],
+    "fuente": "Estimación propia. Supuestos: luz $3,000; merma y robo 1.5 % de ventas; varios $1,000."
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Pero fíjate qué pasa si esa misma tienda está en un local rentado y contratas a un ayudante. Seis mil de renta y unos diez mil de sueldo… y de veinte mil seiscientos te quedan cuatro mil seiscientos. Vendiendo exactamente lo mismo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Mismo caso, local rentado y ayudante",
+    "filas": [
+     [
+      "Te quedaban",
+      "$20,600"
+     ],
+     [
+      "Renta",
+      "−$6,000"
+     ],
+     [
+      "Un ayudante",
+      "−$10,000"
+     ],
+     [
+      "Te quedan",
+      "≈ $4,600"
+     ]
+    ],
+    "fuente": "Estimación propia. Supuestos: renta $6,000; ayudante con salario mínimo y cargas, $10,000."
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Por eso las tienditas que funcionan casi siempre están en la casa del dueño. La renta y el sueldo son justo los dos gastos que una familia se ahorra… pagándolos con su propio tiempo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the lit shop window",
+    "prompt": "a small corner grocery store on the ground floor of a two-story family house, laundry hanging on the rooftop, a child's bicycle by the door, present day Mexican neighborhood, blank signage, no logos"
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Con local rentado y un empleado, necesitas vender unos tres mil doscientos cincuenta pesos diarios solo para no perder dinero. Más de tres veces lo que vende la tienda promedio.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Local rentado + ayudante: $20,000 fijos",
+     "Punto de equilibrio: ≈ $97,500 al mes",
+     "≈ $3,250 al día"
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "voz": "¿Y en cuánto tiempo se recupera la inversión? Una tienda en casa que vende cuatro mil pesos diarios recupera unos cien mil pesos de inversión en cinco meses… siempre que no cuentes tu sueldo. Si lo cuentas, la historia cambia.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 5 meses",
+    "texto": "para recuperar $100,000 en la tienda en casa con buen flujo (sin contar tu sueldo)",
+    "fuente": "Estimación propia: $100,000 ÷ $20,600 al mes."
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Y para ponerlo en perspectiva: un OXXO vende en promedio un millón cien mil pesos al mes. Treinta y siete veces lo que vende la tiendita promedio. Ahí está toda la diferencia: el volumen.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Venta al mes por tienda",
+    "items": [
+     [
+      "Tiendita promedio",
+      30000
+     ],
+     [
+      "OXXO promedio",
+      1101000
+     ]
+    ],
+    "unidad": "pesos al mes",
+    "fmt": "${:,.0f}",
+    "foco": [
+     0
+    ],
+    "fuente": "ANPEC; FEMSA, 2T 2026 (episodio sobre OXXO)."
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Y ahora, lo que nadie te cuenta de poner una tiendita.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Primero: el fiado. Casi la mitad de los tenderos dice que cada vez más clientes piden fiado. Y cada peso fiado es mercancía que ya pagaste… y que a lo mejor nunca cobras.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the debt notebook",
+    "prompt": "a shopkeeper writing in a worn notebook of customer debts at the counter while a neighbor walks out with a bag of groceries, present day, no readable text, blank packaging"
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Segundo: la inseguridad. Entre los tenderos que sufrieron un delito este año, más de la mitad habla de robo hormiga, y uno de cada cinco, de extorsión. Y el cobro de piso más bajo ya pasó de doscientos a quinientos pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Cobro de piso mínimo",
+    "items": [
+     [
+      "Antes",
+      200
+     ],
+     [
+      "Hoy",
+      500
+     ]
+    ],
+    "unidad": "pesos (reportado por tenderos)",
+    "fmt": "${:.0f}",
+    "foco": [
+     1
+    ],
+    "fuente": "ANPEC vía Infobae, 06/08/2026."
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Tercero: la luz. Ocho de cada diez tenderos dicen que el recibo de luz es el gasto que más les cuesta pagar. Y tiene sentido: los refrigeradores no se apagan nunca.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the refrigerator light",
+    "prompt": "glass-door refrigerators full of bottled drinks glowing inside a small dark grocery store at night, an electricity meter on the outside wall, present day, blank packaging, no logos"
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Cuarto: los impuestos a refrescos y cigarros. Este año subieron, y una cajetilla legal ya anda en ciento diez pesos. Mientras tanto, una de contrabando se consigue en quince, y uno de cada cuatro cigarros que se venden en México es ilegal. El tendero que vende legal compite contra eso.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Cajetilla de cigarros",
+    "items": [
+     [
+      "Legal",
+      110
+     ],
+     [
+      "De contrabando",
+      15
+     ]
+    ],
+    "unidad": "pesos por cajetilla",
+    "fmt": "${:.0f}",
+    "foco": [
+     0
+    ],
+    "fuente": "ANPEC vía El Cronista, 12/05/2026."
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Y quinto, la parte buena: la tiendita ya no solo vende abarrotes. Hay tiendas que cobran recibos, venden recargas o reciben paquetes de compras por internet. Mercado Libre, por ejemplo, les paga de tres a seis pesos por paquete.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the cardboard parcel",
+    "prompt": "a shopkeeper handing a cardboard parcel to a young woman at a corner grocery store counter, a stack of parcels on a shelf behind him, present day, blank boxes, no logos, no readable text"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "Una tienda que recibe veinte paquetes al día puede sacar unos tres mil seiscientos pesos extra al mes, sin comprar mercancía. Casi lo mismo que cuesta la luz.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "20 paquetes al día",
+     "× $6 por paquete",
+     "≈ $3,600 al mes"
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "voz": "Entonces, ¿te conviene poner una tiendita? Si la pones en tu casa, con poca inversión y con la familia ayudando, es un negocio noble: no te vas a hacer rico, pero da un ingreso y te deja trabajar sin salir de tu casa.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the jar of candies",
+    "prompt": "a shopkeeper couple smiling at a neighborhood child buying candy at the counter of their small family grocery store in the afternoon, present day Mexico, blank packaging"
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Pero si tienes que rentar un local y pagar sueldos, las cuentas casi nunca salen. Antes de abrir, cuenta cuánta gente pasa frente a tu puerta… y cuántas tiendas hay ya en tu cuadra.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the person's notebook",
+    "prompt": "a person standing on a sidewalk with a notebook, looking at three small grocery stores on the same block of a Mexican street, present day, blank signage, no logos"
+   }
+  },
+  {
+   "id": 38,
+   "voz": "¿Para quién sí? Para una familia con un espacio a la calle, en una zona con flujo de gente, que puede atenderla entre todos. ¿Para quién no? Para quien busca invertir y que el negocio trabaje solo. Una tiendita es, sobre todo, un empleo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sí: en tu casa, en familia y con flujo",
+     "No: local rentado y empleados"
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "voz": "Esto es un análisis general y no reemplaza una asesoría para tu caso. Pero si tienes una tiendita, cuéntame en los comentarios cuánto vendes en un día normal y cuántas horas abres. Y si este video te sirvió, suscríbete: cada semana abrimos los números de un negocio nuevo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Cuánto vende tu tiendita en un día?",
+    "sub": "¿Y cuántas horas abres? Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 40,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "163bdf20-8ed7-4d1c-bb42-2b82fe99782c",
+    "texto": "Mira también",
+    "sub": "¿Cuánto le queda al dueño de un OXXO?"
+   },
+   "dur": 6
+  }
+ ]
+}

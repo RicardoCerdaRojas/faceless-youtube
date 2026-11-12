@@ -1,0 +1,481 @@
+{
+ "episodio": "008-gimnasio",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, en el último año Smart Fit abrió trescientos noventa y dos gimnasios nuevos. Eso es más de uno por día. Y en México cobra desde doscientos noventa y nueve pesos al mes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the gym's glowing windows",
+    "prompt": "a large modern low-cost gym at night seen from the street, floor-to-ceiling windows glowing, rows of treadmills with people running inside, present day Mexican city avenue, blank signage, no logos"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Ahora piénsalo: un local enorme, cientos de máquinas, aire acondicionado, regaderas… y una mensualidad más barata que una cena para dos. Entonces, ¿cómo gana dinero un gimnasio que cobra tan poco?",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "$299 – $699",
+    "texto": "al mes, los planes de Smart Fit en México",
+    "fuente": "ADN40, 15/01/2026 (actualizado 01/04/2026)."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "Hoy vamos a abrir los números del gimnasio más grande de América Latina: cuánto cuesta abrir uno, cuánto factura, cuánto le queda… y cuál es el truco del modelo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cómo gana dinero Smart Fit cobrando tan poco?",
+    "sub": "Socios, costos y el truco del gimnasio barato"
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Primero, el tamaño. Smart Fit es una empresa brasileña que cotiza en bolsa, y al cierre de septiembre tenía dos mil doscientos cincuenta y nueve gimnasios en diecisiete países, con cinco punto siete millones de clientes. Y sus ingresos crecieron veintinueve por ciento en un año.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "2,259",
+    "texto": "gimnasios en 17 países, 5.7 millones de clientes",
+    "fuente": "Smart Fit, resultados 3T26 (Mercado & Consumo, 05/11/2026)."
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Y en México es la cadena líder. Aquí tiene más de quinientos gimnasios y más de un millón trescientos mil usuarios activos. Este año planea abrir unos setenta más, con una inversión de más de mil quinientos millones de pesos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the construction crane",
+    "prompt": "a new gym building under construction in a Mexican city, a crane lifting a large glass panel, workers in helmets, present day, blank signage, no logos"
+   }
+  },
+  {
+   "id": 6,
+   "voz": "Para ponerlo en contexto: en México hay más de veinte mil gimnasios, estudios y clubes. Y casi tres de cada cuatro atienden a menos de cuatrocientas personas. Smart Fit juega en otra liga.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "> 20,000 gimnasios en México",
+     "73 % atienden a menos de 400 personas",
+     "Smart Fit: ≈ 2,600 por gimnasio"
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "voz": "Y todavía hay mucho espacio para crecer. Se calcula que en México unos siete millones doscientas mil personas pagan un gimnasio o un estudio. Son menos de seis de cada cien mexicanos. Y la mensualidad mediana anda en ochocientos pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "5.6 %",
+    "texto": "de los mexicanos paga un gimnasio o estudio (≈ 7.2 millones)",
+    "fuente": "Mercado Fitness, Radiografía México 2024. Mensualidad mediana: $800."
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Fíjate en ese número. Si repartimos un millón trescientos mil usuarios entre quinientos gimnasios, cada uno tiene en promedio unos dos mil seiscientos socios. Un gimnasio de barrio típico tiene algunos cientos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Socios por gimnasio",
+    "items": [
+     [
+      "Gimnasio de barrio (ejemplo)",
+      300
+     ],
+     [
+      "Smart Fit México (promedio)",
+      2600
+     ]
+    ],
+    "unidad": "socios (estimación)",
+    "fmt": "{:,.0f}",
+    "foco": [
+     1
+    ],
+    "fuente": "Emprendedor (10/09/2026); AgendaPro (08/05/2026); Mercado Fitness. Estimación propia."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "Y ahí empieza a aparecer el truco. El modelo no está hecho para cobrar caro a pocos. Está hecho para cobrar barato… a muchísimos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the long row of treadmills",
+    "prompt": "a long row of identical treadmills and bikes stretching into the distance inside a vast gym, only a few people using them, morning light, present day, no logos"
+   }
+  },
+  {
+   "id": 10,
+   "voz": "Ahora, la inversión. La empresa no publica cuánto cuesta cada gimnasio, pero si dividimos los mil quinientos millones de pesos entre los setenta gimnasios del plan, salen unos veintiún millones por gimnasio.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $21 millones",
+    "texto": "de inversión por gimnasio nuevo (estimación)",
+    "fuente": "$1,500 millones ÷ 70 gimnasios (Emprendedor, 10/09/2026). Incluye también tecnología; estimación propia."
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Eso paga la obra, las máquinas, los vestidores y los sistemas. Para que te des una idea, abrir un gimnasio mediano independiente en México cuesta entre quinientos mil y un millón ochocientos mil pesos. Y una franquicia de Anytime Fitness, entre cinco y seis millones y medio.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Inversión para abrir un gimnasio",
+    "items": [
+     [
+      "Gimnasio mediano independiente",
+      1.82
+     ],
+     [
+      "Franquicia Anytime Fitness",
+      6.45
+     ],
+     [
+      "Smart Fit nuevo (estimación)",
+      21.4
+     ]
+    ],
+    "unidad": "millones de pesos (tope del rango)",
+    "fmt": "${:.1f}M",
+    "foco": [
+     2
+    ],
+    "fuente": "AgendaPro (08/05/2026); DeDinero (14/10/2026); estimación propia."
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Ahora, las ventas. Los planes van de doscientos noventa y nueve a seiscientos noventa y nueve pesos. Si suponemos un promedio de quinientos pesos al mes por socio, con dos mil seiscientos socios…",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "≈ 2,600 socios",
+     "× $500 al mes (supuesto)",
+     "≈ $1.3 millones al mes"
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "voz": "…un gimnasio promedio factura alrededor de un millón trescientos mil pesos al mes. Curiosamente, es casi lo mismo que vende un OXXO. Pero con un negocio completamente distinto.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $1.3 millones",
+    "texto": "de ingresos al mes por gimnasio (estimación)",
+    "fuente": "Estimación propia: 2,600 socios × $500."
+   }
+  },
+  {
+   "id": 14,
+   "voz": "En el OXXO, más de la mitad de lo que vendes se va en pagar la mercancía. En el gimnasio no hay mercancía. Lo que vendes es acceso a un lugar. Y casi todos los costos son fijos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the empty locker room",
+    "prompt": "a clean empty gym locker room with rows of lockers and benches, showers in the background, early morning, present day, no logos, no readable text"
+   }
+  },
+  {
+   "id": 15,
+   "voz": "La renta del local, la luz y el aire acondicionado, la limpieza, el mantenimiento de las máquinas, los instructores y la recepción. Todo eso cuesta casi lo mismo con mil socios que con tres mil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "lista",
+    "titulo": "Lo que paga un gimnasio cada mes",
+    "items": [
+     "Renta del local",
+     "Luz y aire acondicionado",
+     "Limpieza y mantenimiento",
+     "Instructores y recepción",
+     "Sistemas y publicidad"
+    ],
+    "total": "Casi todo es costo fijo",
+    "fuente": "Estructura de costos típica de un gimnasio."
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Y casi todo está pensado para gastar poco en operar: te inscribes en una pantalla o en la app, entras con un código en el celular, y en la recepción hay muy poca gente. Las máquinas son las mismas en todas las sedes, así que se compran por miles.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the phone at the turnstile",
+    "prompt": "a gym member scanning a code on a smartphone at an automatic turnstile, a self-service sign-up kiosk beside, present day, blank screens, no logos"
+   }
+  },
+  {
+   "id": 17,
+   "voz": "¿Y cuánto queda? Smart Fit dice que sus gimnasios maduros tienen un margen bruto de alrededor de cincuenta y dos por ciento. O sea, de cada cien pesos que paga un socio, después de los costos del propio gimnasio quedan unos cincuenta y dos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De cada $100 que paga un socio (gimnasio maduro)",
+    "partes": [
+     [
+      "Costos del gimnasio",
+      48,
+      false
+     ],
+     [
+      "Margen bruto",
+      52,
+      true
+     ]
+    ],
+    "fuente": "Smart Fit, presentación a inversionistas (3T25, 2T26)."
+   }
+  },
+  {
+   "id": 18,
+   "voz": "Con un millón trescientos mil de ingresos, eso son unos seiscientos setenta y seis mil pesos al mes por gimnasio. Con eso, un gimnasio nuevo recuperaría su inversión en unos dos años y medio.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 2.5 años",
+    "texto": "para recuperar la inversión de un gimnasio maduro (estimación)",
+    "fuente": "Estimación propia: $21.4 millones ÷ $676,000 al mes. No incluye gastos corporativos."
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Pero ojo, eso es antes de las oficinas, la publicidad, los sistemas, los intereses y los impuestos de toda la empresa. Al final, en el tercer trimestre de este año, a Smart Fit le quedaron unos diez pesos y medio de utilidad por cada cien que cobró.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$100",
+    "a_txt": "que cobra Smart Fit",
+    "b": "$89.50",
+    "b_txt": "costos, intereses e impuestos",
+    "r": "≈ $10.50",
+    "r_txt": "de utilidad recurrente",
+    "fuente": "Margen neto recurrente de 10.5 % en el 3T26 (Eu Quero Investir, 05/11/2026)."
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Y ahora sí, el truco. Si cada socio fuera al gimnasio todos los días, a la misma hora, no cabrían. El modelo funciona porque no todos van… y porque los que van, se reparten a lo largo del día.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "El truco: no todos van"
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Hay un estudio famoso de dos economistas, Stefano DellaVigna y Ulrike Malmendier, que siguió a más de siete mil socios de gimnasios en Estados Unidos. La gente que pagaba mensualidad iba, en promedio, poco más de cuatro veces al mes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the calendar on the fridge",
+    "prompt": "a person looking guiltily at a gym bag by the front door while a wall calendar shows only a few marked days, present day apartment, no readable text, no logos"
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Y como pagaban una cuota fija, terminaban pagando más de diecisiete dólares por visita… cuando el pase por día costaba diez. Pagaban de más, porque al inscribirse creían que iban a ir mucho más seguido. En promedio, cada socio dejó ir unos seiscientos dólares de ahorro durante su membresía.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Costo real por visita",
+    "items": [
+     [
+      "Pase por día",
+      10
+     ],
+     [
+      "Mensualidad, según lo que iban",
+      17
+     ]
+    ],
+    "unidad": "dólares por visita",
+    "fmt": "${:.0f}",
+    "foco": [
+     1
+    ],
+    "fuente": "DellaVigna y Malmendier, American Economic Review, 2006."
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Ojo, no es que el gimnasio engañe a nadie. Es que todos somos optimistas cuando nos inscribimos en enero. Y el gimnasio barato está diseñado para que valga la pena quedarte inscrito… aunque no vayas tanto.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the January crowd",
+    "prompt": "a crowded gym reception in January with a line of new members signing up at touch screens, present day, blank screens, no logos"
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Por eso la mensualidad es baja. A quinientos pesos, mucha gente no cancela aunque vaya poco: es el precio de sentir que en cualquier momento vuelve. Y cada socio que no cancela es ingreso casi sin costo extra.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Mensualidad baja",
+     "→ menos cancelaciones",
+     "→ más socios por gimnasio"
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "voz": "El otro truco es subir de plan. En México, más del sesenta y cinco por ciento de los alumnos de Smart Fit ya está en el plan Black, el más caro, que te deja entrar a cualquier sede y llevar invitados.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "65 %",
+    "texto": "de los alumnos de Smart Fit en México están en el plan Black",
+    "fuente": "Eu Quero Investir, 05/11/2026 (3T26)."
+   }
+  },
+  {
+   "id": 26,
+   "voz": "Y ahora, lo que nadie te cuenta del negocio de los gimnasios.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 27,
+   "voz": "Primero: retener cuesta más que vender. En una encuesta a dueños de gimnasios en México, el problema número uno no era conseguir socios nuevos. Era que los que ya tenían no se fueran.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "55 %",
+    "texto": "de los dueños dice que su mayor reto es retener socios",
+    "fuente": "Mercado Fitness, Radiografía México 2024."
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Segundo: hasta al más grande le pega. En México, los ingresos de los gimnasios maduros de Smart Fit estuvieron cayendo entre doce y dieciocho meses, por cancelaciones y competencia. Recién en este último trimestre volvieron a crecer.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the falling arrow on paper",
+    "prompt": "an executive in a glass office reviewing printed charts on a desk with a city view behind, present day, no readable text, no logos"
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Tercero: la competencia ya no es solo el gimnasio de enfrente. Aplicaciones como TotalPass te dejan pagar una sola cuota y entrar a miles de gimnasios y estudios. En México ya tienen unos once mil lugares afiliados.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 11,000",
+    "texto": "gimnasios y estudios afiliados a TotalPass en México",
+    "fuente": "Eu Quero Investir, 05/11/2026."
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Cuarto: la escala lo es todo. Un gimnasio chico con trescientos socios a setecientos pesos factura doscientos diez mil pesos al mes. Con los mismos costos fijos, cada socio que se va pesa muchísimo más.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Gimnasio mediano independiente",
+    "filas": [
+     [
+      "Socios activos",
+      "300"
+     ],
+     [
+      "Mensualidad",
+      "$700"
+     ],
+     [
+      "Ingresos al mes",
+      "$210,000"
+     ],
+     [
+      "Margen neto típico",
+      "15 % – 35 %"
+     ]
+    ],
+    "fuente": "AgendaPro, 08/05/2026."
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Y quinto: abrir no es lo mismo que llenar. Un gimnasio mediano en México tarda, en promedio, entre ocho y dieciocho meses en alcanzar el punto de equilibrio. Y en esos meses, la renta, la luz y los sueldos se pagan igual, aunque el gimnasio esté medio vacío.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the half-empty gym floor",
+    "prompt": "a newly opened neighborhood gym with shiny equipment and only two people training, the owner watching from the reception desk, present day, blank signage, no logos"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Entonces, ¿cómo gana dinero Smart Fit cobrando tan poco? Con escala. Miles de socios por gimnasio, costos que casi no crecen cuando llega uno más, y una cuota tan baja que mucha gente prefiere no cancelar.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the city lights",
+    "prompt": "an aerial view at dusk of a Mexican city with several brightly lit gyms visible across different neighborhoods, present day, no logos"
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Por eso los grandes pueden cobrar menos y aun así ganar. Y por eso a un gimnasio chico le conviene no competir por precio, sino por algo que el grande no da: atención personal, clases especiales o comunidad.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Grande: precio bajo y escala",
+     "Chico: atención, clases y comunidad"
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "voz": "¿Y si lo que quieres es poner tu propio gimnasio? Entonces no copies el modelo de Smart Fit, porque sin miles de socios no te salen las cuentas. Busca un barrio donde el grande no llega, cobra un poco más y gánate a la gente por el trato.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sin miles de socios: no al low cost",
+     "Busca tu barrio, cobra un poco más",
+     "Compite por el trato"
+    ]
+   }
+  },
+  {
+   "id": 35,
+   "voz": "¿Y para ti, como socio? Haz la cuenta de cuántas veces fuiste el mes pasado. Si fuiste cuatro veces, cada visita te costó más de cien pesos. A lo mejor el pase por día te sale mejor… o a lo mejor es la señal de que te toca volver.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the gym bag",
+    "prompt": "a person walking out of an apartment building at dawn carrying a gym bag, headphones on, the city waking up, present day"
+   }
+  },
+  {
+   "id": 36,
+   "voz": "Cuéntame en los comentarios: ¿cuántas veces fuiste al gimnasio el mes pasado? Sé honesto. Y si tienes un gimnasio, dime cuántos socios tienes y cuánto cobras. Y si este video te sirvió, suscríbete: cada semana abrimos los números de un negocio nuevo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿Cuántas veces fuiste al gym el mes pasado?",
+    "sub": "Sé honesto. Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 37,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "a3d9c830-5a74-48b9-89a8-b1ef0f2d6a2a",
+    "texto": "Mira también",
+    "sub": "¿Cuánto gana realmente el dueño de un McDonald's?"
+   },
+   "dur": 6
+  }
+ ]
+}

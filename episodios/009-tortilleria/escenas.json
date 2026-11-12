@@ -1,0 +1,534 @@
+{
+ "episodio": "009-tortilleria",
+ "voz": "Andre · ElevenLabs (ver guia-voz.md)",
+ "estilo": "ver guia-visual.md",
+ "escenas": [
+  {
+   "id": 1,
+   "voz": "Mira, en México cada persona come en promedio unos sesenta y seis kilos de tortilla al año. Casi doscientos gramos diarios. Y la mayoría salen de un lugar: la tortillería del barrio.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the stack of warm tortillas",
+    "prompt": "a neighborhood tortillería in the early morning, a tortilla machine conveyor carrying fresh tortillas, a woman wrapping a stack of warm tortillas in paper for a customer, steam rising, present day Mexico, blank signage, no logos"
+   }
+  },
+  {
+   "id": 2,
+   "voz": "Y en el campo se come todavía más. En las zonas rurales, el consumo de referencia es de unos doscientos veinte gramos por persona al día, contra unos ciento cuarenta en las ciudades. La tortilla es, literalmente, la base de la comida.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Tortilla por persona al día",
+    "items": [
+     [
+      "Zonas urbanas",
+      139.9
+     ],
+     [
+      "Zonas rurales",
+      220.8
+     ]
+    ],
+    "unidad": "gramos (consumo de referencia)",
+    "fmt": "{:.0f} g",
+    "foco": [
+     1
+    ],
+    "fuente": "Inegi vía Expansión, 15/04/2026."
+   }
+  },
+  {
+   "id": 3,
+   "voz": "En el país hay unas ciento diez mil tortillerías. Y siete de cada diez tortillas que comemos todavía salen de una tortillería de barrio, no del súper.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 110,000",
+    "texto": "tortillerías en México",
+    "fuente": "Expansión, 15/04/2026. 70 % del consumo en tortillerías de barrio (ANPEC)."
+   }
+  },
+  {
+   "id": 4,
+   "voz": "Es de los negocios más cercanos que hay. Todos los días, la fila. Pero, ¿cuánto deja de verdad una tortillería? ¿Cuánto le queda al tortillero de cada kilo?",
+   "visual": {
+    "tipo": "img",
+    "acento": "the line of neighbors",
+    "prompt": "a line of neighbors waiting outside a small tortillería at midday, a woman with a cloth napkin and a man with a basket, present day Mexican street, blank signage"
+   }
+  },
+  {
+   "id": 5,
+   "voz": "Hoy vamos a hacer las cuentas completas: cuánto cuesta poner una, cuánto vende, cuánto cuesta producir un kilo… y por qué este negocio vive un momento difícil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "titulo",
+    "texto": "¿Cuánto deja de verdad una tortillería?",
+    "sub": "Maíz, máquina y ganancia, kilo por kilo"
+   }
+  },
+  {
+   "id": 6,
+   "voz": "Primero, cómo funciona. Hay dos formas de hacer tortilla. Con nixtamal: cueces el maíz con cal, lo mueles y sale la masa. O con harina de maíz industrial, que solo mezclas con agua.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Nixtamal: maíz + cal + molino",
+     "Harina: harina de maíz + agua",
+     "Las dos terminan en la máquina"
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "voz": "Muchas tortillerías no muelen su propio maíz: compran la masa a un molino. Así se ahorran el molino, que es caro y gasta mucha luz. Y luego, la máquina hace el resto. Aplana la masa, corta las tortillas y las pasa por el comal en una banda, una tras otra.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the gas flame under the conveyor",
+    "prompt": "an isometric cutaway engraving of a tortilla machine: a hopper with dough, rollers flattening it, a cutting drum and a three-level conveyor oven with gas flames underneath, thin leader lines without text, present day"
+   }
+  },
+  {
+   "id": 8,
+   "voz": "Ahora, la inversión. Según el Consejo Nacional de la Tortilla, para poner una tortillería necesitas como mínimo unos trescientos mil pesos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ $300,000",
+    "texto": "de inversión mínima recomendada",
+    "fuente": "Homero López, Consejo Nacional de la Tortilla, vía Infobae (30/01/2024)."
+   }
+  },
+  {
+   "id": 9,
+   "voz": "La máquina es lo más caro. Un fabricante ofrece paquetes con máquina, molino y equipo desde ciento cuarenta y ocho mil quinientos pesos, para unas mil cuatrocientas tortillas por hora, hasta más de quinientos mil, para casi tres mil quinientas.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Paquetes de equipo para tortillería",
+    "items": [
+     [
+      "~1,440 tortillas por hora",
+      148.5
+     ],
+     [
+      "~2,500 tortillas por hora",
+      307.0
+     ],
+     [
+      "~3,400 tortillas por hora",
+      515.2
+     ]
+    ],
+    "unidad": "miles de pesos (precios de 2024)",
+    "fmt": "${:.0f} mil",
+    "foco": [
+     1
+    ],
+    "fuente": "Tortilladoras Lenin vía Infobae, 30/01/2024. Precios orientativos."
+   }
+  },
+  {
+   "id": 10,
+   "voz": "A eso súmale el local, la instalación de gas, la báscula, el mostrador y los permisos. Y una cosa importante: la máquina trabaja con calor y motores todo el día, así que la luz y el gas pesan muchísimo.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the gas cylinder",
+    "prompt": "the back room of a tortillería with a large stationary gas tank, a dough mixer, sacks of corn flour stacked on pallets and an electrical panel, present day, blank sacks, no readable text"
+   }
+  },
+  {
+   "id": 11,
+   "voz": "Ahora, cuánto se vende. El kilo de tortilla en México anda en promedio por los veinticuatro pesos con veinte centavos, según Profeco. Pero va desde diecisiete pesos en Tlaxcala hasta más de treinta y uno en Sonora.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Kilo de tortilla, abril de 2026",
+    "items": [
+     [
+      "Tlaxcala",
+      17.0
+     ],
+     [
+      "Promedio nacional",
+      24.2
+     ],
+     [
+      "Sonora",
+      31.33
+     ]
+    ],
+    "unidad": "pesos por kilo",
+    "fmt": "${:.2f}",
+    "foco": [
+     1
+    ],
+    "fuente": "Profeco vía El Imparcial (16/04/2026); SNIIM vía N+ (14/04/2026)."
+   }
+  },
+  {
+   "id": 12,
+   "voz": "Y no es un precio que se mueva poco. En siete años, el kilo de tortilla subió alrededor de sesenta y uno por ciento. Para muchas familias, es de los gastos que más se sienten.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "+61 %",
+    "texto": "subió el kilo de tortilla en siete años",
+    "fuente": "El Imparcial, 20/04/2026."
+   }
+  },
+  {
+   "id": 13,
+   "voz": "¿Y cuántos kilos vende una tortillería? Según especialistas de la industria, hoy una tortillería promedio vende entre doscientos ochenta y trescientos kilos al día.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "280 – 300 kg",
+    "texto": "de tortilla al día, una tortillería promedio",
+    "fuente": "Xataka México, 12/08/2026."
+   }
+  },
+  {
+   "id": 14,
+   "voz": "Con trescientos kilos diarios a veinticuatro pesos con veinte, son unos siete mil doscientos pesos al día. Y si abre todos los días, unos doscientos diecisiete mil pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "300 kg × $24.20",
+     "≈ $7,260 al día",
+     "≈ $217,800 al mes"
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "voz": "Suena a bastante dinero. Pero aquí viene la pregunta clave: ¿cuánto cuesta producir ese kilo?",
+   "visual": {
+    "tipo": "img",
+    "acento": "the scale with tortillas",
+    "prompt": "a stack of tortillas wrapped in brown paper on a scale at a tortillería counter, a customer's hand holding coins, present day, the scale display blank"
+   }
+  },
+  {
+   "id": 16,
+   "voz": "Según el Consejo Nacional de la Tortilla, producir un kilo con nixtamal cuesta unos veintidós pesos con quince centavos. Mezclando maíz con un poco de harina de trigo, veintidós con sesenta y cuatro. Y solo con harina de maíz industrial, veinticinco pesos con doce.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Lo que cuesta producir un kilo",
+    "items": [
+     [
+      "Con nixtamal",
+      22.15
+     ],
+     [
+      "Mixto (maíz y trigo)",
+      22.64
+     ],
+     [
+      "Con harina de maíz",
+      25.12
+     ]
+    ],
+    "unidad": "pesos por kilo",
+    "fmt": "${:.2f}",
+    "foco": [
+     0
+    ],
+    "fuente": "Consejo Nacional de la Tortilla vía Publimetro, 15/04/2026."
+   }
+  },
+  {
+   "id": 17,
+   "voz": "Ese costo ya incluye el maíz, el gas, la luz, el agua, los sueldos, las refacciones y el papel. Y fíjate en un detalle: el maíz es apenas un tercio del costo. Lo demás es todo lo que hace falta para convertirlo en tortilla.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barra",
+    "titulo": "De lo que cuesta producir un kilo",
+    "partes": [
+     [
+      "Maíz",
+      34,
+      false
+     ],
+     [
+      "Gas, luz, sueldos, refacciones y más",
+      66,
+      true
+     ]
+    ],
+    "fuente": "Grupo Consultor de Mercados Agrícolas vía Expansión (15/04/2026): maíz, 33 a 35 % del costo."
+   }
+  },
+  {
+   "id": 18,
+   "voz": "Y si usas harina, el costal de diez kilos de harina de maíz anda en unos ciento ochenta y nueve pesos. Es práctico, porque te ahorras el molino y el nixtamal, pero el kilo de tortilla te sale más caro. Por eso muchas tortillerías mezclan.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the open sack of corn flour",
+    "prompt": "a tortillería worker pouring corn flour from a large blank paper sack into a dough mixer, flour dust in the air, present day, blank sacks, no readable text"
+   }
+  },
+  {
+   "id": 19,
+   "voz": "Ahora compara. Si vendes en veinticuatro pesos con veinte y produces con nixtamal a veintidós con quince, te quedan unos dos pesos por kilo. Pero si trabajas con harina, a veinticinco con doce… pierdes casi un peso en cada kilo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "resta",
+    "a": "$24.20",
+    "a_txt": "precio promedio",
+    "b": "$22.15",
+    "b_txt": "costo con nixtamal",
+    "r": "≈ $2.05",
+    "r_txt": "por kilo",
+    "fuente": "Estimación propia con datos de Profeco y del Consejo Nacional de la Tortilla."
+   }
+  },
+  {
+   "id": 20,
+   "voz": "Con dos pesos por kilo y trescientos kilos diarios, al mes quedan unos dieciocho mil cuatrocientos cincuenta pesos. Un economista de la Universidad Iberoamericana habla de márgenes de diez a veinte por ciento en tortillerías ya establecidas: entre veintiún mil y cuarenta y tres mil pesos al mes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "escenario",
+    "nombre": "Tortillería de 300 kg diarios",
+    "filas": [
+     [
+      "Ventas al mes",
+      "≈ $217,800"
+     ],
+     [
+      "Con el costo del Consejo (nixtamal)",
+      "≈ $18,450"
+     ],
+     [
+      "Con margen de 10 a 20 %",
+      "$21,780 – $43,560"
+     ]
+    ],
+    "fuente": "Estimación propia; margen de 10–20 % según Gerardo Leyva (Ibero) vía Xataka, 12/08/2026."
+   }
+  },
+  {
+   "id": 21,
+   "voz": "Para ponerlo en perspectiva: dos pesos de veinticuatro es un margen de alrededor de ocho por ciento. Más que una gasolinera, pero menos que un OXXO o que la taquería que analizamos antes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Lo que queda de cada $100 vendidos",
+    "items": [
+     [
+      "Gasolinera (mejor caso)",
+      4
+     ],
+     [
+      "Tortillería (nixtamal)",
+      8.5
+     ],
+     [
+      "OXXO",
+      10
+     ],
+     [
+      "Taquería (modelo)",
+      13.2
+     ]
+    ],
+    "unidad": "pesos de cada $100 (estimaciones)",
+    "fmt": "${:.1f}",
+    "foco": [
+     1
+    ],
+    "fuente": "Episodios 001, 003 y 005; estimación propia."
+   }
+  },
+  {
+   "id": 22,
+   "voz": "Ojo con un detalle: el Consejo de la Tortilla estaba pidiendo un aumento de precio cuando dio esas cifras. Así que es razonable pensar que una tortillería eficiente gana algo más. Por eso usamos rangos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the hands counting coins",
+    "prompt": "a tortillería owner counting coins and small bills at the end of the day at the counter, the machine switched off behind, present day, no readable text"
+   }
+  },
+  {
+   "id": 23,
+   "voz": "Y aquí está la trampa de la tortillería: el volumen.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "La trampa: el volumen"
+   }
+  },
+  {
+   "id": 24,
+   "voz": "Hace años, una tortillería llegaba a vender hasta mil kilos al día. Hoy vende trescientos. Más de tres veces menos. Y según El Universal, en treinta años cerraron cerca de tres de cada cuatro tortillerías. Y la máquina, el local y los empleados cuestan casi lo mismo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "barras_h",
+    "titulo": "Kilos vendidos al día por tortillería",
+    "items": [
+     [
+      "Antes",
+      1000
+     ],
+     [
+      "Hoy",
+      300
+     ]
+    ],
+    "unidad": "kilos al día",
+    "fmt": "{:,.0f} kg",
+    "foco": [
+     1
+    ],
+    "fuente": "Xataka México, 12/08/2026."
+   }
+  },
+  {
+   "id": 25,
+   "voz": "Cuando vendes menos kilos, la renta, los sueldos y el mantenimiento se reparten entre menos tortillas. Así que cada kilo te cuesta más producirlo. Y como el precio de la tortilla es tan vigilado, no lo puedes subir así nomás.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the half-idle machine",
+    "prompt": "a tortilla machine running slowly in a quiet tortillería in the afternoon, a single worker waiting by the conveyor, no customers, present day"
+   }
+  },
+  {
+   "id": 26,
+   "voz": "¿Y por qué se vende menos? Porque la tortilla ya no solo se compra en la tortillería. Ahora llega a la tiendita, al súper, a la farmacia… y hasta en moto, en hieleras, directo a la puerta de tu casa.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the cooler on the motorcycle",
+    "prompt": "a man on a small motorcycle with a cooler box strapped to the back, delivering a package of tortillas to a woman at her door, present day Mexican street, no logos"
+   }
+  },
+  {
+   "id": 27,
+   "voz": "De hecho, nueve de cada diez tortillerías ya le venden a las tiendas de abarrotes para sobrevivir. Es justo lo que vimos en el episodio de la tiendita: un negocio de barrio sosteniendo a otro.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "90 %",
+    "texto": "de las tortillerías le vende a tiendas de abarrotes",
+    "fuente": "Xataka México, 12/08/2026."
+   }
+  },
+  {
+   "id": 28,
+   "voz": "Y ahora, lo que nadie te cuenta de poner una tortillería.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "seccion",
+    "texto": "Lo que nadie te cuenta"
+   }
+  },
+  {
+   "id": 29,
+   "voz": "Primero: el precio de la tortilla es política. En abril, los tortilleros anunciaron un aumento de dos a cuatro pesos por kilo, y el gobierno respondió que no había justificación. Y Profeco salió a decir que el precio promedio seguía estable, en unos veinticuatro pesos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the reporters' microphones",
+    "prompt": "a group of tortilla producers speaking to reporters with microphones outside a government building, present day Mexico City, no readable text, no logos"
+   }
+  },
+  {
+   "id": 30,
+   "voz": "Segundo: hay apoyo, pero para pocos. El gobierno ofreció maíz a seis mil pesos la tonelada a tortillerías que se sumen a su programa. A finales de abril se habían sumado unas mil trescientas. De más de cien mil.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "cifra",
+    "cifra": "≈ 1,300",
+    "texto": "tortillerías en el programa de maíz a $6,000 la tonelada",
+    "fuente": "Sader vía El Imparcial, 29/04/2026."
+   }
+  },
+  {
+   "id": 31,
+   "voz": "Tercero: la inseguridad también entra al precio. El mismo Consejo Nacional de la Tortilla ha dicho que en algunas regiones el kilo sube por la extorsión, porque el cobro de piso termina saliendo del bolsillo de los clientes.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the shadow at the door",
+    "prompt": "a tortillería at dusk with a lone figure standing in the doorway casting a long shadow over the counter, the owner looking tense, present day, no readable text"
+   }
+  },
+  {
+   "id": 32,
+   "voz": "Cuarto: la mayoría trabaja en la informalidad. Se calcula que unas sesenta y cinco de cada cien tortillerías son informales. Y Profeco ha llegado a multar hasta con cuatro millones de pesos a quienes venden tortillas en hieleras. Si tú operas en regla, compites contra quien no paga impuestos ni permisos.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "≈ 65 % de las tortillerías son informales",
+     "Multas de hasta $4 millones (hieleras)"
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "voz": "Y quinto: es un trabajo de madrugada. La masa se prepara antes de que salga el sol, porque la gente quiere su tortilla calientita para el desayuno. Y se vende todos los días, también los domingos.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the first light on the comal",
+    "prompt": "a tortillero preparing dough in the dark before dawn, the tortilla machine warming up with blue gas flames, a single light bulb overhead, present day"
+   }
+  },
+  {
+   "id": 34,
+   "voz": "Entonces, ¿te conviene poner una tortillería? Si consigues un buen lugar, con nixtamal propio o un buen proveedor de masa, y le vendes también a las tienditas y fondas de la zona, puede dejar un ingreso decente: de veinte a cuarenta mil pesos al mes. Y es un producto que la gente compra todos los días, llueva o truene.",
+   "visual": {
+    "tipo": "img",
+    "acento": "the delivery basket",
+    "prompt": "a tortillería owner loading stacks of wrapped tortillas into a basket on a bicycle to deliver to nearby corner stores, morning light, present day Mexico, blank packaging"
+   }
+  },
+  {
+   "id": 35,
+   "voz": "Pero el margen por kilo es de un par de pesos, el volumen viene bajando y el precio no lo controlas tú. Antes de invertir trescientos mil pesos, asegúrate de que en tu zona no haya ya otras tres tortillerías peleando por los mismos clientes.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Margen: ≈ $2 por kilo",
+     "Volumen: 1,000 → 300 kg al día",
+     "Precio: vigilado y político"
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "voz": "¿Para quién sí? Para alguien que conoce el oficio, que puede madrugar todos los días y que tiene clientes asegurados, como tiendas o fondas. ¿Para quién no? Para quien busca un negocio cómodo o una ganancia rápida.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "concepto",
+    "lineas": [
+     "Sí: oficio, madrugadas y clientes fijos",
+     "No: negocio cómodo o ganancia rápida"
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "voz": "Esto es un análisis general y no reemplaza una asesoría para tu caso. Pero cuéntame en los comentarios: ¿a cuánto está el kilo de tortilla en tu ciudad? Y si tienes una tortillería, dime cuántos kilos vendes en un día normal. Y si este video te sirvió, suscríbete: cada semana abrimos los números de un negocio nuevo.",
+   "visual": {
+    "tipo": "graf",
+    "kind": "pregunta",
+    "texto": "¿A cuánto está el kilo de tortilla en tu ciudad?",
+    "sub": "Te leo en los comentarios."
+   }
+  },
+  {
+   "id": 38,
+   "voz": null,
+   "visual": {
+    "tipo": "graf",
+    "kind": "final",
+    "job": "dda9f04f-6a07-40de-b147-86aecfca326d",
+    "texto": "Mira también",
+    "sub": "¿Cuánto deja de verdad una taquería?"
+   },
+   "dur": 6
+  }
+ ]
+}
