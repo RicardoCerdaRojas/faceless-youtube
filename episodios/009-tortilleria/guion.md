@@ -109,7 +109,7 @@ Y aquí está la trampa de la tortillería: el volumen.
 
 > **[24 · graf/barras_h]** Kilos vendidos al día por tortillería
 
-Hace años, una tortillería llegaba a vender hasta mil kilos al día. Hoy vende trescientos. Más de tres veces menos. Y según El Universal, en treinta años cerraron cerca de tres de cada cuatro tortillerías. Y la máquina, el local y los empleados cuestan casi lo mismo.
+Hace años, una tortillería llegaba a vender hasta mil kilos al día. Hoy vende trescientos. Más de tres veces menos. Y la máquina, el local y los empleados cuestan casi lo mismo. Según El Universal, además, en treinta años cerraron cerca de tres de cada cuatro tortillerías.
 
 > **[25 · img]** a tortilla machine running slowly in a quiet tortillería in the afternoon, a single worker waiting by the conveyor, no customers, present day
 
